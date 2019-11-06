@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+
+
+
+
+<title>SiMON help: Output window</title>
+
+
+
+
+</head><body>
+<h1>Output window<br>
+</h1><a href="#Endofsim">Output at the end of a simulation</a><br>
+<a href="#Perrange">Output per range (time or weight)</a><br>
+<a href="ListOfVariables.html">List of output variables [separate help page]</a><br>
+<h2><a name="Endofsim"></a>Output at the end of a simulation</h2>
+<p>In this window you can view the simulation outputs of up to 4 simulations (see <a href="Simulation.html">simulation window</a>).<br>
+Only the end-point variables will be shown, which are basically slaughter data.<br>
+Results of the different simulations are presented in different columns.<br>
+You cannot change anything in this window. For tailor-made output, view the output at different time steps/ranges.<br>
+You can export or print this output.<br>
+</p>
+<h2><a name="Perrange"></a>Output per range (time or weight)</h2>
+<p>In this window you can view the simulation results of up to 4 simulations (see <a href="Simulation.html">simulation window</a>).<br>
+The results are shown in the window below and are sorted by the <a href="SelectingVariables.html">selected variables</a>.<br>
+The results of the different simulation runs (1 to 4) are presented per output variable in separate columns.<br>
+The number of the simulation follows the name of the output variable: 
+LW[1] means live weight of the first simulation run, LW[4] means live 
+weight of the fourth simulation run.<br>
+</p>
+<h3>Setting your preferences for presenting simulation results</h3>
+<p>At the top left you can switch the results of a particular simulation run on or off.<br>
+You can repeatedly make changes without having to re-run your simulations.<br>
+You will, however, have to press the Update button before the output table is actually changed.<br>
+</p>
+<h3>Defining the time ranges</h3>
+<p>You can choose how to view your output variables:<br>
+</p>
+<ul>
+  <li>per day&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; --&gt; choose fixed time step with value 1 </li>
+  <li>every x days &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+--&gt; choose a fixed time step with value x</li>
+  <li>average per defined time range --&gt; select an existing time range from the drop-down list</li>
+  <li>graphically&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp; --&gt; choose a fixed time step of 1 and <a href="Graph.html">make a graph</a>
+ </li>
+</ul>
+<p>If you have not defined any output time ranges, you can do so in <a href="RangeDefinition.html">main menu, settings (Output ranges)</a>.<br>
+</p>
+<h3>Selecting the presented output variables </h3>
+<p>Select an existing variable group from the drop-down list and click Update.<br>
+If you decide to view another variable group, select it and press Update again.<br>
+You don't have to re-run the simulations.<br>
+  <br>
+If you have not yet defined variable groups, you can do so in <a href="SelectingVariables.html">main menu, settings (Variable groups)</a>.<br>
+</p>
+<h3>Important</h3>
+<p>Depending on your choice of viewing output per time step or time range you may or may not get to see certain variables.<br>
+Live weight gain (LWG, g/d), for example, can be calculated every time 
+step, but not as an average over a certain time or weight range.<br>
+In that case, you will have to select the variable average live weight gain (avgLWG, g/d).<br>
+All variables starting with avg (average), cavg (cumulative average) are only available as range-output.<br>
+A specific variable group can consist of several types of variables, but
+ selecting this variable group will show the results of the variables 
+that correspond with your choice of output range or step.<br>
+
+
+
+
+
+</p>
+</body></html>
