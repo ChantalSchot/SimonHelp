@@ -1,8 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head>
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" href="styles.css">
+
 
 <title>SiMON help: Protein metabolism</title>
+
 
 </head><body>
 <h1>Protein metabolism</h1>
@@ -51,17 +54,17 @@ You can alter the quantity of endogenous protein lost at the terminal ileum<br>
 by adapting the multiplication factor for endogenous protein (see <a href="ProtSrc.html">protein sources window</a>).<br>
 Please note that only the NET losses at the terminal ileum are being modelled, not the total synthesis of endogenous protein.<br>
 <h3><a name="OxSens"></a>Amino acids, changing sensitivity for oxidation</h3>
-The presence of degradive enzymes in tissues is presumably responsible 
+The presence of degradive enzymes in tissues is presumably responsible
 for the inevitable loss of a fraction of amino acids, even at low levels
  of intake.<br>
 Consequently, potential re-utilization of degraded protein for protein synthesis is always less than 100%.<br>
 Furthermore, potential re-utilization decreases with protein intake and depends on the amino acid considered.<br>
-Unfortunately, information on the magnitude of the inevitable oxidative 
+Unfortunately, information on the magnitude of the inevitable oxidative
 losses of specific amino acids in preruminants is scarce.<br>
-It was decided to make these losses for a specific amino acid dependent 
+It was decided to make these losses for a specific amino acid dependent
 on the amount of that amino acid, passing the site of oxidation.<br>
-In Simon, the proportion of each amino acid inevitably oxidized is 
-arbitrarily set to 0.02 times the daily amount of that amino acid 
+In Simon, the proportion of each amino acid inevitably oxidized is
+arbitrarily set to 0.02 times the daily amount of that amino acid
 entering the amino acid pool.<br>
 This represents a 2% chance of each amino acid being oxidized when passing the site of oxidation.<br>
 This way, both increased protein turnover and increased protein intake leads to increased oxidative losses.<br>
@@ -73,7 +76,7 @@ Four body protein pools are represented, shown in the composite box in <a href="
 The fractional degradation rate (FDR) is assumed fixed for each protein pool.<br>
 It was decided to make the development of the muscle protein pool dependent on substrate concentration<br>
 and to relate the development of the other protein pools to muscle protein.<br>
-For that purpose, relationships between accretion rates of protein in 
+For that purpose, relationships between accretion rates of protein in
 muscle and protein in bone, hide and viscera were estimated.<br>
 Simon calculates protein synthesis rate in bone, hide and viscera by summation of net accretion and degradation rates. <br>
 <br>
@@ -86,8 +89,8 @@ In the protein metabolism window you can alter the fractional degradation rates 
 For technical reasons, muscle protein turnover cannot be changed in this way. <br>
 <br>
 One obvious effect of changing protein turnover is its effect on the fluxes of the amino acids involved,<br>
-consequently altering the minimal oxidative losses and therefore the 
-estimated amino acid use for deposition and for replacing intevitable 
+consequently altering the minimal oxidative losses and therefore the
+estimated amino acid use for deposition and for replacing intevitable
 amino acid oxidation.<br>
 In addition, the energy expenditure on protein deposition changes, which is reflected in for example the fat deposition rate.<br>
 

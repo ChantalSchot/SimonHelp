@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html><head>
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-
+<link rel="stylesheet" href="styles.css">
 
 <title>SiMON help: Feed window</title>
 
@@ -68,12 +68,12 @@ Undo changes since last save. <br>
 
 Define the protein sources used (in % of total protein, NOT in % of the total feed).<br>
 
-Protein sources can be selected after the nutrient composition of the 
+Protein sources can be selected after the nutrient composition of the
 feed is known: moisture, nitrogen, ash, fat, lactose and starch.<br>
 
 After specification of the protein sources you will return to this window and you will find default suggestions<br>
 
-generated for total carbohydrates, digestible fat, digestible lactose, 
+generated for total carbohydrates, digestible fat, digestible lactose,
 digestible starch, total and digestible protein, amino acid composition<br>
 
 and a multiplication factor for basal endogenous protein losses (the latter two in a separate sheet).<br>
@@ -140,7 +140,7 @@ crude ash content (g/kg) <br>
 
 <b>Total carbohydrates</b><br>
 
-total content of carbohydrates (g/kg), calculated by difference between 
+total content of carbohydrates (g/kg), calculated by difference between
 dry matter, protein, ash, and fat, assuming absence of crude fibre.<br>
 
 It is calculated after specification of protein sources and is for your information only.<br>
@@ -191,8 +191,8 @@ starch content <br>
 
 apparent faecal digestible starch content (g/kg).<br>
 
-A default value will be generated after specification of the protein 
-sources (protein content as well as starch content affect starch 
+A default value will be generated after specification of the protein
+sources (protein content as well as starch content affect starch
 digestibility).<br>
 
 This default can be changed. <br>
@@ -233,7 +233,7 @@ This default can be changed <br>
 
 a multiplier which you can use to modify the net protein losses at the terminal ileum.<br>
 
-A default value will be generated after specification of the protein 
+A default value will be generated after specification of the protein
 sources (they affect endogenous protein secretions differently).<br>
 
 This default can be changed. <br>
@@ -246,8 +246,8 @@ sum of non essential (dispensable) amino acids in the feed:<br>
 
 asparagine + aspartic acid + serine + glutamine + glutamic acid + glycine + alanine +proline (including water, g/kg).<br>
 
-This sum is calculated by difference between the crude protein content, 
-the sum of essential amino acids (without water!) and the non-protein 
+This sum is calculated by difference between the crude protein content,
+the sum of essential amino acids (without water!) and the non-protein
 nitrogen mass.<br>
 
 It is a calculated field and cannot be changed.<br>
@@ -266,7 +266,7 @@ The only exception to this rule is that protein sources can be specified.<br>
 
 The reasoning behind this is that important effects of protein sources on digestibility of nutrients in preruminants.<br>
 
-Obviously, protein sources differ in their protein digestibility, but 
+Obviously, protein sources differ in their protein digestibility, but
 also effects on for example fat digestibility have been shown to exist.<br>
 
 Simon uses digestible nutrients to start a simulation.<br>
@@ -315,8 +315,8 @@ the content of apparent faecal crude fat depends on the crude fat content and it
 
 The latter depends on protein source.<br>
 
-For example, when compared with skimmed milk powder, almost all 
-vegetable protein sources have been shown to depress the crude fat 
+For example, when compared with skimmed milk powder, almost all
+vegetable protein sources have been shown to depress the crude fat
 digestibility. <br>
 
 <br>
@@ -351,8 +351,8 @@ the crude protein content depends on the nitrogen content and on the nitrogen to
 
 The latter depends on the protein source.<br>
 
-After specification of the protein source, a weighted average of the 
-protein to nitrogen ratios of all protein sources is used to calculate 
+After specification of the protein source, a weighted average of the
+protein to nitrogen ratios of all protein sources is used to calculate
 the protein content of the feed. <br>
 
 <br>
@@ -363,12 +363,12 @@ The content of true digestible protein depends on the protein content and its di
 
 The latter depends on the protein sources specified.<br>
 
-Simon uses the true protein digestibility (as opposed to apparent 
-digestibilities for other nutrients) because net endogenous losses at 
+Simon uses the true protein digestibility (as opposed to apparent
+digestibilities for other nutrients) because net endogenous losses at
 the terminal ileum are simulated as an output of visceral protein.<br>
 
-Apart from the true digestibilities, also these net endogenous losses 
-depend on protein source and can be adapted by the user in the amino 
+Apart from the true digestibilities, also these net endogenous losses
+depend on protein source and can be adapted by the user in the amino
 acid window. <br>
 
 <br>
@@ -377,25 +377,25 @@ acid window. <br>
 
 the contents of individual amino acids depend on the selected protein sources.<br>
 
-For each protein source, an amino acid profile is available, and the 
-default amino acid composition of the feed is calculated as a weighted 
+For each protein source, an amino acid profile is available, and the
+default amino acid composition of the feed is calculated as a weighted
 mean of all selected protein sources.<br>
 
 These values can be changed.<br>
 
-To guarantee a fixed relationship between the crude protein content and 
-the sum of amino acids; the content of non essential amino acids are 
+To guarantee a fixed relationship between the crude protein content and
+the sum of amino acids; the content of non essential amino acids are
 calculated by difference of crude protein and the sum of essentials.<br>
 
-Please note that the amino acid contents, presented in this window are 
+Please note that the amino acid contents, presented in this window are
 including water (like you get them from an amino acid analyses).<br>
 
 For the purpose of calculating non essential amino acids, water-free contents are used.<br>
 
 Simon uses digestible amino acids for the simulations, and assumes for each amino acid the true digestibility value for protein.<br>
 
-The apparent digestibilties, however, differ between amino acids, 
-because the amino acid profile of the endogenous protein losses differs 
+The apparent digestibilties, however, differ between amino acids,
+because the amino acid profile of the endogenous protein losses differs
 from that of feed protein. <br>
 
 <br>
@@ -406,8 +406,8 @@ By default, endogenous losses at the terminal ileum are based on the ileal nitro
 
 It is assumed that these milk proteins are completely disappeared at the terminal ileum.<br>
 
-For each available protein source, a multiplication factor for the 
-endogenous protein losses is available, relative to that of milk 
+For each available protein source, a multiplication factor for the
+endogenous protein losses is available, relative to that of milk
 proteins (multiplyer set set to one).<br>
 
 In this field, you will see by default the weighted mean for the selected protein sources.<br>

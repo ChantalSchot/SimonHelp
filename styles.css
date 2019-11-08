@@ -1,0 +1,16 @@
+body {
+	font-family: sans-serif;
+	padding: 25px;
+	color: #000000;
+	max-width: 1080px;
+	line-height: 1.2;
+}
+
+a {
+	color: #000888;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0070ff;
+}
