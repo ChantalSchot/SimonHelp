@@ -1,9 +1,10 @@
 body {
-	font-family: sans-serif;
-	padding: 25px;
 	color: #000000;
-	max-width: 1080px;
+	font-family: sans-serif;
+	font-size: 1.08em;
 	line-height: 1.2;
+	max-width: 1080px;
+	padding: 30px;
 }
 
 a {
@@ -13,4 +14,22 @@ a {
 
 a:hover {
 	color: #0070ff;
+}
+
+.contentList {
+	font-size: 0.85em;
+	font-style: italic;
+	position: relative;
+	text-align: right;
+	top: -50px;
+}
+
+.toTop {
+	font-size: 0.85em;
+	font-style: italic;
+	text-align: center;
+}
+
+.incorrect {
+	color: red;
 }
