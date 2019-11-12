@@ -6,423 +6,167 @@
 <title>SiMON help: Feed window</title>
 
 
-</head><body>
-<h1>Feed window</h1>
-
-
+</head><body id="top">
+	<hr><br>
+<h1>SiMON - Feed window</h1>
+<p class="contentList"><a href="Contents.html">SiMON content list</a></p>
+<hr><br>
 <a href="#Buttons">Buttons</a> <br>
-
-
 <a href="#Fields">Fields</a> <br>
+<a href="#HowTo">How-to-use</a><br>
 
+<br><hr>
+<h2 id="Buttons">Buttons</h2>
+<em>Similar for milk replacers, concentrates and forages.</em>
+<blockquote><b>New</b>: Define a new feed. <br>
+	<br>
+	<b>Copy</b>: Copy the selected feed. <br>
+	<br>
+	<b>Delete</b>: Delete the selected feed.<br>
+	<br>
+	<b>Save</b>: Save a newly defined or changed feed.<br>
+	<br>
+	<b>Restore</b>: Undo changes since last save. <br>
+	<br>
+	<b>Ingredients</b>: Define the composition of ingredients used in the feed (% of total, adding up to 100%).<br>
+	After specification of the ingredients, default values are generated for the nutrient composition, degradation factors and amino acid composition. You can change these default values freely and save the feed for use in the simulation model. Re-adjusting the ingredients afterwards will generate new default values, replacing the current values. Changes you may have made to default values will be lost! More information can be found on the <a href="ProtSrc.html">Ingredients</a> help page. <br>
 
-<a href="#Functionality">Functionality</a><br>
+	<!-- Print button is verdwenen
+	<b>Print</b>: Generate a report of the selected genotype for printing or exporting. The report is in HTML format.<br> -->
+</blockquote><br>
+ <hr>
+<h2 id="Fields">Fields</h2>
+<blockquote>
+	<b>Name</b>: Enter a name for the feed (max 15 characters). <br>
+	<br>
+	<b>Description</b>: Enter a description of the feed.<br>
 
-
-<h2><a name="Buttons"></a>Buttons</h2>
-
-
-<b><b>New</b><br>
-
-</b>Define a new feed <br>
-
-
-<br>
-
-
-<b>Copy</b><br>
-
-
-Copy the selected feed <br>
-
-
-<br>
-
-
-<b>Delete</b><br>
-
-
-Delete the selected feed<br>
-
-
-<br>
-
-
-<b>Save</b><br>
-
-Save a newly defined or changed feed<br>
-
+	<!-- Print button is verdwenen
+	<b>Price</b>: Price of the feed (€/100 kg).<br> -->
+</blockquote>
 
 <br>
+<h3>Nutrients</h3>
 
+<em><b>Note about nutrient sheets:</b> The number and type of adjustable nutrients differs for milk replacers, concentrates and forages. A complete list of nutrients is given below, but not all nutrients are visible for all three types of feed. </em><br>
+<br>
+<blockquote>
+	<b>Dry Matter</b>: Dry matter content (g/kg feed &rarr; abbreviated to DM)<br><br>
 
-<b>Restore</b><br>
+	<u>Protein</u>:
+	<blockquote>
+		<b>Nitrogen</b>: Nitrogen content (g/kg DM)<br>
+		<b>Crude Protein Factor</b>: Multiplication factor calculating amount of crude protein (g crude protein / g nitrogen)<br>
+		<b>Ammonia</b>: Ammonia content (g/kg DM)<br>
+		<b>Soluble Protein</b>: Soluble protein content (g/kg DM)<br>
+		<b>Degradable Protein</b>: True digestible crude protein content (g/kg DM).<br>
+		<b>Endogenous Protein Factor</b> (only milk replacers): Multiplier for net protein losses at the terminal ileum.
+	</blockquote>
 
+	<u>Carbohydrates</u>:
+	<blockquote>
+		<b>Starch</b>: Starch content (g/kg DM)<br>
+		<b>Soluble Starch</b>: Soluble starch content (g/kg DM)<br>
+		<b>Degradable Starch</b>: Apparent faecal digestible starch content (g/kg DM)<br>
+		<b>NDF</b>: Neutral detergent fibre content (g/kg DM)<br>
+		<b>Degradable NDF</b>: Apparent faecal digestible neutral detergent fibre content (g/kg DM)<br>
+		<b>Soluble Sugars</b>: Soluble sugar content (g/kg DM)<br>
+		<b>TDF minus NDF</b>: Total dietary fibre minus neutral detergent fibre content (g/kg DM)<br>
+	</blockquote>
 
-Undo changes since last save. <br>
+	<u>Short-chain Fatty Acids</u> (only forages):
+	<blockquote>
+		<b>Acetate</b>: Acetate content (g/kg DM)<br>
+		<b>Propionate</b>: Propionate content (g/kg DM)<br>
+		<b>Butyrate</b>: Butyrate content (g/kg DM)<br>
+		<b>Lactate</b>: Lactate content (g/kg DM)<br>
+	</blockquote>
 
+<u>Miscellaneous</u>:
+<blockquote>
+	<b>Crude Fat</b>: Crude fat content (ether extract, g/kg DM)<br>
+	<b>Crude Ash</b>: Crude ash content (g/kg DM)<br>
+	<b>Calcium</b>: Calcium content (g/kg DM)<br>
+	<b>Phosphor</b>: Phosphor content (g/kg DM)<br>
+	<b>Inositol P</b>: Inositol phosphate content (g/kg DM)<br>
+	<b>Rumen Milk</b> (only milk replacers): Fraction of milk replacer leaking from abomasum into the rumen (%)<br>
+</blockquote>
+
+</blockquote><br>
+
+<h3>Degradation</h3>
+<blockquote>
+	Rumen degradation rates for fibre, protein and starch (/hour).
+</blockquote>
 
 <br>
+<h3>Amino Acids</h3>
 
-<b>Protein sources</b><br>
+<blockquote>
+	<b>Individual Amino Acids</b>: amino acid content in the feed (g/kg DM). Available amino acids:
+	<div class="row">
+	  <div class="column">
+	  	<ul>
+	  		Lysine<br>
+				Methionine<br>
+				Cystine<br>
+				Threonine<br>
+				Tryptophan<br>
+				Isoleucine<br>
+	  	</ul>
+	  </div>
+	  <div class="column">
+			<ul>
+				Arginine<br>
+				Phenylalanine<br>
+				Histidine<br>
+				Leucine<br>
+				Tyrosine<br>
+				Valine<br>
+			</ul>
+	  </div>
+		<div class="column"></div>
+		<div class="column"></div>
+	</div><br>
 
-Define the protein sources used (in % of total protein, NOT in % of the total feed).<br>
+	<b>Other Amino Acids</b>: amino acid content of amino acids not listed above (g/kg DM).<br>
+</blockquote>
 
-Protein sources can be selected after the nutrient composition of the
-feed is known: moisture, nitrogen, ash, fat, lactose and starch.<br>
+<br><hr>
+<h2 id="HowTo">How-to: Creating and adjusting feeds</h2>
 
-After specification of the protein sources you will return to this window and you will find default suggestions<br>
+The feed window can be used to build and maintain a database consisting of different feeds (milk replacers, concentrates and forages separately). These feeds can be used to create <a href="Schedules.html">feeding schedules</a> which are used for simulations.<br><br>
 
-generated for total carbohydrates, digestible fat, digestible lactose,
-digestible starch, total and digestible protein, amino acid composition<br>
+To create a new feed, either click on the <b>new</b> button or select an existing feed and <b>copy</b> it. Next, open the Ingredients window and specify the contribution (in %) of all separate ingredients, adding up to 100% in total. After saving the ingredients (click <b>&#10004; Ok</b>), the nutrient contents for each type of feed are generated based on the ingredient composition, but can be adjusted manually if desired. Degradation rates of fibre, protein and starch in the rumen and amino acid composition of the feed are also specified. <br><br>
 
-and a multiplication factor for basal endogenous protein losses (the latter two in a separate sheet).<br>
+If values are manually changed but the ingredient list is updated afterwards with a different ingredient composition, the default values will be generated again, <em>this will discard previous manual changes!</em> Once all values are as desired, the feed can be saved (click <b>&#10004; Save</b>) and used in a feeding schedule.<br><br>
 
-You can change these defaults to your liking, and the changes you make will be saved when saving the feed.<br>
-
-If you enter the protein sources window again, new defaults will be generated which will replace the current values.<br>
-
-Changes you may have made will be lost. You will be warned before this occurs.<br>
-
-More information can be found in the <a href="ProtSrc.html">protein sources</a> window. <br>
-
-<br>
-
-<b>Print</b><br>
-
-Generate a report of the selected feed for printing or export. The report is in HTML format.<br>
-
-
-<h2><a name="Fields"></a>Fields</h2>
-
-
-<b>Name</b><br>
-
-
-name of the feed (max 15 characters) <br>
-
-
-<br>
-
-
-<b>Description</b><br>
-
-
-enter a description<br>
-
+<em>More specific information on how to specify the ingredient composition is found on the <a href="#ProtSrc">Ingredients</a> help page.</em><br>
 
 <br>
-
-<b>Price</b><br>
-
-price of the feed in Euro/100 kg.<br>
-
-<h3>
-The nutrient sheet</h3>
-
-<b>Moisture</b><br>
-
-moisture content (g/kg) <br>
-
-<br>
-
-<b>Nitrogen</b><br>
-
-nitrogen content (g/kg) <br>
-
-<br>
-
-<b>Crude ash</b><br>
-
-crude ash content (g/kg) <br>
-
-<br>
-
-<b>Total carbohydrates</b><br>
-
-total content of carbohydrates (g/kg), calculated by difference between
-dry matter, protein, ash, and fat, assuming absence of crude fibre.<br>
-
-It is calculated after specification of protein sources and is for your information only.<br>
-
-It is not used in any of the calculations and cannot be changed. <br>
-
-<br>
-
-<b>Crude fat</b><br>
-
-crude fat content (ether extract, g/kg) <br>
-
-<br>
-
-<b>Digestible crude fat</b><br>
-
-apparent faecal digestible crude fat content (g/kg).<br>
-
-A default value will be generated after specification of the protein sources (they affect fat digestibility).<br>
-
-This default can be changed <br>
-
-<br>
-
-<b>Lactose</b><br>
-
-lactose content (g/kg) <br>
-
-<br>
-
-<b>Digestible lactose</b><br>
-
-apparent faecal digestible lactose content (g/kg).<br>
-
-A default value will be generated after specification of the protein sources.<br>
-
-This default can be changed. <br>
-
-<br>
-
-<b>Starch</b><br>
-
-starch content <br>
-
-<br>
-
-<b>Digestible starch</b><br>
-
-apparent faecal digestible starch content (g/kg).<br>
-
-A default value will be generated after specification of the protein
-sources (protein content as well as starch content affect starch
-digestibility).<br>
-
-This default can be changed. <br>
-
-<br>
-
-<b>Protein</b><br>
-
-crude protein content (=N x protein factor)<br>
-
-After specification of the protein sources, a default value is generated (the protein factor depends on the protein source).<br>
-
-This value cannot be changed. <br>
-
-<br>
-
-<b>Digestible protein</b><br>
-
-true digestible crude protein content (g/kg).<br>
-
-A default value will be generated after specification of the protein sources (they affect protein digestibility).<br>
-
-This default can be changed. <br>
-
-<h3>Amino acid sheet</h3>
-
-<b>All amino acids</b><br>
-
-contents of the feed (including water, g/kg).<br>
-
-After specification of protein sources, a default value is selected.<br>
-
-This default can be changed <br>
-
-<br>
-
-<b>Endogenous protein factor</b><br>
-
-a multiplier which you can use to modify the net protein losses at the terminal ileum.<br>
-
-A default value will be generated after specification of the protein
-sources (they affect endogenous protein secretions differently).<br>
-
-This default can be changed. <br>
-
-<br>
-
-<b>Sum of non essential amino acids</b><br>
-
-sum of non essential (dispensable) amino acids in the feed:<br>
-
-asparagine + aspartic acid + serine + glutamine + glutamic acid + glycine + alanine +proline (including water, g/kg).<br>
-
-This sum is calculated by difference between the crude protein content,
-the sum of essential amino acids (without water!) and the non-protein
-nitrogen mass.<br>
-
-It is a calculated field and cannot be changed.<br>
-
-
-<h2><a name="Functionality"></a>Functionality of the feed window</h2>
-
-
-The feed window can be used to build and maintain a database of different feeds.<br>
-
-All feeds that appear in the selection list are available to make a&nbsp; <a href="Schedules.html">feeding schedule</a> and can therefore be used in a simulation.<br>
-
-It was decided to enter nutrient contents directly rather than calculating them from the ingredient composition.<br>
-
-The only exception to this rule is that protein sources can be specified.<br>
-
-The reasoning behind this is that important effects of protein sources on digestibility of nutrients in preruminants.<br>
-
-Obviously, protein sources differ in their protein digestibility, but
-also effects on for example fat digestibility have been shown to exist.<br>
-
-Simon uses digestible nutrients to start a simulation.<br>
-
-In this window, nutrient contents have to be specified: moisture, nitrogen, crude ash, crude fat, lactose and starch.<br>
-
-Please note that at the time of development of this model, no fibre sources were fed to preruminant calves.<br>
-
-Subsequently, protein sources have to be specified in a separate window.<br>
-
-When finished, you will return to the feed window and Simon will generate default values for <br>
-
-<ul>
-
-  <li>digestible crude fat</li>
-  <li>digestible lactose</li>
-  <li>digestible starch</li>
-  <li>crude protein</li>
-  <li>digestible crude protein</li>
-  <li>all amino acids</li>
-</ul>
-
-You can choose to change these defaults if you wish and save the feed.<br>
-
-When retrieving this feed, you can enter the protein sources window again,<br>
-
-but when returning to the feed window, new defaults will be generated, replacing the values you may have changed.<br>
-
-You will be warned before this happens.<br>
-
 <h3>Generating default values</h3>
+<blockquote>
 
-<b>Total carbohydrates</b><br>
+<span class="incorrect"></span>
+<span class="incorrect"><b>Total carbohydrates</b>: calculated as dry matter - crude ash - crude fat - crude protein; for personal information only. Not used for simulations, calculated after the crude protein content is known. Crude protein content depends on the protein source.<br><br>
 
-is calculated as dry matter - crude ash - crude fat - crude protein and is for your information only.<br>
+<b>Digestible crude fat</b>: apparent faecal crude fat depends on fat content and digestibility, which in turn depends on protein source. For example, vegetable protein sources may reduce fat digestibility compared to animal protein sources.<br><br>
 
-It is not used for simulations and will be calculated after the crude protein content is known.<br>
+<b>Digestible lactose</b>: apparent faecal lactose depends on lactose content and digestibility; the latter is assumed to be 90% at the terminal ileum and 100% at the faecal level. Energy yield of intestinal lactose fermentation is assumed to be slightly lower than enzymatic digestion (yields glucose and galactose). Therefore, default apparent faecal digestibility coefficient is set to 95%. <br><br>
 
-This depends on the protein source. Therefore, it will be calculated after you have specified the protein sources. <br>
+<b>Digestible starch</b>: apparent faecal digestible starch depends on the starch content and digestibility; the latter decreases with an increasing starch content, but increases with an increasing protein content of the feed. Default digestibility thus depends on both  starch and protein content. <br><br>
 
-<br>
+<b>Crude protein</b>: depends on nitrogen content and nitrogen:protein ratio; the latter depends on protein source. A weighted average of protein:nitrogen ratios of all protein sources is used to calculate protein content.<br><br>
 
-<b>Digestible crude fat</b><br>
+<b>Digestible crude protein</b>: true digestible protein depends on protein content and digestibility; the latter depends on protein sources specified. SiMON uses true protein digestibility (as opposed to apparent  digestibilities for other nutrients) because net endogenous losses at the terminal ileum are simulated as an output of visceral protein. Apart from the true digestibilities, these net endogenous losses depend on protein source and can be adjusted (Endogenous Prot Factor).<br><br></span>
 
-the content of apparent faecal crude fat depends on the crude fat content and its digestibility.<br>
+<b>Amino acids</b>: individual amino acids depend on selected protein sources. For each protein source, an amino acid profile is available; default amino acid composition is calculated as a weighted mean of all selected protein sources. This profile can be adjusted. To guarantee a fixed relationship between crude protein content and the sum of amino acids; the content of "other" amino acids are calculated by difference of crude protein and the sum of listed amino acids. For each amino acid, SiMON assumes the true digestibility value for protein. Apparent digestibilities may differ between amino acids, as the amino acid profile of the endogenous protein losses differs from that of feed protein.<br><br>
 
-The latter depends on protein source.<br>
+<b>Endogenous protein losses</b>: By default, endogenous losses at the terminal ileum are based on the ileal nitrogen flux in calves fed milk proteins only. It is assumed that these milk proteins have completely disappeared at the terminal ileum. For each available protein source, a multiplication factor for the endogenous protein losses is available, relative to that of milk
+proteins (multiplier, default set to one). The generated default value is a weighted mean for the selected protein sources and can be adjusted.
+</blockquote>
 
-For example, when compared with skimmed milk powder, almost all
-vegetable protein sources have been shown to depress the crude fat
-digestibility. <br>
-
-<br>
-
-<b>Digestible lactose</b><br>
-
-The content of digestible lactose (apparent, faecal) depends on the lactose content and its digestibility.<br>
-
-The latter is assumed to be 90% at the terminal ileum and 100% at the faecal level.<br>
-
-The energy yield of fermentation of lactose in the hindgut is assumed to
- be slightly lower compared with enzymatic digestion (yields glucose and
- galactose).<br>
-
-Therefore, the default apparent faecal digestibility coefficient is set to 95%. <br>
-
-<br>
-
-<b>Digestible starch</b><br>
-
-The content of digestible starch (apparent, faecal) depends on the starch content and its digestibility.<br>
-
-The latter decreases with an increasing starch content, but increases with an increasing protein content of the feed.<br>
-
-The default digestibility value therefore depends on both the starch and the protein content of the feed. <br>
-
-<br>
-
-<b>Crude protein</b><br>
-
-the crude protein content depends on the nitrogen content and on the nitrogen to protein ratio.<br>
-
-The latter depends on the protein source.<br>
-
-After specification of the protein source, a weighted average of the
-protein to nitrogen ratios of all protein sources is used to calculate
-the protein content of the feed. <br>
-
-<br>
-
-<b>Digestible crude protein</b><br>
-
-The content of true digestible protein depends on the protein content and its digestibility.<br>
-
-The latter depends on the protein sources specified.<br>
-
-Simon uses the true protein digestibility (as opposed to apparent
-digestibilities for other nutrients) because net endogenous losses at
-the terminal ileum are simulated as an output of visceral protein.<br>
-
-Apart from the true digestibilities, also these net endogenous losses
-depend on protein source and can be adapted by the user in the amino
-acid window. <br>
-
-<br>
-
-<b>Amino acids</b><br>
-
-the contents of individual amino acids depend on the selected protein sources.<br>
-
-For each protein source, an amino acid profile is available, and the
-default amino acid composition of the feed is calculated as a weighted
-mean of all selected protein sources.<br>
-
-These values can be changed.<br>
-
-To guarantee a fixed relationship between the crude protein content and
-the sum of amino acids; the content of non essential amino acids are
-calculated by difference of crude protein and the sum of essentials.<br>
-
-Please note that the amino acid contents, presented in this window are
-including water (like you get them from an amino acid analyses).<br>
-
-For the purpose of calculating non essential amino acids, water-free contents are used.<br>
-
-Simon uses digestible amino acids for the simulations, and assumes for each amino acid the true digestibility value for protein.<br>
-
-The apparent digestibilties, however, differ between amino acids,
-because the amino acid profile of the endogenous protein losses differs
-from that of feed protein. <br>
-
-<br>
-
-<b>Endogenous protein losses</b><br>
-
-By default, endogenous losses at the terminal ileum are based on the ileal nitrogen flux in calves fed on milk proteins only.<br>
-
-It is assumed that these milk proteins are completely disappeared at the terminal ileum.<br>
-
-For each available protein source, a multiplication factor for the
-endogenous protein losses is available, relative to that of milk
-proteins (multiplyer set set to one).<br>
-
-In this field, you will see by default the weighted mean for the selected protein sources.<br>
-
-You can change this value if you like.<br>
-
-<h3>Feeding schedule based on nutrients</h3>
-
-In each feeding schedule, a maximum of 6 feeds can be used simultaneously.<br>
-
-Therefore, it is possible to formulate four feeds, each representing one nutrient.<br>
-
-In this way, you can vary nutrient input to Simon direcly.<br>
-
-For more information, click <a href="FeedBackground.html">here</a>.<br>
-
+<br><hr>
+<p class="toTop"><a href="#top">Back to top</a></p>
 
 </body></html>
