@@ -6,40 +6,63 @@
 
 <title>SiMON help: Graph</title>
 
+</head><body id="top">
+	<hr><br>
+<h1>SiMON - Graphs</h1>
+<p class="contentList"><a href="Contents.html">SiMON content list</a></p>
+<hr><br>
+<a href="#makeGraph">Making a graph</a> <br>
+<a href="#advanced">Advanced graph settings</a> <br>
 
+<br>
+In SiMON, you can have several graphs open simultaneously. For optimal use of the graph options, read the information below. <br><br>
 
-</head><body>
-<h1>Graph</h1>
-
-
-
-In Simon, you can have several graphs open at the same time.<br>
-
-For optimal use of the graph options, it is important to read the following paragraphs carefully. <br>
-
-<h3>Making a graph </h3>
+<hr>
+<h3 id="makeGraph">Creating a graph</h3>
 
 <ul>
-
-  <li>you define a graph in the <a href="Output.html">output</a> window (per time step/range)</li>
-  <li>you can only make graphs when you selected a fixed time step of 1 day (and subsequently pressed Update to update the table)</li>
-  <li>time will always be the X-variable.</li>
-  <li>a graph is always based on the output you saw in the table in your output window at the time making the graph.<br>
-You can only plot variables that occur in that list.</li>
-  <li>you can create more graphs (and have them on your screen simultaneously).<br>
-These graphs can, but don't have to be, based on the same table.</li>
-  <li>graphs you make will be numbered automatically (graph1, graph2, etc.)</li>
-  <li>all graphs can have only one Y-axis</li>
-  <li>each graph will carry its own settings.<br>
-You can change these by clicking top-left on "graph" and then "<a href="GraphSettings.html">settings</a>".</li>
-  <li>by default, only the first two variables in the output list will
-be plotted in the graph. you can change this, as described above.<br>
-You can also adapt the sequence in the variable list and make sure the ones you would like to see are on top.</li>
+	<li>A graph can only be created for output per range or times within day(s).</li>
+	<li>Make sure the output table is updated before creating a graph.</li>
+	<li>Create a graph by clicking <b>Graph</b> on the top right above the <a href="Output.html">output</a> table (not visible at <em>end of simulation</em>).</li>
+	<li>Time is shown on the X-axis and each graph can only have one unit on the Y-axis.</li>
+	<li>Specify the Y-axis variable(s) by clicking <em>Menu bar &rarr; Graph &rarr; Settings</em>, then select variables you wish to see.</li>
+	<li>By default, only the first two variables from the output are shown. See <a href="#advanced">advanced settings</a> below for more information.</li>
+	<li><b>Multiple graphs</b> can be made simultaneously (see <a href="#advanced">advanced settings</a> below).</li>
+	<li>Each graph can be adjusted separately and will have its own settings.</li>
 </ul>
 
-If you would like more information, see <a href="GraphSettings.html">advanced graph settings</a><br>
+<br><hr>
+<h3 id="advanced">Advanced graph settings</h3>
+Open graph settings by clicking <em>Menu bar &rarr; Graph &rarr; Settings</em>.<br><br>
 
+<b>Graph layout</b><br>
+In the settings window, the basic layout elements of the graph can be adjusted manually by changing:
+<ul>
+	<li>Legend, scale and range of X-axis and Y-axis</li>
+	<li>Location of the legend</li>
+	<li>Description of the legend</li>
+	<li>Visibility of background grid</li>
+	<li>Graph title</li>
+</ul>
+Numerous advanced layout options can be adjusted (e.g. fonts, title, ...) by clicking <b>More options...</b> at the bottom right corner of the settings window (these are not discussed here further).<br><br>
 
+<b>Variable selection</b><br>
+Variables can be selected by checking or unchecking the "visible" column in the Settings list. If a variable is not available, the output needs to be updated (for example, choose another variable group) so you can create a new graph that contains the variable you wish to plot. Line style and color of each variable can be adjusted by clicking on the corresponding line (in the settings window), which allows manual adjustment of style, colour and thickness.<br><br>
+
+<b>Multiple graphs</b><br>
+Multiple graphs can be made at the same time. Minimize (do not close) a graph, update the output table and create a new graph to have two graphs at the same time. By clicking <em>Menu bar &rarr; Windows &rarr; ...</em> you can choose to show multiple graph windows as overlapping or adjacent to each other, or just drag them where you want. New graphs are numbered sequentially (e.g. Graph 1, Graph 2, Graph 3, ...) as long as the previous graph has not been closed. Layout and settings can be adjusted for each graph separately.<br><br>
+
+<b>Export options</b><br>
+Graphs can be exported or saved by clicking <em>Menu bar &rarr; Settings &rarr; ...</em>
+<ul>
+	<li>"Print..." allows printing or saving the graph as pdf (Print to PDF).</li>
+	<li>"Save as" allows exporting the file as bitmap or meta file.</li>
+	<li>"Copy" will copy the graph, allowing you to paste it in another program.</li>
+</ul>
+
+<br><hr>
+<p class="toTop"><a href="Output.html">Back to Output</a></p>
+<p class="toTop"><a href="#top">Back to top</a></p>
 
 
 </body></html>

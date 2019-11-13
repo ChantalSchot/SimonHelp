@@ -4,181 +4,69 @@
 <link rel="stylesheet" href="styles.css">
 
 
-<title>SiMON help: Feeding schedule window</title>
+<title>SiMON help: Schedules</title>
 
 
 
-</head><body>
-<h1>Feeding schedule window</h1>
-
-
-
+</head><body id="top">
+	<hr><br>
+<h1>SiMON - Schedules</h1>
+<p class="contentList"><a href="Contents.html">SiMON content list</a></p>
+<hr><br>
 <a href="#Buttons">Buttons</a> <br>
-
-
-
 <a href="#Fields">Fields</a> <br>
+<a href="#HowTo">How-to-use</a><br>
 
+<br><hr>
+<h2 id="Buttons">Buttons</h2>
+<em>Similar for milk replacers, concentrates and forages.</em>
+<blockquote>
+	<b>New</b>: Define a new feeding schedule.<br><br>
+	<b>Copy</b>: Copy the selected feeding schedule.<br><br>
+	<b>Delete</b>: Delete the selected feeding schedule.<br><br>
+	<b>Save</b>: Save a newly defined or changed feeding schedule.<br><br>
+	<b>Restore</b>: Undo changes since last save.<br><br>
 
+	<!-- Print button is verdwenen
+	<b>Print</b>: Generate a report of the selected schedule for printing or exporting. The report is in HTML format.<br> -->
 
-<a href="#Functionality">Functionality</a><br>
-<a href="#Tips">Tips for entering a feeding schedule</a><br>
-
-
-
-<h2><a name="Buttons"></a>Buttons</h2>
-
-
-
-<b><b>New</b><br>
-
-</b>Define a new feeding schedule <br>
-
-
-
-<br>
-
-
-
-<b>Copy</b><br>
-
-
-
-Copy the selected feeding schedule <br>
-
-
-
-<br>
-
-
-
-<b>Delete</b><br>
-
-
-
-Delete the selected feeding schedule<br>
-
-
-
-<br>
-
-
-
-<b>Save</b><br>
-
-
-Save a newly defined or changed feeding schedule in the database<br>
-
-
-
-<br>
-
-
-
-<b>Restore</b><br>
-
-
-
-Undo the changes in this record since last save<br>
-
-
-
-<br>
-
-
-<b>Print</b><br>
-
-
-Generate a report of the selected feeding schedule for printing or export. The report is in HTML format.<br>
-
-
+</blockquote><hr>
 
 <h2><a name="Fields"></a>Fields</h2>
+<blockquote>
 
+<b>Name</b>: Enter a name for the feeding schedule (max 15 characters). <br><br>
+<b>Description</b>: Enter a description for the feeding schedule.<br><br>
+<b>Step size</b>: Enter a step size (in days) on which to add changes in the feeding schedule (gram/day). Using Ctrl+D in the table will add a new row (with specified step size) in the schedule.<br><br>
 
+<b>Specification of feeding schedule</b>: <br>
+	<blockquote>
+		<b>Day</b>: Starting day on which the specified quantities will be fed.<br>
+		<b>Times (milk replacers only)</b>: Daily time schedule for when milk replacer is fed during the day (see <a href="FeedTimes.html">Feeding Times</a>).<br>
+		<b>Tot.</b>: Total quantity of feed given per day.<br>
+		<b>Feed 1 - 6</b>: List of predefined feeds (specified in the <a href="Feed.html">Feed window</a>) composing the daily feed intake.<br>
+		<b>g/d (1 - 6)</b>: Quantity of feed given per day (gram/day, specified for each feed separately).<br>
+	</blockquote>
+</blockquote>
+<br><hr>
+<h2><a name="HowTo"></a>How-to: Creating and adjusting schedules</h2>
+<em>Similar for milk replacers, concentrates and forages.</em><br><br>
 
-<b>Name</b><br>
-enter the name of the feeding schedule (max 15 characters) <br>
+In this window you specify the quantity of each feed given on each point in time to the simulated calf. To create a new schedule, either click on the <b>new</b> button or select an existing feed and <b>copy</b> it. Define the name, description and step size for the feeding schedule and place the cursor in the first record of the table (Specification of feeding schedule). Every record (row) in the table defines a feeding schedule for a period of time, starting at the specified 'day' for that record and ending on the day of the next record.<br><br>
 
+For each record, enter a starting day, select one or more feeds (up to 6, defined in the <a href="Feed.html">Feed window</a>) and fill in the corresponding quantities (in g/day) that should be fed each day. For milk replacers only, the daily feeding times (column "Times") should be specified as well, more information about this can be found here: <a href="FeedTimes.html">Feeding Times</a>. Press <b>Ctrl+D</b> to add a new record and repeat the steps. For example, if the first record starts on day 0 and the second record starts on day 9, then the feeds from the first record will be applied during days 1 - 8. The feeds from the second record are applied starting on day 9. Once all records are filled out, click <b>&#10004; Save</b> and the schedule becomes available for simulations.<br><br>
 
+If you choose to simulate until a target weight (see <a href="Simulation.html">Simulation window</a>) then the simulated calf may reach the target weight before the complete feeding schedule is finished. If this is not the case, the last record of the feeding schedule is applied until the end of the simulation.<br><br>
 
-<br>
-
-
-
-<b>Description</b><br>
-
-
-
-enter a description<br>
-
-
-
-<br>
-
-<b>Feeding schedule based on</b> (switch button)<br>
-
-choose whether you would like the changes in feed intake in the records
-of the feeding schedule to be based on time (age) or on the weight of
-the calves.<br>
-
-Your choice affects the first column of the feeding schedule that you specify in the lower part of the window. <br>
-
-<br>
-
-<b>Feeding schedule</b><br>
-
-enter your feeding schedule here (dependent on your choice of age or weight based). In each record, enter:<br>
-
+<h3>Tips for creating records in a feeding schedule</h3>
 <ul>
-
-  <li>the day or weight that the new quantities in this record should be fed (first column)</li>
-  <li>select a predefined feed (click twice in this field to get a drop-down list (third column)</li>
-  <li>enter the quantity of this feed to be fed (fourth column)</li>
+  <li>Use &lt;TAB&gt; to enter the fields in the table from left to right.</li>
+  <li>Delete the selected record (row) with &lt;Ctrl + Del&gt;.</li>
+  <li>Select a feed by pressing &lt;space&gt; and subsequently &nbsp;&lt;Alt + &darr; &gt; (arrow down), then <br>
+		use the arrow keys to select the feed and press &lt;enter&gt; to confirm.</li>
 </ul>
+<br><hr>
 
-repeat this procedure for other feeds and move on to the next record.<br>
-
-This way, you can use up to 6 different feeds on each point in time.<br>
-
-In the second record, specify in the first column the day or weight that you would like the new record to be valid.<br>
-
-So if you enter day 1 in the first record and day 9 in the second
-record, record one will be applied throughout days 1 to 8, and the
-second record will applied starting from day 9.<br>
-
-The last record, by definition, is applied until the end of the simulation. <br>
-
-<br>
-
-Pleas make sure that the quantities you specify in the feeding schedule match the weight range that you want to simulate.<br>
-
-You specify the starting weight in the Simulation window.<br>
-
-
-
-<h2><a name="Functionality"></a>Functionality of the feeding schedule window</h2>
-
-
-
-In this window you specify the quantity of each feed (defined in the <a href="Feed.html">feed</a> window) given on each point in time to the simulated calf.<br>
-
-The functionality should be clear from the description of the fields.<br>
-
-If you choose to simulate until a target weight (see <a href="Simulation.html">simulation window</a>) then you have to realize that you may reach the target weight before the complete feeding schedule is finished.<br>
-
-It is, however, also possible that it takes longer to reach your target weight than you would anticipate.<br>
-
-In that case, the last record of the feeding schedule is applied until the target weight is reached.<br>
-<h2><a name="Tips"></a>Tips for entering a feeding schedule</h2>
-<ul>
-  <li>use &lt;TAB&gt; to enter the fields from left to right</li>
-  <li>delete a record with Ctrl-Del</li>
-  <li>select a feed using the key-board: press &lt;TAB&gt;, followed by </li>
-  <li>&lt;space&gt; and&nbsp; &lt;ALT-arrow down&gt;</li>
-</ul>
-<br>
-
-
+<p class="toTop"><a href="#top">Back to top</a></p>
 
 </body></html>

@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="styles.css">
 
 
-<title>SiMON help: Protein sources window</title>
+<title>SiMON help: Ingredients</title>
 
 
 </head><body id="top">
@@ -24,80 +24,32 @@
 	<b>Show zero contributions</b>: Uncheck to show only ingredients that are currently selected (thus have a contribution of at least 1%). Check to show complete list of ingredients.<br><br>
 	<b>Increase contribution by one (Enter)</b>: Increase the contribution of the currently selected ingredient by 1%.<br><br>
 	<b>Set contribution to zero (Ctrl+Z)</b>: Sets the contribution of the currently selected ingredient to 0% (removing it from the feed), regardless of the previous contribution value.<br><br>
-	<b>&Sigma;= 100%</b>: Increases contributions of currently selected ingredients to rate so the sum adds up to 100 (thus total contribution of 100%). <br><br>
+	<b>&Sigma; = 100%</b>: Increases contributions of all selected ingredients to ratio so the sum adds up to 100 (thus total contribution of 100%). <br><br>
 	<b>OK</b>: Confirms ingredient selection and returns you to the feeds window. Undo changes through X in the top right corner, or through "Restore" in the feeds window.<br><br>
 </blockquote>
-
+<hr>
 <h2><a name="Fields"></a>Fields</h2>
 
+Ingredients are listed in a table consisting of three columns: <br>
+<blockquote>
+	<b>Identifier</b>: Name of the ingredient.<br><br>
+	<b>Description</b>: Description of the ingredient.<br><br>
+	<b>Contribution</b>: Percentage contribution of the ingredient to total feed composition.<br><br>
+</blockquote>
+<hr>
+<h2><a name="HowTo"></a>How-to: Adding ingredients to a feed</h2>
+In the ingredients window, you can select various ingredients that form the basis of a feed. This works the same for milk replacers, concentrates and forages, although different ingredients may be listed for the different feed types.
+<ul>
+	<li>To add an ingredient, find it in the alphabetical list either by scrolling through or using the search function.</li>
+	<li>Increase the <b>contribution</b> in the right column to a value between 1-100 (this is the percentage of the ingredient in the feed).</li>
+	<li>Select all ingredients and uncheck <b>Show zero contributions</b> (top right) to show only selected ingredients in the table.</li>
+	<li>Ensure that the sum of all contributions adds up to 100, or let SiMON calculate this by clicking on <b>&Sigma; = 100%</b>.</li>
+	<li>Once the list is complete and correct, click <b>&#10004; Ok</b> to save the ingredient composition.</li>
+</ul>
+Based on the selected ingredients, SiMON will generate default values for nutrients, degradation rates and amino acid composition. These values can be adjusted afterwards if desired. Note that changing the ingredients will regenerate the default values, discarding manual changes made previously.
+<br><br><hr>
 
-Protein sources and their data are presented in 5 columns: <br>
-
-<br>
-
-<b>Name protein source</b><br>
-
-get a drop-down list by clicking in this field and select a defined protein source. <br>
-
-<br>
-
-<b>Contribution to feed</b><br>
-
-enter the percentage contribution of the protein source to total feed protein (not to the feed). <br>
-
-<br>
-
-<b>Endogenous protein factor</b><br>
-
-default multiplication factor for the protein source selected, if it would be the only protein source used.<br>
-
-This multiplication factor is set to one for milk proteins, and generally is somewhat higher for vegetable protein sources.<br>
-
-You cannot change this factor, but after leaving this window, a weighted
- mean is calculated, which you can adapt in the feed window (amino acid
-sheet). <br>
-
-<br>
-
-<b>Protein factor</b><br>
-
-gives the crude protein factor (g crude protein/g nitrogen) for the selected protein source. This value is fixed. <br>
-
-<br>
-
-<b>True digestibility coefficient protein</b><br>
-
-gives the true digestibility coefficient for the selected protein source.<br>
-
-You cannot change this value.<br>
-
-After leaving this window, a weighted mean is calculated for the protein sources selected, and used as a default.<br>
-
-You can adapt this value if you like.<br>
-
-
-<h2><a name="Functionality"></a>Functionality of the protein sources window</h2>
-
-
-In this window, you can specify your protein sources.<br>
-
-You can choose between skimmed milk powder, whey, soy protein isolate,
-soy protein concentrate, soluble wheat gluten protein and potato
-protein.<br>
-
-The sum of the contributions has to add up to 100%.<br>
-
-Based on these data, Simon generates default values for protein, fat,
-starch and lactose digestibility, the protein to nitrogen ratio, the
-amino acid composition and the endogenous protein factor.<br>
-
-You can change these default values when you return to the feed window.<br>
-
-The endogenous protein factor affects energy metabolism and the apparent
- faecal protein digestibility, which can be retrieved as an output
-variable (!) in the output window.<br>
-
-<br>
-
+<p class="toTop"><a href="Feed.html">Back to Feed window</a></p>
+<p class="toTop"><a href="#top">Back to top</a></p>
 
 </body></html>

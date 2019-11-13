@@ -4,188 +4,64 @@
 <link rel="stylesheet" href="styles.css">
 
 
-<title>SiMON help: Simulation window</title>
+<title>SiMON help: Simulation</title>
 
 
 
-</head><body>
-<h1>Simulation window</h1>
-
-
-
+</head><body id="top">
+	<hr><br>
+<h1>SiMON - Simulation</h1>
+<p class="contentList"><a href="Contents.html">SiMON content list</a></p>
+<hr><br>
 <a href="#Buttons">Buttons</a> <br>
-
-
-
 <a href="#Fields">Fields</a> <br>
+<a href="#HowTo">How-to-use</a><br>
 
+<br><hr>
+<h2 id="Buttons">Buttons</h2>
+<blockquote>
+	<b>New</b>: Define a new simulation.<br><br>
+	<b>Copy</b>: Copy the selected feeding schedule.<br><br>
+	<b>Delete</b>: Delete the selected feeding schedule.<br><br>
+	<b>Save</b>: Save a newly defined or changed feeding schedule.<br><br>
+	<b>Restore</b>: Undo changes since last save.<br><br>
+	<b>Start simulation(s)</b>: Start the simulations (if all required information has been filled in).<br><br>
 
+	<!-- Print button is verdwenen
+	<b>Print</b>: Generate a report of the selected simulation for printing or exporting. The report is in HTML format.<br> -->
 
-<a href="#Functionality">Functionality</a><br>
-
-
-
-<h2><a name="Buttons"></a>Buttons</h2>
-
-
-
-<b><b>New</b><br>
-
-</b>Define a new simulation<br>
-
-
-
-<br>
-
-
-
-<b>Copy</b><br>
-
-
-
-Copy the selected simulation<br>
-
-
-
-<br>
-
-
-
-<b>Delete</b><br>
-
-
-
-Delete the selected simulation<br>
-
-
-
-<br>
-
-
-
-<b>Save</b><br>
-save the newly defined or changed simulation in the database<br>
-
-You will save the settings of the simulations only, not the outputs! <br>
-
-
-
-<br>
-
-
-
-<b>Restore</b><br>
-
-
-
-Undo the changes to this record since last save<br>
-
-
-
-<br>
-
-
-<b>Print</b><br>
-
-
-Generate a report for viewing, exporting and printing. The report is in HTML format.<br>
-
-<br>
-
-<b>Start simulation(s)</b><br>
-
-After you have specified the required information, you can start the simulations.<br>
-
-
-
+</blockquote><hr>
 <h2><a name="Fields"></a>Fields</h2>
+<blockquote>
+	<b>Name</b>: Enter a name for the feeding schedule (max 15 characters).<br><br>
+	<b>Description</b>: Enter a description for the feeding schedule.<br><br>
 
+	<b>Initial values</b>:
+	<blockquote>
+		<b>Start weight (kg)</b>: Enter the starting weight of the simulated calf.<br>
+		<b>Days on solid feed</b>: Specify the number of days the calf has theoretically been on solid feed at the start of simulation.<br>
+		<b>Quantity of solid feed (kg)</b>: Specify how much solid feed (in kg) the calf has received before the start of the simulation.
+	</blockquote>
 
+	<b>Simulation stops at:</b>
+	<blockquote>
+		<b>End weight (kg)</b>: Enter the end weight (in kg); once the calf reaches this weight, the simulation ends.<br>
+		<b>Max. simulation time (day)</b>: Specify how many days the simulation will last at most, if the end weight is not reached.
+	</blockquote><br>
 
-<b>Name</b><br>
+	<b>Genotype</b>: Specify the genotype for the simulation.<br><br>
+	<b>Schedule milk replacers, concentrates and forages</b>: Specify which feeding schedules are applied to the simulation.
+</blockquote><br>
+<hr>
 
+<h2><a name="HowTo"></a>How-to: Creating and running simulations</h2>
+In this window, you can define up to four simulations simultaneously. A simulation is characterized by a combination of genotype (<a href="Genotype.html">Genotype window</a>) and feeding schedules for milk replacer, concentrate and forage (<a href="Schedules.html">Schedules window</a>), the latter depending on defined feeds of each type (<a href="Feed.html">Feed window</a>).<br><br>
 
+The simulations running simultaneously will cover the same time or live weight range (depending on your preference). The initial weight should exceed 40 kg, but <span class="incorrect"><em>the model is only evaluated in the live weight range of 80 to 240 kg</em></span>. Once all required information is filled out, click <b>&#10004; Save</b> and the simulation can be started; up to four specified simulations will run consecutively. <br><br>
 
-enter the name of your simulation (max 15 characters) <br>
+The results are shown in the <a href="Output.html">Output window</a>, but are not stored in the database permanently. Only basic information that is used in the simulation, i.e. genotypes, feed, feeding schedules and the simulated combination of the previous, are saved. If one of these (e.g. a genotype) has been deleted, re-running the simulation will result in an error message.<br><br>
 
-
-
-<br>
-
-
-
-<b>Description</b><br>
-
-
-
-enter a description<br>
-
-
-
-<br>
-
-
-<b>Initial live wt</b><br>
-
-
-enter the starting weight for the simulation.<br>
-
-It has to exceed 40 kg. <br>
-
-<br>
-
-<b>Simulation stops at</b><br>
-
-you can choose between stopping the simulation at a target weight or after a specified number of days. <br>
-
-<br>
-
-<b>Dressing percentage</b><br>
-
-enter the dressing percentage that you want to use for the calculation of "net paid weight".<br>
-
-It will not affect any of the other output parameters <br>
-
-<br>
-
-<b>Genotype</b><br>
-
-select the genotype that you want to use for this simulation <br>
-
-<br>
-
-<b>Feeding schedule</b><br>
-
-select the feeding schedule that you want to use for this simulation.<br>
-
-
-
-<h2><a name="Functionality"></a>Functionality of the simulation window</h2>
-In this window, you can define up to 4 simulations.<br>
-
-A simulation is characterized by a combination of genotype (see <a href="Genotype.html">Genotype window</a>) and feeding schedule (see <a href="Schedules.html">Feeding schedule</a> window).<br>
-
-All simulations that you want to run simultaneously should cover the
-same time or live weight range (depending on your preference).<br>
-
-The initial weight should exceed 40 kg, but it must be noted that the
-model is only evaluated in the live weight range of 80 to 240 kg.<br>
-
-After providing the necessary information, you can start the simulations, which will be performed after each other.<br>
-
-The results can be viewed in the <a href="Output.html">Output</a> window, but are not stored in the database permanently.<br>
-
-You can save the basic information, like genotypes, feeds, and feeding schedules, but not the results of a simulation.<br>
-
-If you try to rerun an old simulation and you have in the mean time deleted for example the genotype used,<br>
-
-you cannot perform this simulation and will be notified by means of an error message.<br>
-
-The dressing percentage that you have to specify will only be used for
-the calculation of net paid weight, a common Dutch parameter.<br>
-
-Simon will also predict a dressing percentage, which can be viewed in the output window.<br>
-
-
+<hr>
+<p class="toTop"><a href="#top">Back to top</a></p>
 
 </body></html>

@@ -4,7 +4,7 @@ body {
 	font-size: 1.08em;
 	line-height: 1.2;
 	max-width: 1080px;
-	padding: 30px;
+	padding: 25px;
 }
 
 a {
@@ -36,6 +36,14 @@ a:hover {
 
 .column {
   flex: 33%;
+}
+
+.columnLeft {
+	flex: 25%;
+}
+
+.columnRight {
+	flex: 75%;
 }
 
 .incorrect {
