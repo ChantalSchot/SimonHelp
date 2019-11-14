@@ -6,92 +6,62 @@
 
 <title>SiMON help: Protein metabolism</title>
 
-
-</head><body>
-<h1>Protein metabolism</h1>
-
-In this window, which is not accessible for all users, you can change a number of model parameters.<br>
-
-You can change the following (for details see below):<br>
-
-<ul>
-
-  <li>the amino acid composition of <a href="#BodyProt">body protein</a> (first 4 columns)</li>
-  <li>the amino acid composition of <a href="#Endogenous">endogenous protein</a> (column 5)</li>
-  <li>the sensitivity of all essential amino acids to <a href="#OxSens">oxidation</a> (column 6)</li>
-  <li>the rate of <a href="#Turnover">turnover</a> of body proteins</li>
-</ul>
-
-For more detailed information on the design of SiMON, the user is referred to: <br>
+</head><body id="top">
+	<hr><br>
+<h1>SiMON - Protein metabolism</h1>
+<p class="contentList"><a href="Contents.html">SiMON content list</a></p>
+<hr><br>
+<a href="#Buttons">Buttons</a> <br>
+<a href="#bodyProt">Composition of body protein</a><br>
+<a href="#endoProt">Composition of endogenous protein</a><br>
+<a href="#sensitivity">Oxidation sensitivity of essential amino acids</a><br>
+<a href="#turnover">Turnover rate of body protein</a><br>
 
 <br>
+Open the Protein metabolism window through <em>Menu bar &rarr; Settings &rarr; Protein Metabolism</em>. In this window (not accessible for all users) you can change the amino acid composition, turnover rate and oxidative sensitivity of body protein and amino acids.<br><br>
 
-Gerrits, W.J.J., Dijkstra, J. &amp; France, J. (1997)<br>
+<b>For more information, the user is referred to the papers published about the model:<br></b>
 
-Description of a model integrating protein and energy metabolism in preruminant calves.<br>
+Gerrits, W.J.J., Dijkstra, J. &amp; France, J. (1997).<a href="https://www.ncbi.nlm.nih.gov/pubmed/9187640" target="_blank"> Description of a model integrating protein and energy metabolism in preruminant calves.</a>
+<em>Journal of Nutrition </em>127: 1229-1242.<br>
 
-Journal of Nutrition 127: 1229-1242.<br>
+Gerrits, W.J.J., France, J. Dijkstra, J. Bosch, M.W. Tolman, G.H., &amp;
+ Tamminga, S. (1997) <a href="https://www.ncbi.nlm.nih.gov/pubmed/9187641" target="_blank">Evaluation of a model integrating protein and energy metabolism in preruminant calves.</a> <em>Journal of Nutrition </em>127:
+1243-1252.<br>
 
-<br>
+<br><hr>
+<h2 id="Buttons">Buttons</h2>
+<blockquote>
+	<b>Retrieve defaults</b>: Retrieve the default composition and turnover values.<br><br>
+	<b>Save as default</b>: Replace the default settings with the manually adjusted settings to create new defaults.<br><br>
+	<b>Ok</b>: Save current values.<br><br>
+	<b>Cancel</b>: Undo changes and close the protein metabolism window.<br><br>
+	<b>Print</b>: Generate a report of the current values for printing or exporting. The report is in HTML format.<br><br>
+</blockquote>
 
-Gerrits, W.J.J., France, J. Dijkstra, J. Bosch, M.W. Tolman, G.H., &amp; Tamminga, S. (1997)<br>
+<hr>
+<h3><a name="bodyProt"></a>Amino acid composition of body protein</h3>
+In the first 4 columns you can enter the amino acid composition of the protein in bone, hide, muscle and organs. The default values are based on amino acid analyses in calf tissues. These values can be changed within boundaries, and these changes will affect estimates for amino acid requirements by changing the quantity of building blocks needed for one kg of a specific protein. It also changes the quantity of  amino acid that circulates through the body and can potentially be oxidized.<br><br>
 
-Evaluation of a model integrating protein and energy metabolism in preruminant calves.<br>
+<hr>
+<h3><a name="endoProt"></a>Amino acid composition of endogenous protein</h3>
+You can change the amino acid composition of endogenous protein in column 5. The default composition is based on the amino acid composition of ileal digesta of calves fed on milk proteins, which were shown to have a true digestibility close to 100%. These numbers (all in g amino acid/kg of protein) can be adapted and will affect estimates of amino acid use by SiMON. You can alter the quantity of endogenous protein lost at the terminal ileum by adapting the multiplication factor for endogenous protein (see nutrients in the <a href="Feed.html">Feed window</a>). Please note that only the net losses at the terminal ileum are being modelled, not the total synthesis of endogenous protein.<br><br>
 
-Journal of Nutrition 127: 1243-1252.<br>
-<h3><a name="BodyProt"></a>Amino acid composition body protein</h3>
-In the first 4 columns you can enter the amino acid composition of the protein in bone, hide, muscle and organs.<br>
-The default values are based on amino acid analyses in calf tissues.<br>
-These values can be changed within boundaries, and these changes will affect estimates for amino acid requirements<br>
-by changing the quantity of building blocks needed for one kg of a specific protein,<br>
-but also, by changing the quantity of that amino acid that circulates through the body and can potentially be oxidized.<br>
-<h3><a name="Endogenous"></a>Amino acid composition of endogenous protein</h3>
-You can change the amino acid composition of endogenous protein in column 5.<br>
-The default composition is based on the amino acid composition of ileal digesta of calves fed on milk proteins,<br>
-which were shown to have a true digestibility close to 100%.<br>
-These numbers (all in g amino acid/kg of protein) can be adapted and will affect estimates of amino acid use by Simon.<br>
-You can alter the quantity of endogenous protein lost at the terminal ileum<br>
-by adapting the multiplication factor for endogenous protein (see <a href="ProtSrc.html">protein sources window</a>).<br>
-Please note that only the NET losses at the terminal ileum are being modelled, not the total synthesis of endogenous protein.<br>
-<h3><a name="OxSens"></a>Amino acids, changing sensitivity for oxidation</h3>
-The presence of degradive enzymes in tissues is presumably responsible
-for the inevitable loss of a fraction of amino acids, even at low levels
- of intake.<br>
-Consequently, potential re-utilization of degraded protein for protein synthesis is always less than 100%.<br>
-Furthermore, potential re-utilization decreases with protein intake and depends on the amino acid considered.<br>
-Unfortunately, information on the magnitude of the inevitable oxidative
-losses of specific amino acids in preruminants is scarce.<br>
-It was decided to make these losses for a specific amino acid dependent
-on the amount of that amino acid, passing the site of oxidation.<br>
-In Simon, the proportion of each amino acid inevitably oxidized is
-arbitrarily set to 0.02 times the daily amount of that amino acid
-entering the amino acid pool.<br>
-This represents a 2% chance of each amino acid being oxidized when passing the site of oxidation.<br>
-This way, both increased protein turnover and increased protein intake leads to increased oxidative losses.<br>
-Although it is clear that this 2% will not be valid for all amino acids, information is lacking to make this differentiation.<br>
-You can enter your own oxidation sensitivity for each amino acid in the last column of this window.<br>
-<h3><a name="Turnover"></a>Protein turnover</h3>
-For reason of simplicity, all amino acids, available for synthesis or oxidation, are combined in one metabolite pool.<br>
-Four body protein pools are represented, shown in the composite box in <a href="Background.html#Flowchart">the figure</a>.<br>
-The fractional degradation rate (FDR) is assumed fixed for each protein pool.<br>
-It was decided to make the development of the muscle protein pool dependent on substrate concentration<br>
-and to relate the development of the other protein pools to muscle protein.<br>
-For that purpose, relationships between accretion rates of protein in
-muscle and protein in bone, hide and viscera were estimated.<br>
-Simon calculates protein synthesis rate in bone, hide and viscera by summation of net accretion and degradation rates. <br>
-<br>
-An increase in the fractional degradation rate (FDR) of for example hide
- protein, is followed by an increased hide protein synthesis rate,<br>
-because the model will try to keep hide protein deposition rate proportional to muscle protein deposition rate.<br>
-Therefore, the turnover of protein in hide, bone and viscera and bone can be varied by varying the respective FDRs.<br>
-The respective deposition rates will be only slightly negatively affected by increasing these FDRs.<br>
-In the protein metabolism window you can alter the fractional degradation rates for bone, hide and organ protein.<br>
-For technical reasons, muscle protein turnover cannot be changed in this way. <br>
-<br>
-One obvious effect of changing protein turnover is its effect on the fluxes of the amino acids involved,<br>
-consequently altering the minimal oxidative losses and therefore the
-estimated amino acid use for deposition and for replacing intevitable
-amino acid oxidation.<br>
-In addition, the energy expenditure on protein deposition changes, which is reflected in for example the fat deposition rate.<br>
+<hr>
+<h3><a name="sensitivity"></a>Oxidation senitivity of amino acids</h3>
+The presence of degradive enzymes in tissues is presumably responsible for the inevitable loss of a fraction of amino acids, even at low levels of intake. Consequently, potential re-utilization of degraded protein for protein synthesis is always less than 100%. Furthermore, potential re-utilization decreases with protein intake and depends on the amino acid considered. Unfortunately, information on the magnitude of the inevitable oxidative losses of specific amino acids in preruminants is scarce. <br><br>
+
+In SiMON, these losses for a specific amino acid depend on the amount of amino acid passing the site of oxidation. The proportion of each amino acid inevitably oxidized is arbitrarily set to 0.02 times the daily amount of that amino acid entering the amino acid pool. This represents a 2% chance of each amino acid being oxidized when passing the site of oxidation. This way, both increased protein turnover and increased protein intake leads to increased oxidative losses. Although it is clear that this 2% will not be valid for all amino acids, information is lacking to make this differentiation. You can enter your own oxidation sensitivity for each amino acid in the last column of this window. <br><br>
+
+<hr>
+<h3><a name="turnover"></a>Turnover rate of body protein</h3>
+For reason of simplicity, all amino acids available for synthesis or oxidation are combined in one metabolite pool. Four body protein pools are represented, shown in the composite box of <a href="Background.html#Flowchart">this flowchart</a>. The fractional degradation rate (FDR) is assumed fixed for each protein pool. In SiMON, development of the muscle protein pool depends on substrate concentration and development of other protein pools are related to muscle protein. For that purpose, relationships between accretion rates of protein in muscle and protein in bone, hide and viscera were estimated. SiMON calculates protein synthesis rate in bone, hide and viscera by summation of net accretion and degradation rates.<br><br>
+
+An increase in the FDR of for example hide protein, is followed by an increased hide protein synthesis rate, because the model will try to keep hide protein deposition rate proportional to muscle protein deposition rate. Therefore, the turnover of protein in hide, bone and viscera and bone can be varied by varying the respective FDRs. The respective deposition rates will be only slightly negatively affected by increasing these FDRs. In the protein metabolism window you can alter the fractional degradation rates for bone, hide and organ protein. For technical reasons, muscle protein turnover cannot be changed in this way. <br><br>
+
+One obvious effect of changing protein turnover is its effect on the fluxes of the amino acids involved, consequently altering the minimal oxidative losses and therefore the estimated amino acid use for deposition and for replacing intevitable amino acid oxidation. In addition, the energy expenditure on protein deposition changes, which is reflected in for example the fat deposition rate.<br><br>
+
+<hr>
+<p class="toTop"><a href="#top">Back to top</a></p>
 
 </body></html>

@@ -8,92 +8,53 @@
 
 
 
-</head><body>
-<h1>Range definition<br>
-</h1>
-
-
-
-
-If you chose in the <a href="Output.html">Output window</a> for output per time or weight range, you can choose predefined ranges from a drop-down list there.<br>
-
-In this window, you can define them. You can choose between ranges based on Weight or on Time. <br>
+</head><body id="top">
+	<hr><br>
+<h1>SiMON - Output Ranges</h1>
+<p class="contentList"><a href="Contents.html">SiMON content list</a></p>
+<hr><br>
+<a href="#Buttons">Buttons</a> <br>
+<a href="#Fields">Fields</a> <br>
+<a href="#HowTo">How-to-use</a><br>
 
 <br>
+Open the Output Ranges window through <em>Menu bar &rarr; Settings &rarr; Output Ranges</em>. Predefined output ranges can be used to view results of a simulation in the Output window per range (weight or time).<br>
 
-New<br>
+<br><hr>
+<h2 id="Buttons">Buttons</h2>
+<blockquote>
+	<b>New</b>: Define a new range definition (max 16 characters).<br><br>
+	<b>Copy</b>: Copy the selected range definition.<br><br>
+	<b>Delete</b>: Delete the selected range definition.<br><br>
+	<b>Save</b>: Save a newly defined or changed range definition.<br><br>
+	<b>Restore</b>: Undo changes since last save.<br><br>
+	<b>Close</b>: Close the Range Definition window.<br><br>
+</blockquote>
 
-create a new range definition, name (max 16 characters) and save it. <br>
+<hr>
+<h2><a name="Fields"></a>Fields</h2>
+<blockquote>
+	<b>Name</b>: Enter a name for the range definition. <br><br>
+	<b>Description</b>: Enter a description for the range definition.<br><br>
+	<b>Based on</b>: Define whether range definition is based on time (days) or weight (kg).<br><br>
+	<b>Endpoints</b>: Table to add different range steps.<br><br>
+</blockquote>
 
-<br>
+<hr>
+<h2><a name="HowTo"></a>How-to: Creating or adjusting output ranges</h2>
+In the Output Ranges window, you can create range definitions for output ranges of the results. There are two predefined range definitions, namely:
+<ul>
+	<li><b>TimeRangeWks</b>: Fixed time step of 7 days for 10 weeks.</li>
+	<li><b>WeightRange10kg</b>: Fixed weight step of 10 kg.</li>
+</ul>
 
-Copy<br>
+To create a new range definition, either click on the <b>new</b> button or select an existing range definition and <b>copy</b> it. Enter a name and description, choose whether it is based on time or weight, and fill in the endpoints (rounded numbers). To add a new endpoint, place the cursor on the last row and press &darr; (down arrow; only works if the last row has been filled out), the list will automatically be sorted in ascending order. SiMON assumes that the first defined endpoint is always day 0 or 0 kg. The last endpoint does not necessarily match the end of a simulation. Once all endpoints have been filled out, click <b>&#10004; Save</b> and the range definition can be used in the Output window. Adjust an existing range definition by selecting and changing the endpoints are already filled in. Delete an endpoint with &lt;Ctrl + Del&gt;.<br><br>
 
-copy the selected range definition <br>
+<b>Important note</b><br>
+Keep in mind that averages are calculated on a time basis. If you specify very small ranges (e.g. only a few kgs), the averages over the weight ranges will be calculated based on the days closest to the desired start and end points. A small defined range may thus be smaller than how much the calf grows in one day.
+<br><br><hr>
 
-<br>
-
-Delete<br>
-
-delete the selected range definition <br>
-
-<br>
-
-Save<br>
-
-save the newly made range definition <br>
-
-<br>
-
-Restore<br>
-
-undo changes since the last save <br>
-
-<br>
-
-Close<br>
-
-close this window <br>
-
-<br>
-
-Print<br>
-
-
-generate a report of the selected range definition for viewing printing and exporting. <br>
-
-
-<br>
-
-Help<br>
-
-invoke help<br>
-
-<h3>Make a range definition</h3>
-
-After choosing either a range definition based on time or based on weight, you can set each range by entering its end point.<br>
-
-It is assumed that the first defined end point starts from day 0 and
-that each end point will be the beginning of the next range.<br>
-
-The last end point does not necessarily match the end of a simulation.<br>
-
-You can insert new ranges by pointing the cursor to the bottom of the list and entering a new end point.<br>
-
-The list will automatically be sorted.<br>
-
-<h3>Important: be careful choosing small ranges... </h3>
-
-If you specify small ranges (let's say a couple of kilos LW) you have to
- realize that averages are always calculated on a time basis,<br>
-
-and that averages over a weight range are always calculated based on the days closest to the desired beginning and end points.<br>
-
-It may occur that a defined range is smaller than the calf grows in one day on your feeding schedule.<br>
-
-<br>
-
-
-
+<p class="toTop"><a href="Output.html">Back to Output window</a></p>
+<p class="toTop"><a href="#top">Back to top</a></p>
 
 </body></html>

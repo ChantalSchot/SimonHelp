@@ -4,114 +4,61 @@
 <link rel="stylesheet" href="styles.css">
 
 
-<title>SiMON help: Selecting output variables</title>
+<title>SiMON help: Variable groups</title>
 
 
 
-</head><body>
-<h1>Selecting output variables<br>
-</h1>
 
-
-In this window you can build and maintain selections of outputvariables that you would like to see in the output window.<br>
-You can save, retrieve, and delete these selections.<br>
-In the output window you can retrieve these variable groups, and after clicking Update, these output variables will be shown. <br>
-<br>
-New<br>
-specify a name for your variable group (15 characters).<br>
-You can also enter a description.<br>
-
+</head><body id="top">
+	<hr><br>
+<h1>SiMON - Variable Groups</h1>
+<p class="contentList"><a href="Contents.html">SiMON content list</a></p>
+<hr><br>
+<a href="#Buttons">Buttons</a> <br>
+<a href="#Fields">Fields</a> <br>
+<a href="#HowTo">How-to-use</a><br>
 
 <br>
+Open the Variable Groups window through <em>Menu bar &rarr; Settings &rarr; Variable Groups</em>. Predefined variables groups can be used to view results of selected variables in the Output window.<br>
 
+<br><hr>
+<h2 id="Buttons">Buttons</h2>
+<blockquote>
+	<b>New</b>: Define a new variable group (max 15 characters).<br><br>
+	<b>Copy</b>: Copy the selected variable group.<br><br>
+	<b>Delete</b>: Delete the selected variable group.<br><br>
+	<b>Save</b>: Save a newly defined or changed variable group.<br><br>
+	<b>Restore</b>: Undo changes since last save.<br><br>
+	<b>Close</b>: Close the Variable Group window.<br><br>
+	<b>&uarr; and &darr;</b>: Move a selected variable up or down in the list (order how results are shown in output table).<br><br>
+	<b>> and <</b>: Add or remove a variable into or out of the "Selected variables" list.<br><br>
+	<b>>> and <<</b>: Add or remove all listed variables into or out of the "Selected variables" list.<br><br>
+</blockquote>
 
-Copy<br>
-copy the selected variable group. <br>
+<hr>
+<h2><a name="Fields"></a>Fields</h2>
+<blockquote>
+	<b>Name</b>: Enter a name for the variable group. <br><br>
+	<b>Description</b>: Enter a description for the feed.<br><br>
+	<b>Per time step/range</b>: Show only variables that are visible in the results per day or per custom range.<br><br>
+	<b>All variables (drop-down)</b>: Shows a list of different variable categories.<br><br>
+	<b>Available variables</b>: Shows available variables that are not in the selected variable group.<br><br>
+	<b>Selected variables</b>: Shows a list of selected variables in the current variable group.<br><br>
+</blockquote>
 
+<hr>
+<h2><a name="HowTo"></a>How-to: Creating or adjusting variable groups</h2>
+In the Output window, you can choose to show specific variable groups in the table of results. There are several predefined variable groups, namely:
+<ul>
+	<li><b>Body weight</b>: Includes variables related to body weight composition (including organs).</li>
+	<li><b>Feeding</b>: Includes variables related to feed intake of different feeds.</li>
+	<li><b>N balance</b>: Includes variables related to nitrogen balance.</li>
+</ul>
 
-<br>
+From the complete list of available variables you can create your own selections by using variable groups. To create a new variable group, either click on the <b>new</b> button or select an existing variable group and <b>copy</b> it. Enter a name and description, choose whether it is based on time step or range, and select variables that you want to add to the variable group. Move a variable to the selected variables in the variable group by pressing > or remove a selected variable by pressing <. If you want to move all variables from the list to selected or unselected, use the >> or << buttons. Use the red &uarr; and &darr; arrows to change the sequence in which variables are shown in the output window. Click <b>&#10004; Save</b> and the variable group can be used in the Output window.
+<br><br><hr>
 
-
-Delete<br>
-delete the selected variable group. <br>
-
-
-<br>
-
-
-Save<br>
-save the variable group under a specified name. <br>
-
-
-<br>
-
-
-Restore<br>
-undo the changes since the last save.<br>
-
-
-<br>
-
-
-Close<br>
-
-
-close this window <br>
-
-
-<br>
-
-
-Print<br>
-
-
-
-generate a report of the selected variable group for viewing printing and exporting. <br>
-
-
-
-<br>
-
-
-Help<br>
-
-
-invoke help<br>
-<h3>Making a variable group</h3>
-
-From the list of available variables you can make your own selection.<br>
-The output variables that are available depend on whether you have
-selected output per time/weight range or at fixed time steps.<br>
-Your
-selection can contain both types of variables, and after updating your
-output table in the output window you will see the available output
-variables.<br>
-You can see which ones are available by using the "per time
-step/range" switch button.<br>
-You can choose your variables from all the
-available variables in the list left, or you can choose from predefined
-categories.<br>
-
-<br>
-
-Use the red arrows to alter the sequence of the variables.<br>
-They will
-appear in the output window in the order you have included them in your
-variable group.<br>
-Please note that by default, only the top two of your
-group are plotted in a graph.<br>
-
-<br>
-
-
-<h3>Making a variable group</h3>
-
-
-After choosing either a range definition based on time or based on weight, you can set each range by entering its end point.<br>
-<br>
-
-
-
-
+<p class="toTop"><a href="Output.html">Back to Output window</a></p>
+<p class="toTop"><a href="#top">Back to top</a></p>
 
 </body></html>
