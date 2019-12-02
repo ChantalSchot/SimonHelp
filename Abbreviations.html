@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" href="styles.css">
+
+<title>SiMON help: Abbreviations</title>
+
+
+</head><body id="top">
+	<hr><br>
+<h1>SiMON - Variable abbreviations</h1>
+<p class="contentList"><a href="Contents.html">SiMON content list</a></p>
+<hr><br>
+<a href="#System">Abbreviation System</a> <br>
+<a href="#Examples">Examples</a> <br>
+<a href="#List">Abbreviation list</a><br>
+
+<br><hr>
+<h2 id="System">Abbreviation System</h2>
+<em>Variable abbreviations consist of 2-5 parts as listed below:</em><br><br>
+
+<div class="row">
+	<div class="columnLeftSmall">
+		<b>Type:<br><br><br>
+			Property:<br><br><br>
+			Nutrient:<br><br>
+			Source:<br><br><br>
+			Location: <br><br>
+		</b>
+	</div>
+	<div class="columnRight">
+		Quantity, flow, increase, concentration, proportion, ...<br>
+		<em>Separated with space from next part <br><br></em>
+
+		(in)digestible, (in)fermentable, soluble, absorbed, (un)degradable, ...<br>
+		<em>Three-letter abbreviations, precedes nutrient <br><br></em>
+
+		Fibre, protein, starch, fat, ... <br><br>
+
+		Originating from solid feed (forage, concentrate) or milk replacer (MR)<br>
+		<em>Only for relevant variables, separated with dash from previous part <br><br></em>
+
+		Feed, rumen, abomasum, large intestine, ...<br>
+		<em>Separated with space from previous part</em>
+	</div>
+		<div class="columnLeft"></div>
+</div>
+<br>
+<ul>
+	<li>Property + resource conjoined with a capital, e.g. degradable starch = degStch.</li>
+	<li>If description requires 2 or more parts, they are conjoined with capital for 2nd word (camelCase) or dash (depending on specific cases).</li>
+	<li>Type: Can be preceded by cum, avg or cavg for cumulatives, averages of cumulative averages.</li>
+</ul>
+
+<!-- <table>
+	<tr>
+		<td><b>Type</b></td>
+		<td>Quantity, flow, increase, concentration, proportion, ... <br>
+Separated with space from next part</td>
+	</tr>
+	<tr>
+		<td><b>Property</b></td>
+		<td>- PROPERTY	(in)digestible, (in)fermentable, soluble, absorbed, (un)degradable, ...<br>
+3 letter abbreviations here, precedes nutrient</td>
+	</tr>
+</table> -->
+
+<br><hr>
+<h2 id="Examples">Examples</h2>
+
+<div class="row">
+	<div class="columnLeftSmall">
+		Q infFibre F<br><br>
+		Q slbProt C/F<br><br><br>
+		Q stch-MR pSI<br><br><br>
+		Q prot abm<br><br>
+		cumIn NDF LI<br><br>
+		U hy-meth LI<br><br>
+		Y vl-ahexAm rum<br><br>
+	</div>
+	<div class="columnRight">
+		Quantity infermentable fibre in forage (mol)<br><br>
+		Quantity of soluble protein in concentrate + forage + milk replacer combined (mol)<br>
+		<em>C/F separated with space as this is <b>location</b> of the nutrient</em><br><br>
+		Quantity of starch (from MR) in the proximal small intestine (mol)<br>
+		<em>MR separated with dash as this is <b>source</b> of the nutrient</em><br><br>
+		Quantity of protein in abomasum (mol)<br><br>
+		Cumulative inflow of NDF into large intestine<br><br>
+		Hydrogen uptake required for methane production in the large intestine<br><br>
+		Valerate yield from amylolytic hexose when growing on ammonia  in the rumen<br><br>
+	</div>
+</div><br>
+
+<br><hr>
+<h2 id="List">List of abbreviations used in SiMON variables</h2>
+
+<em><b>Hint</b>: Use CTRL + F to search for a specific term in this list. </em>
+
+<h3>Type</h3>
+<div class="row">
+	<div class="columnLeftSmall">
+		C<br>
+		D<br>
+		Da<br>
+		F<br>
+		Gain<br>
+		In<br>
+		V<br>
+		Out<br>
+		Up<br>
+		Fr<br>
+		P<br>
+		Q<br>
+		K<br>
+		Ret<br>
+		T<br>
+		U<br>
+		Ua<br>
+		Vol<br>
+		Y
+	</div>
+	<div class="columnRight">
+		Concentration<br>
+		Digestibility<br>
+		Digestibility (apparent)<br>
+		Flux, flow<br>
+		Gain<br>
+		influx, intake<br>
+		Maximum rate<br>
+		Outflux<br>
+		Passage<br>
+		Percentage, fraction, proportion<br>
+		Production, increase<br>
+		Quantity/amount<br>
+		Rate (passage)<br>
+		Retention<br>
+		Time<br>
+		Utilization, uptake (disappearance)<br>
+		Uptake (absorption)<br>
+		Volume<br>
+		Yield
+	</div><div class="columnRight"></div>
+</div><br>
+
+<h3>Property</h3>
+<div class="row">
+	<div class="columnLeftSmall">
+		abs<br>
+		a<br>
+		avg<br>
+		cavg<br>
+		deg<br>
+		fer<br>
+		incr<br>
+		ind<br>
+		inf<br>
+		sld<br>
+		slb<br>
+		tot<br>
+		und
+	</div>
+	<div class="columnRight">
+		absorbed<br>
+		apparent<br>
+		average<br>
+		cumulative average<br>
+		degradable<br>
+		fermentable / fermentation<br>
+		increase<br>
+		indigestible<br>
+		infermentable<br>
+		solid<br>
+		soluble<br>
+		total<br>
+		undegradable<br>
+	</div><div class="columnRight"></div>
+</div><br>
+
+<h3>Nutrient</h3>
+<div class="row">
+	<div class="columnLeftSmall">
+	</div>
+	<div class="columnRight">
+
+	</div><div class="columnRight"></div>
+</div><br>
+
+<h3>Source</h3>
+<div class="row">
+	<div class="columnLeftSmall">
+	</div>
+	<div class="columnRight">
+
+	</div><div class="columnRight"></div>
+</div><br>
+
+<h3>Location</h3>
+<div class="row">
+	<div class="columnLeftSmall">
+	</div>
+	<div class="columnRight">
+
+	</div><div class="columnRight"></div>
+</div><br>
+
+<br><hr>
+
+<h3>Amino acids</h3>
+<div class="row">
+	<div class="columnLeftSmall">
+	</div>
+	<div class="columnRight">
+
+	</div><div class="columnRight"></div>
+</div><br>
+
+<h3>Body composition</h3>
+<div class="row">
+	<div class="columnLeftSmall">
+	</div>
+	<div class="columnRight">
+
+	</div><div class="columnRight"></div>
+</div><br>
+
+<h3>Energy</h3>
+<div class="row">
+	<div class="columnLeftSmall">
+	</div>
+	<div class="columnRight">
+
+	</div><div class="columnRight"></div>
+</div><br>
+
+<h3>Fatty acids</h3>
+<div class="row">
+	<div class="columnLeftSmall">
+	</div>
+	<div class="columnRight">
+
+	</div><div class="columnRight"></div>
+</div><br>
+
+<h3>Miscellaneous</h3>
+<div class="row">
+	<div class="columnLeftSmall">
+	</div>
+	<div class="columnRight">
+
+	</div><div class="columnRight"></div>
+</div><br>
+
+<br><hr>
+<p class="toTop"><a href="#top">Back to top</a></p>
+
+</body></html>
