@@ -8,300 +8,2866 @@
 
 
 
-</head><body id="top">
+</head><body class="variables" id="top">
 
 	<div class="dropdown">
-	  <button class="dropbtn">Navigation</button>
-	  <div class="dropdown-content">
+		<button class="dropbtnVars">Navigation</button>
+		<div class="dropdown-content varList">
 			<a href="#top"><em>Back to top</em></a>
-	    <a href="#a">A-F</a>
-	    <a href="#g">G-L</a>
-	    <a href="#m">M-R</a>
-	    <a href="#s">S-Z</a>
-	    <a href="#AAlimit">AA limit</a>
-	  </div>
+			<a href="#abIn">Abomasum influx</a>
+			<a href="#abOut">Abomasum outflux</a>
+			<a href="#abPools">Abomasum pools</a>
+			<a href="#acc">Acetyl-CoA</a>
+			<a href="#comp">Body composition</a>
+			<a href="#cumFlows">Cumulative flows</a>
+			<a href="#dig">Digestibility</a>
+			<a href="#energy">Energy</a>
+			<a href="#feed">Feed</a>
+			<a href="#liIn">Large intestine influx</a>
+			<a href="#liMet">Large intestine metabolism</a>
+			<a href="#liOut">Large intestine outflux</a>
+			<a href="#liPools">Large intestine pools</a>
+			<a href="#liVFAp">Large intestine VFA production</a>
+			<a href="#liVFAy">Large intestine VFA yields</a>
+			<a href="#misc">Miscellaneous</a>
+			<a href="#nBal">Nitrogen balance</a>
+			<a href="#rumIn">Rumen influx</a>
+			<a href="#rumMet">Rumen metabolism</a>
+			<a href="#rumOut">Rumen outflux</a>
+			<a href="#rumPools">Rumen pools</a>
+			<a href="#rumVFAp">Rumen VFA production</a>
+			<a href="#rumVFAy">Rumen VFA yields</a>
+			<a href="#siIn">Small intestine influx</a>
+			<a href="#siMet">Small intestine metabolism</a>
+			<a href="#siOut">Small intestine outflux</a>
+			<a href="#siPools">Small intestine pools</a>
+			<a href="#waMet">Whole animal metabolism</a>
+		</div>
 	</div>
 
 
-<h3>List of output variables</h3>
+<hr><br><h1>List of output variables</h3>
+<p class="contentList"><a href="Contents.html">SiMON content list</a></p>
+<hr><br>
+<em>Variables are listed per category. Use CTRL+F to search for a specific variable, or use the navigation menu on the top right to jump to a specific section of variables.</em><br>
+<br><hr>
+
+<!--
+<h3 id=""></h3>
+<div class="row">
+	<div class="columnLeftVars">
+
+	</div>
+	<div class="columnUnit">
+
+	</div>
+	<div class="columnRight">
+
+	</div>
+</div><br>
+-->
+
+<br>
+<div class="row">
+	<div class="columnLeftVars">
+		<b>Abbreviation</b><br>
+	</div>
+	<div class="columnUnit">
+		<b>Unit</b><br>
+	</div>
+	<div class="columnRight">
+		<b>Description</b><br>
+	</div>
+</div><br>
 
 
-<p><a href="#a">A</a> B <a href="#c">C</a> <a href="#d">D</a> <a href="#e">E</a> <a href="#f">F</a> <a href="#g">G</a> <a href="#h">H</a> <a href="#i">I</a> J K <a href="#l">L</a> <a href="#m">M</a> <a href="#n">N</a> <a href="#o">O</a> <a href="#p">P</a> <a href="#q">Q</a> R <a href="#s">S</a> <a href="#t">T</a> U <a href="#v">V</a> <a href="#w">W</a> X Y Z <a href="#other">other</a><br>
-  </p>
+<h3 id="abIn">Abomasum influx</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		In ash-MR abm<br>
+		In degProt-MR abm<br>
+		In fat-MR abm<br>
+		In N-MR abm<br>
+		In sls-MR abm<br>
+		In stch-MR abm
+	</div>
+	<div class="columnUnit">
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d
+	</div>
+	<div class="columnRight">
+		Ash (MR origin) influx into abomasum, corrected for rumen leakage<br>
+		Degradable protein (MR origin) influx into abomasum, corrected for rumen leakage<br>
+		Fat (MR origin) influx into abomasum, corrected for rumen leakage<br>
+		Nitrogen (MR origin) influx into abomasum, corrected for rumen leakage<br>
+		Soluble sugars (including lactose, from milk replacer) influx into abomasum, corrected for rumen leakage<br>
+		Starch (MR origin) influx into abomasum, corrected for rumen leakage
+	</div>
+</div><br>
 
 
-<table border="1" cellpadding="2" cellspacing="2" width="800">
-
-<tbody><tr><td><a name="other"></a># points</td><td>number of output points in range</td><td>-</td></tr>
-<tr><td>%ash</td><td>ash content of the empty body</td><td>%</td></tr>
-<tr><td>%carcass</td><td>weight carcass as % of empty body wt</td><td>%</td></tr>
-<tr><td>%Eret/DE</td><td>efficiency of utilization of DE for E retention</td><td>%</td></tr>
-<tr><td>%Eret/GE</td><td>efficiency of utilization of GE for E retention</td><td>%</td></tr>
-<tr><td>%Eret/ME</td><td>efficiency of utilization of ME for E retention</td><td>%</td></tr>
-<tr><td>%fat</td><td>fat content of body in % of empty body</td><td>%</td></tr>
-<tr><td>%hhft</td><td>weight hide+head+feet+tail as % of empty body wt</td><td>%</td></tr>
-<tr><td>%ME/DE</td><td>metabolizability of the digested energy</td><td>%</td></tr>
-<tr><td>%ME/GE</td><td>metabolizability of gross energy</td><td>%</td></tr>
-<tr><td>%Nret/dNin</td><td>N retention as % of faecal digestible N intake</td><td>%</td></tr>
-<tr><td>%Nret/Nin</td><td>nitrogen retention as % of nitrogen intake</td><td>%</td></tr>
-<tr><td>%organs</td><td>weight organs as % of empty body weight</td><td>%</td></tr>
-<tr><td>%prot bone</td><td>bone protein as % of body protein</td><td>%</td></tr>
-<tr><td>%prot hide</td><td>hide protein as % of body protein</td><td>%</td></tr>
-<tr><td>%prot musc</td><td>muscle protein as % of body protein</td><td>%</td></tr>
-<tr><td>%prot org</td><td>organ protein as % of body protein</td><td>%</td></tr>
-<tr><td>%protein</td><td>protein content of the empty body</td><td>%</td></tr>
-<tr><td>%water</td><td>water content of the empty body</td><td>%</td></tr>
-<tr><td><a name="a"></a>AA limit</td><td>number limiting amino acid (see <a href="#AAlimit">below</a>)</td><td><br>
-</td></tr>
-<tr><td>arg in</td><td>rate of arginine intake</td><td>g/d</td></tr>
-<tr><td>arg use</td><td>arginine use</td><td>g/d</td></tr>
-<tr><td>ash</td><td>weight body ash</td><td>kg</td></tr>
-<tr><td>ash in</td><td>rate of ash intake</td><td>g/d</td></tr>
-<tr><td>ashdep</td><td>rate of ash deposition in the body</td><td>g/d</td></tr>
-<tr><td>avg %ash</td><td>avg ash content of the empty body over range</td><td>%</td></tr>
-<tr><td>avg %carcass</td><td>avg weight carcass as % of EBW over range</td><td>%</td></tr>
-<tr><td>avg %Eret/BE</td><td>avg eff of util of GE for E retention</td><td>%</td></tr>
-<tr><td>avg %Eret/DE</td><td>avg eff of util of DE for E retention</td><td>%</td></tr>
-<tr><td>avg %Eret/ME</td><td>avg eff of util of ME for E retention over range</td><td>%</td></tr>
-<tr><td>avg %fat</td><td>avg fat content of the empty body</td><td>%</td></tr>
-<tr><td>avg %hhft</td><td>avg wt hide+head+feet+tail as % of EBW over range</td><td>%</td></tr>
-<tr><td>avg %ME/DE</td><td>avg metabolizability of DE intake over range</td><td>%</td></tr>
-<tr><td>avg %ME/GE</td><td>avg metabolizability of GE intake over range</td><td>%</td></tr>
-<tr><td>avg %Nret/dNin</td><td>avg N ret as % of faecal dig N intake over range</td><td>%</td></tr>
-<tr><td>avg %Nret/Nin</td><td>avg N retention as % of N intake over range</td><td>%</td></tr>
-<tr><td>avg %organs</td><td>avg weight organs as % of EBW over range</td><td>%</td></tr>
-<tr><td>avg %prot</td><td>avg protein content of the empty body over range</td><td>%</td></tr>
-<tr><td>avg %prot bne</td><td>avg bone protein as % of body protein over range</td><td>%</td></tr>
-<tr><td>avg %prot hide</td><td>avg hide protein as % of body protein over range</td><td>%</td></tr>
-<tr><td>avg %prot msc</td><td>avg muscle protein as % of body protein over range</td><td>%</td></tr>
-<tr><td>avg %prot org</td><td>avg organ protein as % of body protein over range</td><td>%</td></tr>
-<tr><td>avg %water</td><td>avg water content of the empty body</td><td>%</td></tr>
-<tr><td>avg arg in</td><td>average rate of arginine intake over range</td><td>g/d</td></tr>
-<tr><td>avg arg use</td><td>avg arginine use over range</td><td>g/d</td></tr>
-<tr><td>avg ash in</td><td>avg ash intake over range</td><td>g/d</td></tr>
-<tr><td>avg ashdep</td><td>avg rate of body ash deposition over range</td><td>g/d</td></tr>
-<tr><td>avg CHO in</td><td>avg rate of carbohydrate intake over range</td><td>g/d</td></tr>
-<tr><td>avg d fat in</td><td>avg apparent faecal dig. fat intake over range</td><td>g/d</td></tr>
-<tr><td>avg d lact in</td><td>total digestible lactose intake over range</td><td>kg</td></tr>
-<tr><td>avg d lact in</td><td>avg apparent faecal dig. lactose intake over range</td><td>g/d</td></tr>
-<tr><td>avg d prot in</td><td>avg true digestible protein intake over range</td><td>g/d</td></tr>
-<tr><td>avg d stch in</td><td>avg apparent faecal dig. starch intake over range</td><td>g/d</td></tr>
-<tr><td>avg DE in</td><td>avg intake of digestible energy over range</td><td>kJ/d</td></tr>
-<tr><td>avg dm in</td><td>avg dry matter intake over range</td><td>g/d</td></tr>
-<tr><td>avg dN in</td><td>avg intake of apparent faecal dig. nitrogen intake</td><td>g/d</td></tr>
-<tr><td>avg E heat</td><td>avg rate of heat production over range</td><td>kJ/d</td></tr>
-<tr><td>avg E maint</td><td>avg energy use for maintenance over range</td><td>kJ/d</td></tr>
-<tr><td>avg Eret</td><td>avg energy retention over range</td><td>kJ/d</td></tr>
-<tr><td>avg EWG</td><td>avg rate of empty body weight gain over range</td><td>g/d</td></tr>
-<tr><td>avg fat in</td><td>avg rate of fat intake over range</td><td>g/d</td></tr>
-<tr><td>avg fatdep</td><td>avg rate of body fat deposition over range</td><td>g/d</td></tr>
-<tr><td>avg FCR</td><td>avg feed conversion ratio over range</td><td>kg/kg</td></tr>
-<tr><td>avg fec %DC-N</td><td>avg app faecal N digestibility coeff over range</td><td>%</td></tr>
-<tr><td>avg feed in</td><td>avg rate of feed intake over range</td><td>g/d</td></tr>
-<tr><td>avg GE in</td><td>avg rate of gross energy intake over range</td><td>kJ/d</td></tr>
-<tr><td>avg his in</td><td>avg histidine intake over range</td><td>g/d</td></tr>
-<tr><td>avg his use</td><td>avg histidine use over range</td><td>g/d</td></tr>
-<tr><td>avg ile in</td><td>avg isoleucine intake over range</td><td>g/d</td></tr>
-<tr><td>avg ile use</td><td>ave isoleucine use over range</td><td>g/d</td></tr>
-<tr><td>avg lact in</td><td>avg lactose intake over range</td><td>g/d</td></tr>
-<tr><td>avg leu in</td><td>avg leucine intake over range</td><td>g/d</td></tr>
-<tr><td>avg leu use</td><td>average leucine use over range</td><td>g/d</td></tr>
-<tr><td>avg LWG</td><td>avg rate of live weight gain over range</td><td>g/d</td></tr>
-<tr><td>avg lys in</td><td>avg rate of lysine intake over range</td><td>g/d</td></tr>
-<tr><td>avg lys use</td><td>average lysine use over range</td><td>g/d</td></tr>
-<tr><td>avg m+c in</td><td>avg rate of methionine+cystine intake over range</td><td>g/d</td></tr>
-<tr><td>avg m+c use</td><td>avg methionine + cystine use over range</td><td>g/d</td></tr>
-<tr><td>avg ME in</td><td>avg intake of metabolizable energy over range</td><td>kJ/d</td></tr>
-<tr><td>avg met in</td><td>avg rate of methionine intake over range</td><td>g/d</td></tr>
-<tr><td>avg met use</td><td>avg methionine use over range</td><td>g/d</td></tr>
-<tr><td>avg N in</td><td>avg nitrogen intake over range</td><td>g/d</td></tr>
-<tr><td>avg ness in</td><td>avg intake of non essential amino acids over range</td><td>g/d</td></tr>
-<tr><td>avg Nfaec</td><td>avg rate of N excretion with faeces over range</td><td>g/d</td></tr>
-<tr><td>avg N-maint</td><td>avg use of nitrogen for maintenance over range</td><td>g/d</td></tr>
-<tr><td>avg Nret</td><td>avg N retention over range</td><td>g/d</td></tr>
-<tr><td>avg Nurine</td><td>avg rate of N excretion with urine over range</td><td>g/d</td></tr>
-<tr><td>avg p+t in</td><td>avg rate of phenylalanine+tyrosine int over range</td><td>g/d</td></tr>
-<tr><td>avg p+t use</td><td>avg phenylalanine+tyrosine use over range</td><td>g/d</td></tr>
-<tr><td>avg phe in</td><td>avg rate of phenylalanine intake over range</td><td>g/d</td></tr>
-<tr><td>avg phe use</td><td>avg phenylalanine use over range</td><td>g/d</td></tr>
-<tr><td>avg prot in</td><td>avg protein intake over range</td><td>g/d</td></tr>
-<tr><td>avg protdep</td><td>avg rate of protein deposition in the body</td><td>g/d</td></tr>
-<tr><td>avg stch in</td><td>avg starch intake over range</td><td>kg</td></tr>
-<tr><td>avg stch in</td><td>avg rate of starch intake over range</td><td>g/d</td></tr>
-<tr><td>avg thr in</td><td>avg rate of threonine intake over range</td><td>g/d</td></tr>
-<tr><td>avg thr use</td><td>avg threonine use</td><td>g/d</td></tr>
-<tr><td>avg try in</td><td>avg rate of tryptophan intake over range</td><td>g/d</td></tr>
-<tr><td>avg try use</td><td>avg tryptophan use over range</td><td>g/d</td></tr>
-<tr><td>avg val in</td><td>avg rate of valine intake over range</td><td>g/d</td></tr>
-<tr><td>avg val use</td><td>avg valine use over range</td><td>g/d</td></tr>
-<tr><td>avg waterdep</td><td>avg rate of water deposition in the body</td><td>g/d</td></tr>
-<tr><td><a name="c"></a>carcass</td><td>weight carcass</td><td>kg</td></tr>
-<tr><td>cavg ashdep</td><td>cum avg rate of body ash deposition from t=0</td><td>g/d</td></tr>
-<tr><td>cavg EWG</td><td>cum avg rate of empty body weight gain from t=0</td><td>g/d</td></tr>
-<tr><td>cavg fatdep</td><td>cum avg rate of body fat deposition from t=0</td><td>g/d</td></tr>
-<tr><td>cavg fatin</td><td>cum avg fat intake from t=0</td><td>g/d</td></tr>
-<tr><td>cavg feedin</td><td>cum avg feed intake from=0</td><td>g/d</td></tr>
-<tr><td>cavg lactin</td><td>cum avg lactose intake from t=0</td><td>g/d</td></tr>
-<tr><td>cavg LWG</td><td>cum avg rate of live weight gain from t=0</td><td>g/d</td></tr>
-<tr><td>cavg Nin</td><td>cum avg nitrogen intake from t=0</td><td>g/d</td></tr>
-<tr><td>cavg protdep</td><td>cum avg rate of body protein deposition from t=0</td><td>g/d</td></tr>
-<tr><td>cavg protin</td><td>cum avg protein intake from t=0</td><td>g/d</td></tr>
-<tr><td>cavg stchin</td><td>cum avg starch intake from t=0</td><td>g/d</td></tr>
-<tr><td>cavg waterdep</td><td>cum avg rate of body water deposition from t=0</td><td>g/d</td></tr>
-<tr><td>CHO in</td><td>rate of carbohydrate intake</td><td>g/d</td></tr>
-<tr><td>cum ashdep</td><td>cumulative ash deposition from t=0</td><td>kg</td></tr>
-<tr><td>cum EWG</td><td>cumulative EWG from t=0</td><td>kg</td></tr>
-<tr><td>cum fatdep</td><td>cumulative fat from t=0</td><td>kg</td></tr>
-<tr><td>cum fatin</td><td>cumulative fat intake from t=0</td><td>kg</td></tr>
-<tr><td>cum FCR</td><td>cumulative feed conversion ratio from t=0</td><td>kg/kg</td></tr>
-<tr><td>cum fd cost</td><td>cumulative feed costs from t=0</td><td>euro</td></tr>
-<tr><td>cum fdcost/kg</td><td>cumulative feed costs per kg LW gain from t=0</td><td>euro/kg</td></tr>
-<tr><td>cum feedin</td><td>cumulative feed intake from t=0</td><td>kg</td></tr>
-<tr><td>cum lactin</td><td>cumulative lactose intake from t=0</td><td>kg</td></tr>
-<tr><td>cum LWG</td><td>cumulative live weight gain from t=0</td><td>kg</td></tr>
-<tr><td>cum Nin</td><td>cumulative nitrogen intake from t=0</td><td>kg</td></tr>
-<tr><td>cum protdep</td><td>cumulative protein deposition from t=0</td><td>kg</td></tr>
-<tr><td>cum protin</td><td>cumulative protein intake from t=0</td><td>kg</td></tr>
-<tr><td>cum stchin</td><td>cumulative starchintake from t=0</td><td>kg</td></tr>
-<tr><td>cum waterdep</td><td>cumulative water deposition from t=0</td><td>kg</td></tr>
-<tr><td><a name="d"></a>d fat in</td><td>apparent faecal digestible fat intake</td><td>g/d</td></tr>
-<tr><td>d lact in</td><td>apparent faecal digestible lactose intake</td><td>g/d</td></tr>
-<tr><td>d prot in</td><td>true digestible protein intake</td><td>g/d</td></tr>
-<tr><td>d strch in</td><td>apparent faecal digestible starch intake</td><td>g/d</td></tr>
-<tr><td>daynumber</td><td>daynumber</td><td>d</td></tr>
-<tr><td>d low feed</td><td>number of days on too low feed intake</td><td>d</td></tr>
-<tr><td>DE in</td><td>rate of digestible energy intake</td><td>kJ/d</td></tr>
-<tr><td>dm in</td><td>rate of dry matter intake</td><td>g/d</td></tr>
-<tr><td>dNin</td><td>rate of apparent faecal digestible nitrogen intake</td><td>g/d</td></tr>
-<tr><td>dress%calc</td><td>calculated dressing percentage</td><td>%</td></tr>
-<tr><td>dress%user</td><td>user defined dressing% for calculating net paid wt</td><td>%</td></tr>
-<tr><td><a name="e"></a>E heat</td><td>rate of heat production</td><td>kJ/d</td></tr>
-<tr><td>E maint</td><td>energy expenditure on maintenance processes</td><td>kJ/d</td></tr>
-<tr><td>E ret</td><td>rate of energy retention</td><td>kJ/d</td></tr>
-<tr><td>EBW</td><td>empty body weight (=live weight - contents GIT)</td><td>kg</td></tr>
-<tr><td>EWG</td><td>rate of emtpy body weight gain</td><td>g/d</td></tr>
-<tr><td><a name="f"></a>fat</td><td>weight body fat</td><td>kg</td></tr>
-<tr><td>fat in</td><td>rate of fat intake</td><td>g/d</td></tr>
-<tr><td>fatdep</td><td>rate of body fat deposition</td><td>g/d</td></tr>
-<tr><td>FCR</td><td>feed conversion ratio</td><td>kg/kg</td></tr>
-<tr><td>fec %DC-N</td><td>apparent faecal digestion coefficient of nitrogen</td><td>%</td></tr>
-<tr><td>feed in</td><td>rate of feed intake</td><td>g/d</td></tr>
-<tr><td><a name="g"></a>GE in</td><td>rate of gross energy intake</td><td>kJ/d</td></tr>
-<tr><td><a name="h"></a>hhft</td><td>weight hide+head+feet+tail</td><td>kg</td></tr>
-<tr><td>his in</td><td>rate of histidine intake</td><td>g/d</td></tr>
-<tr><td>his use</td><td>histidine use</td><td>g/d</td></tr>
-<tr><td><a name="i"></a>ile in</td><td>rate of isoleucine intake</td><td>g/d</td></tr>
-<tr><td>ile use</td><td>isoleucine use</td><td>g/d</td></tr>
-<tr><td>inc ash</td><td>increase weight body ash over range</td><td>kg</td></tr>
-<tr><td>inc carcass</td><td>increase weight carcass over range</td><td>kg</td></tr>
-<tr><td>inc EBW</td><td>increase weight empty body over range</td><td>kg</td></tr>
-<tr><td>inc fat</td><td>increase weight body fat over range</td><td>kg</td></tr>
-<tr><td>inc hhft</td><td>increase weight hide+head+feet+tail over range</td><td>kg</td></tr>
-<tr><td>inc LW</td><td>increase live weight over range</td><td>kg</td></tr>
-<tr><td>inc organs</td><td>increase weight organs over range</td><td>kg</td></tr>
-<tr><td>inc prot</td><td>increase weight body protein over range</td><td>kg</td></tr>
-<tr><td>inc prot bone</td><td>increase weight bone protein over range</td><td>kg</td></tr>
-<tr><td>inc prot hide</td><td>increase weight hide protein over range</td><td>kg</td></tr>
-<tr><td>inc prot musc</td><td>increase weight muscle protein over range</td><td>kg</td></tr>
-<tr><td>inc prot org</td><td>increase organ protein over range</td><td>kg</td></tr>
-<tr><td>inc water</td><td>increase weight body water over range</td><td>kg</td></tr>
-<tr><td><a name="l"></a>lact in</td><td>rate of lactose intake</td><td>g/d</td></tr>
-<tr><td>leu in</td><td>rate of leucine intake</td><td>g/d</td></tr>
-<tr><td>leu use</td><td>leucine use</td><td>g/d</td></tr>
-<tr><td>LW</td><td>live weight</td><td>kg</td></tr>
-<tr><td>LWG</td><td>rate of live weight gain</td><td>g/d</td></tr>
-<tr><td>lys in</td><td>rate of lysine intake</td><td>g/d</td></tr>
-<tr><td>lys use</td><td>lysine use</td><td>g/d</td></tr>
-<tr><td><a name="m"></a>m+c in</td><td>methionine + cystine intake</td><td>g/d</td></tr>
-<tr><td>m+c use</td><td>methionine+cystine use</td><td>g/d</td></tr>
-<tr><td>ME in</td><td>rate of intake of metabolizable energy</td><td>kJ/d</td></tr>
-<tr><td>met in</td><td>rate of methionine intake</td><td>g/d</td></tr>
-<tr><td>met use</td><td>methionine use</td><td>g/d</td></tr>
-<tr><td><a name="n"></a>ness in</td><td>rate of intake of non-essential amino acids</td><td>g/d</td></tr>
-<tr><td>Nfaec</td><td>rate of nitrogen excretion with faeces</td><td>g/d</td></tr>
-<tr><td>Nin</td><td>rate of nitrogen intake</td><td>g/d</td></tr>
-<tr><td>N-maint</td><td>N losses maint: hide+faeces (MFN)+urine (EUN)</td><td>g/d</td></tr>
-<tr><td>NPWcalc</td><td>calculated net paid weight</td><td>kg</td></tr>
-<tr><td>NPWuser</td><td>net paid weight, based on user defined dressing%</td><td>kg</td></tr>
-<tr><td>Nret</td><td>rate of nitrogen retention</td><td>g/d</td></tr>
-<tr><td>Nurine</td><td>rate of nitrogen excretion with urine</td><td>g/d</td></tr>
-<tr><td><a name="o"></a>organs</td><td>weight organs in thorax, abdomen + blood</td><td>kg</td></tr>
-<tr><td><a name="p"></a>p+t in</td><td>rate of intake of phenylalanine+tyrosine</td><td>g/d</td></tr>
-<tr><td>p+t use</td><td>phenylalanine+tyrosine use</td><td>g/d</td></tr>
-<tr><td>phe in</td><td>rate of phenylalanine intake</td><td>g/d</td></tr>
-<tr><td>phe use</td><td>phenylalanine use</td><td>g/d</td></tr>
-<tr><td>prot bone</td><td>weight bone protein</td><td>kg</td></tr>
-<tr><td>prot hide</td><td>weight hide protein</td><td>kg</td></tr>
-<tr><td>prot in</td><td>rate of protein intake</td><td>g/d</td></tr>
-<tr><td>prot musc</td><td>weight muscle protein</td><td>kg</td></tr>
-<tr><td>prot org</td><td>weight organ protein</td><td>kg</td></tr>
-<tr><td>protdep</td><td>rate of body protein deposition</td><td>g/d</td></tr>
-<tr><td>protein</td><td>weight body protein</td><td>kg</td></tr>
-<tr><td><a name="q"></a>qt ash in</td><td>total ash intake over range</td><td>kg</td></tr>
-<tr><td>qt CHOin</td><td>total intake carbohydrates over range</td><td>kg</td></tr>
-<tr><td>qt d fat in</td><td>total app faec. digestible fat intake over range</td><td>kg</td></tr>
-<tr><td>qt d Nin</td><td>total faecal digestible N intake over range</td><td>kg</td></tr>
-<tr><td>qt d prot in</td><td>total true digestible protein intake over range</td><td>kg</td></tr>
-<tr><td>qt d stch in</td><td>total app faec. digestible starch intake over rang</td><td>kg</td></tr>
-<tr><td>qt DE in</td><td>total digestible energy intake over range</td><td>MJ</td></tr>
-<tr><td>qt dm in</td><td>total dry matter intake over range</td><td>kg</td></tr>
-<tr><td>qt E heat</td><td>total energy expenditure on heat prod over range</td><td>MJ</td></tr>
-<tr><td>qt E maint</td><td>total energy expenditure on maintenance over range</td><td>MJ</td></tr>
-<tr><td>qt E ret</td><td>total energy retention over range</td><td>MJ</td></tr>
-<tr><td>qt fat in</td><td>total fat intake over range</td><td>kg</td></tr>
-<tr><td>qt feed in</td><td>total feed intake over range</td><td>kg</td></tr>
-<tr><td>qt GE in</td><td>total gross energy intake over range</td><td>MJ</td></tr>
-<tr><td>qt lact in</td><td>total lactose intake over range</td><td>kg</td></tr>
-<tr><td>qt ME in</td><td>total intake metabolizable energy over range</td><td>MJ</td></tr>
-<tr><td>qt Nfaec</td><td>total faecal nitrogen output over range</td><td>kg</td></tr>
-<tr><td>qt Nin</td><td>total nitrogen intake over range</td><td>kg</td></tr>
-<tr><td>qt Nret</td><td>total nitrogen retention over range</td><td>kg</td></tr>
-<tr><td>qt Nurine</td><td>total nitrogen in urine over range</td><td>kg</td></tr>
-<tr><td>qt prot in</td><td>total protein intake over range</td><td>kg</td></tr>
-<tr><td><a name="s"></a>slaughter wt</td><td>slaughter weight</td><td>kg</td></tr>
-<tr><td>starch in</td><td>rate of starch intake</td><td>g/d</td></tr>
-<tr><td><a name="t"></a>thr in</td><td>rate of threonine intake</td><td>g/d</td></tr>
-<tr><td>thr use</td><td>threonine use</td><td>g/d</td></tr>
-<tr><td>try in</td><td>rate of tryptophan intake</td><td>g/d</td></tr>
-<tr><td>try use</td><td>tryptophan use</td><td>g/d</td></tr>
-<tr><td><a name="v"></a>val in</td><td>rate of valine intake</td><td>g/d</td></tr>
-<tr><td>val use</td><td>valine use</td><td>g/d</td></tr>
-<tr><td><a name="w"></a>water</td><td>weight body water</td><td>kg</td></tr>
-<tr><td>waterdep</td><td>rate of water deposition in the body</td><td>g/d</td></tr>
-</tbody>
-
-</table>
+<h3 id="abOut">Abomasum outflux</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		K abm<br>
+		Up degProt abm<br>
+		Up fat abm<br>
+		Up lac abm<br>
+		Up N abm<br>
+		Up stch abm
+	</div>
+	<div class="columnUnit">
+		/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d
+	</div>
+	<div class="columnRight">
+		Fractional passage rate of all dry matter through the abomasum<br>
+		Degradable protein passage through the abomasum<br>
+		Fat passage through the abomasum<br>
+		Lactose passage through the abomasum<br>
+		Nitrogen passage through the abomasum<br>
+		Starch passage through the abomasum
+	</div>
+</div><br>
 
 
+<h3 id="abPools">Abomasum pools</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		Q fat-MR abm<br>
+		Q lac-MR abm<br>
+		Q N-MR abm<br>
+		Q prot-MR abm<br>
+		Q stch-MR abm
+	</div>
+	<div class="columnUnit">
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol
+	</div>
+	<div class="columnRight">
+		Quantity fat in the abomasum (MR origin)<br>
+		Quantity lactose in the abomasum (MR origin)<br>
+		Quantity nitrogen in the abomasum (MR origin)<br>
+		Quantity protein in the abomasum (MR origin)<br>
+		Quantity starch in the abomasum (MR origin)
+	</div>
+</div><br>
 
-<h3><a name="AAlimit"></a>AA limit, numbers amino acids</h3>
+<h3 id="acc">Acetyl-CoA</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		C acc<br>
+		C acc-pl<br>
+		P acc-aa<br>
+		P acc-ac<br>
+		P acc-bu<br>
+		P acc-fa<br>
+		P acc-glc<br>
+		P accTot<br>
+		U acc-fa<br>
+		U acc-gr<br>
+		U acc-NEm<br>
+		U acc-NEmAdj<br>
+		U acc-ox<br>
+		U accTot<br>
+		V acc-fa
+	</div>
+	<div class="columnUnit">
+		mol/kg<br>
+		mol/L<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d
+	</div>
+	<div class="columnRight">
+		Concentration of Acetyl-CoA in body fluids<br>
+		Concentration of Acetyl-CoA per L of plasma in blood<br>
+		Acetyl-CoA influx from oxidation of amino acids<br>
+		Acetyl-CoA production via lipogenesis from absorbed acetate<br>
+		Acetyl-CoA production via lipogenesis from absorbed butyrate<br>
+		Acetyl-CoA influx from oxidation of fatty acids<br>
+		Acetyl-CoA influx from oxidation of glucose<br>
+		Total of Acetyl-CoA influxes<br>
+		Acetyl-CoA outflux into synthesis of fatty acids<br>
+		Acetyl-CoA outflux into additional energy costs of growth (associated costs of e.g. protein turnover)<br>
+		Acetyl-CoA outflux into maintenance energy, corrected for ATP produced in other transactions<br>
+		Acetyl-CoA outflux into maintenance energy, corrected for double counting of other processes.<br>
+		Acetyl-CoA oxidation to provide energy for various energy consuming processes<br>
+		Total of Acetyl-CoA outfluxes<br>
+		Maximum rate of fatty acid synthesis (through oxidation of Acetyl-CoA)
+	</div>
+</div><br>
 
 
-<p>The variable named AA limit returns the number of the amino acid, limiting growth rate at a certain point in time.<br>
-If no value is returned, no essential amino acid is directly limiting.
-This does not imply that the growth rate achieved is optimal!<br>
-  </p>
+<h3 id="comp">Body composition</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		avgGain ew<br>
+		avgGain lw<br>
+		avgK bashDp<br>
+		avgK bfatDp<br>
+		avgK bwtrDp<br>
+		avgK protDp<br>
+		cumGain ash<br>
+		cumGain ew<br>
+		cumGain fat<br>
+		cumGain lw<br>
+		cumGain prot<br>
+		cumGain wtr<br>
+		cumRet N<br>
+		Gain ew<br>
+		Gain lw<br>
+		K prot<br>
+		P ashDp<br>
+		P bwtrDp<br>
+		P bwtrDp-boneMusc<br>
+		P bwtrDp-viscHide<br>
+		P lwEw<br>
+		Q aa<br>
+		Q acc<br>
+		Q bash<br>
+		Q bash %<br>
+		Q bfat<br>
+		Q bfat %<br>
+		Q bwtr<br>
+		Q bwtr %<br>
+		Q carc<br>
+		Q carc %<br>
+		Q diff lwEw<br>
+		Q dress<br>
+		Q ew<br>
+		Q fa<br>
+		Q glc<br>
+		Q glg<br>
+		Q hhft<br>
+		Q hhft %<br>
+		Q kidney<br>
+		Q lbm<br>
+		Q liver<br>
+		Q lw<br>
+		Q neaa-micProt<br>
+		Q prot<br>
+		Q prot %<br>
+		Q prot bone<br>
+		Q prot bone %<br>
+		Q prot hide<br>
+		Q prot hide %<br>
+		Q prot musc<br>
+		Q prot musc %<br>
+		Q prot visc<br>
+		Q prot visc %<br>
+		Q slgh<br>
+		Q visc<br>
+		Q visc %
+	</div>
+	<div class="columnUnit">
+		kg/d<br>
+		kg/d<br>
+		kg/d<br>
+		kg/d<br>
+		kg/d<br>
+		kg/d<br>
+		kg<br>
+		kg<br>
+		kg<br>
+		kg<br>
+		kg<br>
+		kg<br>
+		g<br>
+		kg/d<br>
+		kg/d<br>
+		kg/d<br>
+		kg/d<br>
+		kg/d<br>
+		kg/d<br>
+		kg/d<br>
+		kg/d<br>
+		mol<br>
+		mol<br>
+		kg ash<br>
+		%<br>
+		kg fat<br>
+		%<br>
+		kg water<br>
+		%<br>
+		kg<br>
+		%<br>
+		kg<br>
+		%<br>
+		kg<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		kg<br>
+		%<br>
+		kg<br>
+		kg<br>
+		kg<br>
+		kg<br>
+		g/kg DM<br>
+		kg<br>
+		%<br>
+		kg<br>
+		%<br>
+		kg<br>
+		%<br>
+		kg<br>
+		%<br>
+		kg<br>
+		%<br>
+		kg<br>
+		kg<br>
+		%
+	</div>
+	<div class="columnRight">
+		Average daily empty body weight gain<br>
+		Average daily live weight gain<br>
+		Average daily ash deposition rate<br>
+		Average daily body fat deposition rate<br>
+		Average daily water deposition rate<br>
+		Average daily protein deposition rate<br>
+		Cumulative ash gain<br>
+		Cumulative empty body weight gain<br>
+		Cumulative fat gain<br>
+		Cumulative live weight gain<br>
+		Cumulative protein gain<br>
+		Cumulative water gain<br>
+		Cumulative N retention<br>
+		Daily empty body weight gain<br>
+		Daily live weight gain<br>
+		Change in quantity body protein<br>
+		Deposition of body ash<br>
+		Deposition of body water<br>
+		Deposition of body water for bone and muscle<br>
+		Deposition of body water for viscera and hide<br>
+		Rate of accumulation of gastro-intestinal contents and slaughterhouse losses<br>
+		Quantity postabsorptive amino acids<br>
+		Quantity Acetyl-CoA-equivalents<br>
+		Quantity body ash<br>
+		Empty body ash content<br>
+		Quantity body fat<br>
+		Empty body fat content<br>
+		Quantity body water<br>
+		Empty body water content<br>
+		Quantity of carcass<br>
+		Carcass as percentage of empty body weight<br>
+		Difference between empty body weight and live weight (includes GIT contents, losses during transportation, rumen milk, etc)<br>
+		Dressing percentage computed by model<br>
+		Empty body weight (sum of different pools)<br>
+		Quantity fatty acids<br>
+		Quantity glucose<br>
+		Quantity glycogen<br>
+		Quantity of hide, head, feet and tail<br>
+		Hide, head, feet and tail as percentage of empty body weight<br>
+		Kidney weight (for calculation of slaughter weight)<br>
+		Lean body mass excluding viscera (for calculating maintenance energy)<br>
+		Liver weight (for maximum rate of amino acid oxidation)<br>
+		Live body weight (empty weight + difference empty and live weight)<br>
+		Remainder of non-essential amino acids in microbial protein<br>
+		Quantity body protein<br>
+		Empty body protein content<br>
+		Quantity bone protein<br>
+		Bone protein as percentage of empty body protein<br>
+		Quantity hide protein<br>
+		Hide protein as percentage of empty body protein<br>
+		Quantity muscle protein<br>
+		Muscle protein as percentage of empty body protein<br>
+		Quantity visceral protein<br>
+		Visceral protein as percentage of empty body protein<br>
+		Warm slaughter weight including carcass, liver, kidney and fat<br>
+		Quantity of visceral organs<br>
+		Visceral organs as percentage of empty body weight
+	</div>
+</div><br>
 
 
-<table border="1" cellpadding="2" cellspacing="2" width="400">
+<h3 id="cumFlows">Cumulative flows</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		cumIn DE<br>
+		cumIn dm<br>
+		cumIn fat<br>
+		cumIn GE<br>
+		cumIn ME<br>
+		cumIn MR/C/F<br>
+		cumIn N<br>
+		cumIn NDF-C/F<br>
+		cumIn stch-MR/C/F<br>
+		cumOut dm<br>
+		cumOut fat<br>
+		cumOut GE-MR/C/F<br>
+		cumOut NDF<br>
+		cumOut N-MR/C/F<br>
+		cumOut prot-C/F<br>
+		cumOut stch<br>
+		cumRet E
+	</div>
+	<div class="columnUnit">
+		kJ<br>
+		g<br>
+		mol<br>
+		kJ<br>
+		kJ<br>
+		kg<br>
+		kg<br>
+		kg<br>
+		mol<br>
+		g/100<br>
+		mol<br>
+		Energy<br>
+		kg<br>
+		g N<br>
+		mol<br>
+		mol<br>
+		kJ
+	</div>
+	<div class="columnRight">
+		Cumulative digestible energy intake<br>
+		Cumulative dry matter intake<br>
+		Cumulative fat intake<br>
+		Cumulative gross energy intake<br>
+		Cumulative metabolizable energy intake<br>
+		Cumulative feed intake<br>
+		Cumulative nitrogen intake<br>
+		Cumulative NDF intake (concentrate & forage origin)<br>
+		Cumulative starch intake (MR, concentrate & forage origin)<br>
+		Cumulative dry matter outflux (true)<br>
+		Cumulative fat outflux (true)<br>
+		Cumulative gross energy outflux (MR, concentrate & forage origin)<br>
+		Cumulative NDF outflux (feces)<br>
+		Cumulative nitrogen outflux  (true, feces) (MR, concentrate & forage origin)<br>
+		Cumulative protein outflux (true, feces) (concentrate & forage origin)<br>
+		Cumulative starch outflux (true, feces)<br>
+		Cumulative energy retention
+	</div>
+</div><br>
 
 
-<tbody><tr><td>1    =</td><td>threonine</td></tr>
-<tr><td>2    = </td><td>tryptophan</td></tr>
-<tr><td>3    =</td><td>valine</td></tr>
-<tr><td>4    = </td><td>methionine</td></tr>
-<tr><td>5    =</td><td>methionine + cystine</td></tr>
-<tr><td>6    =</td><td>isoleucine</td></tr>
-<tr><td>7    =</td><td>leucine</td></tr>
-<tr><td>8    = </td><td>lysine</td></tr>
-<tr><td>9    =</td><td>histidine</td></tr>
-<tr><td>10  =</td><td>phenylalanine</td></tr>
-<tr><td>11  =</td><td>phenylalanine + tyrosine</td></tr>
-<tr><td>12  =</td><td>arginine</td></tr>
-</tbody>
+<h3 id="dig">Digestibility</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		D DM<br>
+		D dm rum<br>
+		D DM-C/F<br>
+		D DM-MR<br>
+		D fat<br>
+		D fat-C/F<br>
+		D fat-MR<br>
+		D fibre rum<br>
+		D fibre-C/F<br>
+		D prot<br>
+		D prot rum<br>
+		D prot-C/F<br>
+		D prot-MR<br>
+		D stch<br>
+		D stch rum<br>
+		D stch-C/F<br>
+		D_a DM<br>
+		D_a dm rum<br>
+		D_a DM-C/F<br>
+		D_a E<br>
+		D_a E-C/F<br>
+		D_a E-MR<br>
+		D_a fat<br>
+		D_a fat-C/F<br>
+		D_a N-fec<br>
+		D_a prot<br>
+		D_a prot rum<br>
+		D_a prot-C/F<br>
+		D_a stch<br>
+		D_a stch-C/F<br>
+		K fat dSI<br>
+		K prot dSI<br>
+		K sls dSI<br>
+		K stch dSI
+	</div>
+	<div class="columnUnit">
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		-<br>
+		-<br>
+		-<br>
+		-
+	</div>
+	<div class="columnRight">
+		Whole tract digestibility of dry matter (true) (MR, concentrate & forage origin)<br>
+		Digestibility of dry matter in the rumen<br>
+		Whole tract digestibility of dry matter (true) (concentrate & forage origin)<br>
+		Whole tract digestibility of dry matter (true) (MR origin)<br>
+		Whole tract digestibility of fat<br>
+		Whole tract digestibility of fat (concentrate & forage origin)<br>
+		Whole tract digestibility of fat (MR origin)<br>
+		Digestibility of fibre in the rumen<br>
+		Whole tract digestibility of fibre (concentrate & forage origin)<br>
+		Whole tract digestibility of protein<br>
+		Digestibility of protein in the rumen<br>
+		Whole tract digestibility of protein (concentrate & forage origin)<br>
+		Whole tract digestibility of protein (MR origin)<br>
+		Whole tract digestibility of starch<br>
+		Digestibility of starch and sugars in the rumen<br>
+		Whole tract digestibility of starch (concentrate & forage origin)<br>
+		Whole tract digestibility of dry matter (apparent) (MR, concentrate & forage origin)<br>
+		Apparent digestibility of dry matter in the rumen<br>
+		Whole tract digestibility of dry matter (apparent) (concentrate & forage origin)<br>
+		Whole tract apparent digestibility of energy<br>
+		Whole tract apparent digestibility of energy (concentrate & forage origin)<br>
+		Whole tract apparent digestibility of energy (MR origin)<br>
+		Whole tract apparent digestibility of fat<br>
+		Whole tract apparent digestibility of fat (concentrate & forage origin)<br>
+		Apparent digestibility of faecal nitrogen<br>
+		Whole tract apparent digestibility of protein<br>
+		Apparent digestibility of protein in the rumen<br>
+		Whole tract apparent digestibility of protein (concentrate & forage origin)<br>
+		Whole tract apparent digestibility of starch and sugars<br>
+		Whole tract apparent digestibility of starch and sugars (concentrate & forage origin)<br>
+		Digestion coëfficiënt of fat in the distal small intestine<br>
+		Digestion coëfficiënt of degradable protein in the distal small intestine<br>
+		Digestion coëfficiënt of soluble sugars (including lactose) in the distal small intestine<br>
+		Digestion coëfficiënt of starch in the distal small intestine
+	</div>
+</div><br>
 
-</table>
+
+<h3 id="energy">Energy</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		UrineE<br>
+		In DE-C/F<br>
+		In DE-GE<br>
+		In DE-GE-C/F<br>
+		In DE-GE-MR<br>
+		In DE-MR<br>
+		In GE<br>
+		In GE mbw<br>
+		In GE-C/F<br>
+		In GE-C/F mbw<br>
+		In GE-MR<br>
+		In GE-MR/C/F<br>
+		In ME<br>
+		In totDE<br>
+		P acc-pr<br>
+		P atp-aaGlc<br>
+		P atp-aaOx<br>
+		P atpAdj<br>
+		P atp-faOx<br>
+		P atp-glg<br>
+		P atp-glyBfat<br>
+		P atp-glyMR/C/F<br>
+		Q DE MR/C/F<br>
+		Q Eh<br>
+		Q Eh mbw<br>
+		Q Eh-acc<br>
+		Q Eh-acc mbw<br>
+		Q Eh-RQ<br>
+		Q Eh-RQ mbw<br>
+		Q Em<br>
+		Q GE fec<br>
+		Q GE-C/F fec<br>
+		Q GE-MR fec<br>
+		Q ME MR/C/F<br>
+		Q meth-DE<br>
+		Q meth-DE-C/F<br>
+		Q meth-GE<br>
+		Q meth-GE-C/F<br>
+		Q ur-DE<br>
+		Q ur-GE<br>
+		Ret E<br>
+		Ret E mbw<br>
+		U atp-glg
+	</div>
+	<div class="columnUnit">
+		MJ/d<br>
+		%<br>
+		%<br>
+		%<br>
+		MJ/d<br>
+		kJ/d<br>
+		KJ/kg^0.75/d<br>
+		MJ/d<br>
+		KJ/kg^0.75/d<br>
+		MJ/d<br>
+		MJ/d<br>
+		kJ/d<br>
+		kJ/d<br>
+		mol/d<br>
+		mol ATP/d<br>
+		mol ATP/d<br>
+		mol ATP/d<br>
+		mol ATP/d<br>
+		mol ATP/d<br>
+		mol ATP/d<br>
+		mol ATP/d<br>
+		MJ/d<br>
+		KJ/d<br>
+		kJ/kg^0.75*d<br>
+		kJ/d<br>
+		kJ/kg^0.75*d<br>
+		kJ/d<br>
+		kJ/kg^0.75*d<br>
+		kJ/d<br>
+		MJ/d<br>
+		MJ/d<br>
+		MJ/d<br>
+		MJ/kg DM<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		kJ/d<br>
+		kJ/kg^0.75*d<br>
+		mol ATP/d<br>
+		MJ/d
+	</div>
+	<div class="columnRight">
+		Digestible energy intake (concentrate & forage origin)<br>
+		Digestible energy intake, % of gross energy<br>
+		Digestible energy intake, % of gross energy (concentrate & forage origin)<br>
+		Digestible energy intake, % of gross energy (MR origin)<br>
+		Digestible energy intake (MR origin)<br>
+		Total daily intake of gross energy<br>
+		Gross energy intake relative to metabolic body weight<br>
+		Gross energy intake (concentrate & forage origin)<br>
+		Gross energy intake relative to metabolic body weight (concentrate & forage origin)<br>
+		Gross energy intake (MR origin)<br>
+		Gross energy intake<br>
+		Total daily intake of metabolizable energy<br>
+		Total daily intake of digestible energy<br>
+		Acetyl-CoA production via lipogenesis from absorbed valerate<br>
+		Production of ATP during gluconeogenesis from amino acids<br>
+		Production of ATP during amino acid oxidation<br>
+		Production of ATP, corrected for energy loss using amino acids as precursor for urinary nitrogen losses<br>
+		Production of ATP during fatty acid oxidation<br>
+		Production of ATP during glycolysis<br>
+		Production of ATP during transformation of glycerol from degraded body fat into glucose<br>
+		Production of ATP during glucose production from dietary glycerol<br>
+		Digestible energy density of the diet<br>
+		Heat production (original equation)<br>
+		Heat production per metabolic weight<br>
+		Heat production based on oxidation of Acetyl-CoA<br>
+		Heat production based on oxidation of Acetyl-CoA per metabolic weight<br>
+		Heat production based on respiratory quotient<br>
+		Heat production based on respiratory quotient per metabolic weight<br>
+		Energy requirements for maintenance<br>
+		Gross energy in faeces<br>
+		Gross energy in faeces (concentrate & forage origin)<br>
+		Gross energy in faeces (MR origin)<br>
+		Metabolizable energy density of the diet<br>
+		Methane, % of digestible energy<br>
+		Methane, % of digestible energy (concentrate & forage origin)<br>
+		Methane, % of gross energy<br>
+		Methane, % of gross energy (concentrate & forage origin)<br>
+		Urine energy, % of digestible energy<br>
+		Urine energy, % of gross energy<br>
+		Energy retention<br>
+		Energy retention per metabolic weight<br>
+		Outflux of ATP for glycogenesis<br>
+		Energy in urine
+	</div>
+</div><br>
 
 
+<h3 id="feed">Feed</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		avgIn dm<br>
+		avgIn dm gram<br>
+		avgIn fat<br>
+		avgIn feed<br>
+		avgIn N<br>
+		avgIn prot<br>
+		avgIn sls<br>
+		avgIn stch<br>
+		cumFCR<br>
+		FCR<br>
+		Fr digProt C<br>
+		Fr digProt F<br>
+		Fr digProt MR<br>
+		Fr F-C/F<br>
+		Fr hex-lct<br>
+		Fr indFibre C<br>
+		Fr indFibre F<br>
+		Fr indFibre MR<br>
+		Fr lct MR/C/F<br>
+		Fr solProt C<br>
+		Fr solProt F<br>
+		Fr solProt MR<br>
+		Fr stch MR/C/F<br>
+		Fr stch MR/C/F2<br>
+		In dm bw<br>
+		In dm mbw<br>
+		In dm-F<br>
+		In dm-MR abm<br>
+		In F<br>
+		In feed-MR abm<br>
+		In hex<br>
+		Q dm-C<br>
+		Q dm-F<br>
+		Q dm-MR
+	</div>
+	<div class="columnUnit">
+		kg/d<br>
+		g/d<br>
+		kg/d<br>
+		kg/d<br>
+		kg/d<br>
+		kg/d<br>
+		kg/d<br>
+		kg/d<br>
+		g/g<br>
+		g/g<br>
+		g/kg<br>
+		g/kg<br>
+		g/kg<br>
+		%<br>
+		mol/mol<br>
+		g/kg<br>
+		g/kg<br>
+		g/kg<br>
+		%<br>
+		g/kg<br>
+		g/kg<br>
+		g/kg<br>
+		%<br>
+		%<br>
+		g/kg<br>
+		g/kg^0.75<br>
+		kg<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		mol/d<br>
+		g/kg<br>
+		g/kg<br>
+		g/kg
+	</div>
+	<div class="columnRight">
+		Average daily dry matter intake<br>
+		Average daily dry matter intake (in grams)<br>
+		Average daily fat intake<br>
+		Average daily feed intake<br>
+		Average daily nitrogen intake<br>
+		Average daily protein intake<br>
+		Average daily soluble sugars (including lactose, from milk replacer) intake<br>
+		Average daily starch intake<br>
+		Cumulative feed conversion ratio from start (t0) to t of simulation<br>
+		Feed conversion ratio (absorbed nutrients from milk replacer)<br>
+		Digestible protein fraction in concentrate<br>
+		Digestible protein fraction in forage<br>
+		Digestible protein fraction in milk replacer<br>
+		Fraction forage in the solid feed (concentrate and forage)<br>
+		Proportion hexose from lactate of total hexose intake<br>
+		Indigestible fibre fraction in concentrate<br>
+		Indigestible fibre fraction in forage<br>
+		Indigestible fibre fraction in milk replacer<br>
+		Lactate content of the diet<br>
+		Soluble protein fraction in concentrate<br>
+		Soluble protein fraction in forage<br>
+		Soluble protein fraction in milk replacer<br>
+		Starch and sugar content of the diet<br>
+		Fraction starch in diet<br>
+		Dry matter intake (g dm/kg body weight)<br>
+		Dry matter intake per metabolic weight<br>
+		Dry matter intake of forage<br>
+		Dry matter (MR origin) intake (influx into abomasum)<br>
+		Daily forage intake<br>
+		Feed (MR origin) influx into abomasum<br>
+		Total hexose intake<br>
+		Dry matter in concentrate<br>
+		Dry matter in forage<br>
+		Dry matter in milk replacer
+	</div>
+</div><br>
 
+
+<h3 id="liIn">Large intestine influx</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		In degFibre-C/F LI<br>
+		In degProt-C/F LI<br>
+		In degStch LI<br>
+		In fat-micC/F LI<br>
+		In fat-MR LI<br>
+		In indFibre-C/F LI<br>
+		In indProt-C/F LI<br>
+		In micProt LI<br>
+		In solProt-C/F LI<br>
+		In solProt-MR LI<br>
+		P asp-ahex LI
+	</div>
+	<div class="columnUnit">
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		g/d
+	</div>
+	<div class="columnRight">
+		Degradable fibre influx (concentrate & forage origin) into the large intestine<br>
+		Degradable protein (concentrate & forage origin) influx into the large intestine<br>
+		Degradable starch influx into the large intestine from small intestinal degradable starch and storage amylolytic polysaccharides<br>
+		Fat (concentrate, forage and microbes origin) influx into the large intestine<br>
+		Fat (MR origin) influx into the large intestine<br>
+		Indigestible fibre influx (concentrate & forage origin) into the large intestine<br>
+		Indigestible protein (concentrate & forage origin) influx from small intestinal indigestible protein in the large intestine<br>
+		Microbial protein influx into the large intestine<br>
+		Soluble protein (concentrate & forage origin) influx into the large intestine<br>
+		Soluble protein (MR origin) influx into the large intestine<br>
+		Amylolytic storage polysaccharides influx from amylolytic hexose utilization in the large intestine
+	</div>
+</div><br>
+
+
+<h3 id="liMet">Large intestine metabolism</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		K fibre LI<br>
+		K hex LI<br>
+		K prot LI<br>
+		K stch LI<br>
+		P ahex-lac-MR LI<br>
+		P ahex-stch LI<br>
+		P amic-am LI<br>
+		P amic-prot LI<br>
+		P am-prot LI<br>
+		P chex-fibre LI<br>
+		P hy-ac LI<br>
+		P hy-bu LI<br>
+		P hy-micProt LI<br>
+		P solProt-C/F LI<br>
+		U ahex asp LI<br>
+		U ahex LI<br>
+		U ahex micAm LI<br>
+		U ahex micProt LI<br>
+		U am-amic LI<br>
+		U am-cmic LI<br>
+		U am-ur LI<br>
+		U chex micAm LI<br>
+		U chex micProt LI<br>
+		U chex noGrMic LI<br>
+		U chex-fibre LI<br>
+		U degProt-C/F LI<br>
+		U hy-fat LI<br>
+		U hy-meth LI<br>
+		U hy-mic LI<br>
+		U hy-micAm LI<br>
+		U hy-pr LI<br>
+		U hy-vfa LI<br>
+		U hy-vl LI<br>
+		U solProt-C/F amic LI<br>
+		U solProt-C/F cmic LI<br>
+		U solProt-C/F mic LI<br>
+		U solProt-MR amic LI<br>
+		U solProt-MR cmic LI<br>
+		U solProt-MR mic LI<br>
+		U stch-ahex LI<br>
+		Ua am LI<br>
+		Y hy-AcBuMic LI
+	</div>
+	<div class="columnUnit">
+		/d<br>
+		-<br>
+		/d<br>
+		/d<br>
+		mol/d<br>
+		mol/d<br>
+		g/d<br>
+		g/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d
+	</div>
+	<div class="columnRight">
+		Degradation constant of fibre in the large intestine<br>
+		Scaling factor for cellulolytic hexose degradation (Vmax) in the large intestine (adjustment for DOF)<br>
+		Degradation constant of protein in the large intestine<br>
+		Degradation constant of starch in the large intestine<br>
+		Amylolytic hexose influx from lactose lactose (MR origin) in the large intestine<br>
+		Amylolytic hexose yield from starch degradation in the large intestine<br>
+		Growth of amylolytic bacteria on ammonia in the large intestine<br>
+		Growth of amylolytic bacteria on protein in the large intestine<br>
+		Ammonia yield from protein fermentation in the large intestine<br>
+		Cellulolytic hexose yield from fibre degradation in the large intestine<br>
+		Hydrogen production associated with acetate production in the large intestine<br>
+		Hydrogen production associated with butyrate production in the large intestine<br>
+		Hydrogen production associated with microbial growth on protein/amino acids in the large intestine<br>
+		Soluble protein (concentrate & forage origin) from degradable protein degradation in the large intestine<br>
+		Amylolytic hexose uptake for amylolytic polysaccharides storage in the large intestine<br>
+		Amylolytic hexose fermentation for microbial non-growth functions in the large intestine<br>
+		Amylolytic hexose uptake for microbial growth on ammonia in the large intestine<br>
+		Amylolytic hexose uptake for microbial growth on protein in the large intestine<br>
+		Ammonia uptake for growth of amylolytic microbes in the large intestine<br>
+		Ammonia uptake for growth of cellulolytic microbes in the large intestine<br>
+		Ammonia lost in urine from the large intestine<br>
+		Cellulolytic hexose uptake for microbial growth on ammonia in the large intestine<br>
+		Cellulolytic hexose uptake for microbial growth on protein in the large intestine<br>
+		Cellulolytic hexose fermentation for microbial non-growth functions in the large intestine<br>
+		Cellulolytic hexose from fibre digestion in the large intestine<br>
+		Degradable protein (concentrate & forage origin) hydrolyzed to soluble protein in the large intestine<br>
+		Hydrogen uptake required for lipid biohydrogenation in the large intestine<br>
+		Hydrogen uptake required for methane production in the large intestine<br>
+		Hydrogen required for microbial growth on ammonia in the large intestine<br>
+		Hydrogen uptake associated with microbial growth on ammonia in the large intestine<br>
+		Hydrogen uptake associated with proprionate production in the large intestine<br>
+		Hydrogen uptake required for propionate and valerate production in the large intestine<br>
+		Hydrogen uptake associated with valerate production in the large intestine<br>
+		Soluble protein (concentrate & forage origin) uptake for growth of amylolytic microbes in the large intestine<br>
+		Soluble protein (concentrate & forage origin) uptake for growth of cellulolytic microbes in the large intestine<br>
+		Soluble protein (concentrate & forage origin) fermentation in the large intestine<br>
+		Soluble protein (MR origin) uptake for growth of amylolytic microbes in the large intestine<br>
+		Soluble protein (MR origin) uptake for growth of cellulolytic microbes in the large intestine<br>
+		Soluble protein (MR origin) fermentation in the large intestine<br>
+		Starch degradation into amylolytic hexose in the large intestine<br>
+		Ammonia absorption from the large intestine<br>
+		Hydrogen yield from acetate, butyrate production and microbial growth on amino acids/protein in the large intestine
+	</div>
+</div><br>
+
+
+<h3 id="liOut">Large intestine outflux</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		K amic LI<br>
+		K cmic LI<br>
+		K dig LI<br>
+		K vfa LI<br>
+		Ua ac LI<br>
+		Ua bu LI<br>
+		Ua pr LI<br>
+		Ua vl LI<br>
+		Up ac LI<br>
+		Up ahex LI<br>
+		Up am LI<br>
+		Up amic LI<br>
+		Up asp LI<br>
+		Up bu LI<br>
+		Up chex LI<br>
+		Up cmic LI<br>
+		Up degFibre LI<br>
+		Up degProt-C/F LI<br>
+		Up degStch LI<br>
+		Up fat-C/F LI<br>
+		Up fat-MR LI<br>
+		Up indFibre LI<br>
+		Up indProt-C/F LI<br>
+		Up pr LI<br>
+		Up solProt-C/F LI<br>
+		Up solProt-MR LI<br>
+		Up vl LI
+	</div>
+	<div class="columnUnit">
+		/d<br>
+		/d<br>
+		/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		g/d<br>
+		g/d<br>
+		mol/d<br>
+		mol/d<br>
+		g/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d
+	</div>
+	<div class="columnRight">
+		Fractional passage rate of amylolytic microbes in the large intestine<br>
+		Fractional passage rate of cellulolytic microbes in the large intestine<br>
+		Fractional passage rate of digesta in the large intestine<br>
+		Rate of absorption and passage of total VFA from the large intestine<br>
+		Acetate absorption from the large intestine<br>
+		Butyrate absorption from the large intestine<br>
+		Propionate absorption from the large intestine<br>
+		Valerate absorption in the large intestine<br>
+		Acetate passage from the large intestine<br>
+		Amylolytic hexose passage from the large intestine<br>
+		Ammonia passage from the large intestine<br>
+		Amylolytic microbes passage from the large intestine<br>
+		Amylolytic storage polysaccharides passage from the large intestine<br>
+		Butyrate passage from the large intestine<br>
+		Cellulolytic hexose passage from the large intestine<br>
+		Cellulolytic microbes passage from the large intestine<br>
+		Degradable fibre passage from the large intestine<br>
+		Degradable protein (concentrate & forage origin) passage from the large intestine<br>
+		Degradable starch passage from the large intestine<br>
+		Fat (concentrate & forage origin) passage from the large intestine<br>
+		Fat (MR origin) passage from the large intestine<br>
+		Indigestible fibre passage from the large intestine<br>
+		Indigestible protein (concentrate & forage origin) passage from the large intestine<br>
+		Propionate passage from the large intestine<br>
+		Soluble protein (concentrate & forage origin) passage from the large intestine<br>
+		Soluble protein (MR origin) passage from the large intestine<br>
+		Valerate passage through the large intestine
+	</div>
+</div><br>
+
+
+<h3 id="liPools">Large intestine pools</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		C ac LI<br>
+		C ahex LI<br>
+		C am LI<br>
+		C amic LI<br>
+		C asp LI<br>
+		C bu LI<br>
+		C chex LI<br>
+		C cmic LI<br>
+		C degFibre LI<br>
+		C degProt-C/F LI<br>
+		C degStch LI<br>
+		C fat-C/F LI<br>
+		C fat-MR LI<br>
+		C indFibre LI<br>
+		C pr LI<br>
+		C solProt-C/F LI<br>
+		C solProt-MR LI<br>
+		C vfa LI<br>
+		C vl LI<br>
+		Fr hex-nonSugar LI<br>
+		Q acA LI<br>
+		Q am LI<br>
+		Q amic LI<br>
+		Q buA LI<br>
+		Q cmic LI<br>
+		Q degProt-C/F LI<br>
+		Q fat-C/F LI<br>
+		Q fat-MR LI<br>
+		Q ferFibre-C/F LI<br>
+		Q ferStch LI<br>
+		Q hex-amic LI<br>
+		Q hex-cmic LI<br>
+		Q infFibre-C/F LI<br>
+		Q msp LI<br>
+		Q prA LI<br>
+		Q solProt-C/F LI<br>
+		Q solProt-MR LI<br>
+		Q undProt-C/F LI<br>
+		Q vlA LI<br>
+		Vol LI
+	</div>
+	<div class="columnUnit">
+		M<br>
+		M<br>
+		M<br>
+		g/L<br>
+		g/L<br>
+		M<br>
+		M<br>
+		g/L<br>
+		M<br>
+		M<br>
+		M<br>
+		M<br>
+		M<br>
+		M<br>
+		M<br>
+		M<br>
+		M<br>
+		mM<br>
+		M<br>
+		mol/d<br>
+		mol<br>
+		mol<br>
+		g<br>
+		mol<br>
+		g<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		g<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		L
+	</div>
+	<div class="columnRight">
+		Acetate concentration in the large intestine<br>
+		Concentration of amylolytic hexose in the large intestine<br>
+		Concentration of ammonia in the large intestine<br>
+		Concentration of amylolytic bacteria in the large intestine<br>
+		Concentration of amylolytic storage polysaccharides in the large intestine<br>
+		Butyrate concentration in the large intestine<br>
+		Concentration of cellulolytic hexose in the large intestine<br>
+		Concentration of cellulolytic microbes in the large intestine<br>
+		Concentration of degradable fibre in the large intestine<br>
+		Concentration of degradable protein (concentrate & forage origin) in the large intestine<br>
+		Concentration of degradable starch in the large intestine<br>
+		Concentration of fat (concentrate & forage origin) in the large intestine<br>
+		Concentration of fat (MR origin) in the large intestine<br>
+		Concentration of indigestible fibre in the large intestine<br>
+		Propionate concentration in the large intestine<br>
+		Concentration of soluble protein (concentrate & forage origin) in the large intestine<br>
+		Concentration of soluble protein (MR origin) in the large intestine<br>
+		VFA concentration in the large intestine<br>
+		Valerate concentration in the large intestine<br>
+		Proportion of hexose (Tcfha) not derived from sugars in the large intestine<br>
+		Quantity acetic acid in the large intestine<br>
+		Quantity ammonia in the large intestine<br>
+		Quantity amylolytic microbes in the large intestine<br>
+		Quantity butyric acid in the large intestine<br>
+		Quantity cellulolytic microbes in the large intestine<br>
+		Quantity degradable protein in the large intestine (concentrate & forage origin)<br>
+		Quantity fat in the large intestine (concentrate & forage origin)<br>
+		Quantity fat in the large intestine (MR origin)<br>
+		Quantity fermentable fibre in the large intestine (concentrate & forage origin)<br>
+		Quantity fermentable starch in the large intestine (MR, concentrate & forage origin)<br>
+		Quantity hexose available to amylolytic microbes in the large intestine (MR, concentrate & forage origin)<br>
+		Quantity hexose available to cellulolytic microbes in the large intestine (MR, concentrate & forage origin)<br>
+		Quantity infermentable fibre in the large intestine (concentrate & forage origin)<br>
+		Quantity microbial storage polysaccharides in the large intestine<br>
+		Quantity propionic acid in the large intestine<br>
+		Quantity soluble protein in the large intestine (concentrate & forage origin)<br>
+		Quantity soluble protein in the large intestine (MR origin)<br>
+		Quantity undegradable protein in the large intestine (concentrate & forage origin)<br>
+		Quantity valeric acid in the large intestine<br>
+		Volume of the large intestine
+	</div>
+</div><br>
+
+
+<h3 id="liVFAp">Large intestine VFA production</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		P ac asp LI<br>
+		P ac LI<br>
+		P ac-ahex amicAm LI<br>
+		P ac-ahex amicProt LI<br>
+		P ac-ahex LI<br>
+		P ac-chex cmicAm LI<br>
+		P ac-chex cmicProt LI<br>
+		P ac-chex LI<br>
+		P ac-prot LI<br>
+		P bu asp LI<br>
+		P bu LI<br>
+		P bu-ahex amicAm LI<br>
+		P bu-ahex amicProt LI<br>
+		P bu-ahex LI<br>
+		P bu-chex cmicAm LI<br>
+		P bu-chex cmicProt LI<br>
+		P bu-chex LI<br>
+		P bu-prot LI<br>
+		P pr asp LI<br>
+		P pr LI<br>
+		P pr-ahex amicAm LI<br>
+		P pr-ahex amicProt LI<br>
+		P pr-ahex LI<br>
+		P pr-chex cmicAm LI<br>
+		P pr-chex cmicProt LI<br>
+		P pr-chex LI<br>
+		P pr-prot LI<br>
+		P vl asp LI<br>
+		P vl LI<br>
+		P vl-ahex amicAm LI<br>
+		P vl-ahex amicProt LI<br>
+		P vl-ahex LI<br>
+		P vl-chex cmicAm LI<br>
+		P vl-chex cmicProt LI<br>
+		P vl-chex LI<br>
+		P vl-prot LI
+	</div>
+	<div class="columnUnit">
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d
+	</div>
+	<div class="columnRight">
+		Acetate production from large intestinal fermentation required for amylolytic polysaccharides storage<br>
+		Total acetate production in the large intestine<br>
+		Acetate production from amylolytic hexose fermentation required for amylolytic microbial growth on ammonia in the large intestine<br>
+		Acetate production from amylolytic hexose fermentation required for amylolytic microbial growth on protein in the large intestine<br>
+		Acetate production from amylolytic hexose fermentation in the large intestine<br>
+		Acetate production from cellulolytic hexose fermentation required for cellulolytic microbial growth on ammonia in the large intestine<br>
+		Acetate production from cellulolytic hexose fermentation required for cellulolytic microbial growth on protein in the large intestine<br>
+		Acetate production from cellulolytic hexose fermentation in the large intestine<br>
+		Acetate production from soluble protein fermentation in the large intestine<br>
+		Butyrate production from large intestinal fermentation required for amylolytic polysaccharides storage<br>
+		Total butyrate production in the large intestine<br>
+		Butyrate production from amylolytic hexose fermentation required for amylolytic microbial growth on ammonia in the large intestine<br>
+		Butyrate production from amylolytic hexose fermentation required for amylolytic microbial growth on protein in the large intestine<br>
+		Butyrate production from amylolytic hexose fermentation in the large intestine<br>
+		Butyrate production from cellulolytic hexose fermentation required for cellulolytic microbial growth on ammonia in the large intestine<br>
+		Butyrate production from cellulolytic hexose fermentation required for cellulolytic microbial growth on protein in the large intestine<br>
+		Butyrate production from cellulolytic hexose fermentation in the large intestine<br>
+		Butyrate production from soluble protein fermentation in the large intestine<br>
+		Propionate production from large intestinal fermentation required for amylolytic polysaccharides storage<br>
+		Total proprionate production in the large intestine<br>
+		Propionate production from amylolytic hexose fermentation required for amylolytic microbial growth on ammonia in the large intestine<br>
+		Propionate production from amylolytic hexose fermentation required for amylolytic microbial growth on protein in the large intestine<br>
+		Propionate production from amylolytic hexose fermentation in the large intestine<br>
+		Propionate production from cellulolytic hexose fermentation required for cellulolytic microbial grow on ammonia in the large intestine<br>
+		Propionate production from cellulolytic hexose fermentation required for cellulolytic microbial growth on protein in the large intestine<br>
+		Propionate production from cellulolytic hexose fermentation in the large intestine<br>
+		Propionate production from soluble protein fermentation in the large intestine<br>
+		Valerate production from fermentation required for amylolytic polysaccharides storage in the large intestine<br>
+		Total valerate production in the large intestine<br>
+		Valerate production from amylolytic hexose fermentation required for amylolytic microbial growth on ammonia in the large intestine<br>
+		Valerate production from amylolytic hexose fermentation required for amylolytic microbial growth on protein in the large intestine<br>
+		Valerate production from amylolytic hexose fermentation in the large intestine<br>
+		Valerate production from cellulolytic hexose fermentation required for cellulolytic microbial growth on ammonia in the large intestine<br>
+		Valerate production from cellulolytic hexose fermentation required for cellulolytic microbial growth on protein in the large intestine<br>
+		Valerate production from cellulolytic hexose fermentation in the large intestine<br>
+		Valerate production from soluble protein fermentation in the large intestine
+	</div>
+</div><br>
+
+<h3 id="liVFAy">Large intestine VFA yields</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		Y ac-ahexAm LI<br>
+		Y ac-ahexProt LI<br>
+		Y ac-asp LI<br>
+		Y ac-chex LI<br>
+		Y ac-chexAm LI<br>
+		Y ac-chexProt LI<br>
+		Y ac-fibre LI<br>
+		Y ac-hex LI<br>
+		Y ac-prot LI<br>
+		Y bu-ahexAm LI<br>
+		Y bu-ahexMicProt LI<br>
+		Y bu-ahexProt LI<br>
+		Y bu-asp LI<br>
+		Y bu-chex LI<br>
+		Y bu-chexAm LI<br>
+		Y bu-chexProt LI<br>
+		Y bu-fibre LI<br>
+		Y bu-hex LI<br>
+		Y bu-prot LI<br>
+		Y pr-ahexAm LI<br>
+		Y pr-ahexMicProt LI<br>
+		Y pr-ahexProt LI<br>
+		Y pr-asp LI<br>
+		Y pr-chex LI<br>
+		Y pr-chexAm LI<br>
+		Y pr-chexProt LI<br>
+		Y pr-fibre LI<br>
+		Y pr-hex LI<br>
+		Y pr-prot LI<br>
+		Y vl-ahexAm LI<br>
+		Y vl-ahexMicProt LI<br>
+		Y vl-ahexProt LI<br>
+		Y vl-asp LI<br>
+		Y vl-chex LI<br>
+		Y vl-chexAm LI<br>
+		Y vl-chexProt LI<br>
+		Y vl-fibre LI<br>
+		Y vl-hex LI<br>
+		Y vl-prot LI
+	</div>
+	<div class="columnUnit">
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-
+	</div>
+	<div class="columnRight">
+		Acetate yield from amylolytic hexose when growing on ammonia in the large intestine<br>
+		Acetate yield from amylolytic hexose when growing on protein in the large intestine<br>
+		Acetate yield from amylolytic storage polysaccharides fermentation in the large intestine<br>
+		Acetate yield from cellulolytic hexose fermentation in the large intestine<br>
+		Acetate yield from cellulolytic hexose when growing on ammonia in the large intestine<br>
+		Acetate yield from cellulolytic hexose when growing on protein in the large intestine<br>
+		Total acetate yield from fibre in the large intestine<br>
+		Acetate yield from hexose fermentation for non-growth functions in the large intestine<br>
+		Acetate yield from soluble protein fermentation in the large intestine<br>
+		Butyrate yield from amylolytic hexose when growing on ammonia in the large intestine<br>
+		Butyrate yield from amylolytic hexose when growing on microbial protein in the large intestine<br>
+		Butyrate yield from amylolytic hexose when growing on protein in the large intestine<br>
+		Butyrate yield from amylolytic storage polysaccharides fermentation in the large intestine<br>
+		Butyrate yield from cellulolytic hexose fermentation in the large intestine<br>
+		Butyrate yield from cellulolytic hexose when growing on ammonia in the large intestine<br>
+		Butyrate yield from cellulolytic hexose when growing on protein in the large intestine<br>
+		Total butyrate yield from fibre in the large intestine<br>
+		Butyrate yield from hexose fermentation for non-growth functions in the large intestine<br>
+		Butyrate yield from soluble protein fermentation in the large intestine<br>
+		Propionate yield from amylolytic hexose when growing on ammonia in the large intestine<br>
+		Propionate yield from amylolytic hexose when growing on microbial protein in the large intestine<br>
+		Propionate yield from amylolytic hexose when growing on protein in the large intestine<br>
+		Propionate yield from amylolytic storage polysaccharides fermentation in the large intestine<br>
+		Propionate yield from cellulolytic hexose fermentation in the large intestine<br>
+		Propionate yield from cellulolytic hexose when growing on ammonia in the large intestine<br>
+		Propionate yield from cellulolytic hexose when growing on protein in the large intestine<br>
+		Total propionate yield from fibre in the large intestine<br>
+		Propionate yield from hexose fermentation for non-growth functions in the large intestine<br>
+		Propionate yield from soluble protein fermentation in the large intestine<br>
+		Valerate yield from amylolytic hexose when growing on ammonia in the large intestine<br>
+		Valerate yield from amylolytic hexose when growing on microbial protein in the large intestine<br>
+		Valerate yield from amylolytic hexose when growing on protein in the large intestine<br>
+		Valerate yield from amylolytic storage polysaccharides fermentation in the large intestine<br>
+		Valerate yield from cellulolytic hexose fermentation in the large intestine<br>
+		Valerate yield from cellulolytic hexose when growing on ammonia in the large intestine<br>
+		Valerate yield from cellulolytic hexose when growing on protein in the large intestine<br>
+		Total valerate yield from fibre in the large intestine<br>
+		Valerate yield from hexose fermentation for non-growth functions in the large intestine<br>
+		Valerate yield from soluble protein fermentation in the large intestine
+	</div>
+</div><br>
+
+
+<h3 id="misc">Miscellaneous</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		Days feed<br>
+		pH LI<br>
+		pH rum<br>
+		Q paidWt fix<br>
+		Q paidWt sim<br>
+		relDays feed<br>
+		Score<br>
+		T pHmin LI<br>
+		T pHmin rum<br>
+		T rumination<br>
+		time<br>
+		Vol rum
+	</div>
+	<div class="columnUnit">
+		d<br>
+		pH<br>
+		pH<br>
+		kg<br>
+		kg<br>
+		d<br>
+		-<br>
+		h<br>
+		h<br>
+		L/L<br>
+		day<br>
+		L
+	</div>
+	<div class="columnRight">
+		Number of days on feed, includes prior to simulation start<br>
+		pH in the large intestine<br>
+		pH in the rumen<br>
+		Net paid weight, based  on fixed dressing percentage<br>
+		Net paid weight, based on simulated dressing percentage<br>
+		Relative days on feed, scaled to average daily dry matter intake per day<br>
+		Rumen wall development score (scale of 1-3)<br>
+		Time below critical pH in the large intestine<br>
+		Time below critical pH in the rumen (pH 6.3)<br>
+		Relative rumination time (adjustment relative to an adult cow)<br>
+		Time in model<br>
+		Rumen volume
+	</div>
+</div><br>
+
+
+<h3 id="nBal">Nitrogen balance</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		avgEff digN<br>
+		avgEff N<br>
+		C aa<br>
+		C aa-pl<br>
+		Eff digN<br>
+		Eff N<br>
+		P aa-bone<br>
+		P aa-hide<br>
+		P aa-isc<br>
+		P aa-MR<br>
+		P aa-musc<br>
+		P aa-neAa<br>
+		P aa-prot<br>
+		P aa-prot-C/F<br>
+		P aaTot-deg<br>
+		Q N ur<br>
+		Q N-fec<br>
+		Q Nm<br>
+		U aa-bone<br>
+		U aa-glc<br>
+		U aa-hide<br>
+		U aa-musc<br>
+		U aa-ox<br>
+		U aa-oxAdj<br>
+		U aaPool-urN<br>
+		U aaTot-syn<br>
+		U aa-urN<br>
+		U aa-visc<br>
+		V aa-ox
+	</div>
+	<div class="columnUnit">
+		%<br>
+		%<br>
+		mol/kg<br>
+		mol/L<br>
+		%<br>
+		%<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol AA/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol AA/d<br>
+		mol AA/d<br>
+		mol/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		kg N/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d
+	</div>
+	<div class="columnRight">
+		Average efficiency of digestible nitrogen utilization for nitrogen retention<br>
+		Average nitrogen efficiency (Nretention/Nintake)<br>
+		Concentration of amino acids in body fluids<br>
+		Concentration of amino acids per L of plasma in blood<br>
+		Efficiency of digestible nitrogen utilization for nitrogen retention<br>
+		Total nitrogen efficiency (Nretention/Nintake)<br>
+		Amino acid influx from degradation of bone protein<br>
+		Amino acid influx from degradation of hide protein<br>
+		Amino acid influx from degradation of visceral protein<br>
+		Amino acid intake from milk replacer<br>
+		Amino acid influx from degradation of muscle protein<br>
+		Amino acid influx from synthesis of non essential amino acids<br>
+		Conversion of protein absorption into amino acid absorption<br>
+		Conversion of protein (concentrate & forage origin) absorption into amino acid absorption<br>
+		Total amino acid influx from degradation of all tissues<br>
+		Total urinary nitrogen excretion<br>
+		Total faecal nitrogen losses<br>
+		Maintenance nitrogen required for metabolic faecal nitrogen, obligatory urine nitrogen and nitrogen losses from skin and hair<br>
+		Amino acid outflux into synthesis of bone protein<br>
+		Amino acid outflux into gluconeogenesis (from amino acids)<br>
+		Amino acid outflux into synthesis of hide protein<br>
+		Amino acid outflux into synthesis of muscle protein<br>
+		Amino acid outflux into amino acid oxidation<br>
+		Amino acid outflux into oxidation, corrected for outflux into gluconeogenesis<br>
+		Amino acid outflux (from the amino acid pool) to endogenous urinary nitrogen losses<br>
+		Total amino acid outflux into synthesis of all tissues<br>
+		Amino acid outflux to endogenous urinary nitrogen losses<br>
+		Amino acid outflux into synthesis of visceral protein<br>
+		Maximum rate of amino acid oxidation
+	</div>
+</div><br>
+
+
+<h3 id="rumIn">Rumen influx</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		In ac-F rum<br>
+		In am-F rum<br>
+		In ash-C rum<br>
+		In ash-F rum<br>
+		In ash-MR rum<br>
+		In bu-F rum<br>
+		In degFibre-C rum<br>
+		In degFibre-F rum<br>
+		In degProt-C rum<br>
+		In degProt-F rum<br>
+		In degProt-MR rum<br>
+		In degStch-C rum<br>
+		In degStch-F rum<br>
+		In degStch-MR rum<br>
+		In eth-F rum<br>
+		In fat-C rum<br>
+		In fat-F rum<br>
+		In fat-mic rum<br>
+		In fat-MR rum<br>
+		In feed-C rum<br>
+		In feed-F rum<br>
+		In indFibre-C rum<br>
+		In indFibre-F rum<br>
+		In indProt-C rum<br>
+		In indProt-F rum<br>
+		In indProt-MR rum<br>
+		In lct-F rum<br>
+		In pct-C rum<br>
+		In pct-F rum<br>
+		In pr-F rum<br>
+		In rpfat-F rum<br>
+		In rpfat-MR/C rum<br>
+		In sls-C rum<br>
+		In sls-F rum<br>
+		In sls-MR rum<br>
+		In slv rum<br>
+		In solProt-C rum<br>
+		In solProt-F rum<br>
+		In solProt-MR rum<br>
+		In solStch-C rum<br>
+		In solStch-F rum<br>
+		In solStch-MR rum<br>
+		In vl-F rum
+	</div>
+	<div class="columnUnit">
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		mol/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		mol/d<br>
+		mol/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		L/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		g/d
+	</div>
+	<div class="columnRight">
+		Acetate (forage origin) influx into the rumen<br>
+		Ammonia (forage origin) influx into the rumen<br>
+		Ash (concentrate origin) influx into the rumen<br>
+		Ash (forage origin) influx into the rumen<br>
+		Ash (MR origin) influx into the rumen (leakage from the abomasum)<br>
+		Butyrate (forage origin) influx into the rumen<br>
+		Degradable fibre (concentrate origin) influx into the rumen<br>
+		Degradable fibres (forage origin) influx into the rumen<br>
+		Degradable protein (concentrate origin) influx into the rumen<br>
+		Degradable protein (forage origin) influx into the rumen<br>
+		Degradable protein (MR origin) influx into the rumen (leakage from the abomasum)<br>
+		Degradable starch (concentrate origin) influx into the rumen<br>
+		Degradable starch (forage origin) influx into the rumen<br>
+		Degradable starch (MR origin) influx into the rumen (leakage from the abomasum)<br>
+		Ethanol (forage origin) influx into the rumen<br>
+		Fat (concentrate origin) influx into the rumen<br>
+		Fat (forage origin) influx into the rumen<br>
+		Fat (from microbial biomass) influx in the rumen<br>
+		Fat (MR origin) influx into the rumen (leakage from the abomasum)<br>
+		Feed (concentrate origin) influx into the rumen<br>
+		Feed (forage origin) influx into the rumen<br>
+		Indigestible fibre (concentrate origin) influx into the rumen<br>
+		Indigestible fibres (forage origin) influx into the rumen<br>
+		Indigestible protein (concentrate origin) influx into the rumen<br>
+		Indigestible protein (forage origin) influx into the rumen<br>
+		Indigestible protein (MR origin) influx into the rumen (leakage from the abomasum)<br>
+		Lactate (forage origin) influx into the rumen<br>
+		Pectin (concentrate origin) influx into the rumen<br>
+		Pectin (forage origin) influx into the rumen<br>
+		Propionate (forage origin) influx into the rumen<br>
+		Rumen-protected fat (forage origin) influx in the rumen<br>
+		Rumen-protected fat (concentrate and leaked MR origin) influx in the rumen<br>
+		Soluble sugars (concentrate origin) influx into the rumen<br>
+		Soluble sugars (forage origin) influx into the rumen<br>
+		Soluble sugars (including lactose, from milk replacer) influx into the rumen (leakage from the abomasum)<br>
+		Saliva influx into the rumen<br>
+		Soluble protein (concentrate origin) influx into the rumen<br>
+		Soluble protein (forage origin) influx into the rumen<br>
+		Soluble protein (MR origin) influx into the rumen (leakage from the abomasum)<br>
+		Soluble starch (concentrate origin) influx into the rumen<br>
+		Soluble starch (forage origin) influx into the rumen<br>
+		Soluble starch (MR origin) influx into the rumen (leakage from the abomasum)<br>
+		Valerate (forage origin) influx into the rumen
+	</div>
+</div><br>
+
+
+<h3 id="rumMet">Rumen metabolism</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		P ahex<br>
+		P ahex-aspMic rum<br>
+		P ahex-degStch rum<br>
+		P ahex-fat rum<br>
+		P ahex-lct rum<br>
+		P ahex-pct rum<br>
+		P ahex-sls rum<br>
+		P ahex-solStch rum<br>
+		P amic-am rum<br>
+		P amic-cmic rum<br>
+		P amic-prot rum<br>
+		P am-micProt rum<br>
+		P am-prot rum<br>
+		P am-urea rum<br>
+		P chex-fibre rum<br>
+		P cmic-am rum<br>
+		P cmic-prot rum<br>
+		P hy-ac rum<br>
+		P hy-bu rum<br>
+		P hy-micProt rum<br>
+		P solProt-degProt rum<br>
+		P solProt-mic rum<br>
+		P solProt-micProt rum<br>
+		P solProt-slv rum<br>
+		P solProt-solProt-MR/C rum<br>
+		U ahex asp rum<br>
+		U ahex micAm rum<br>
+		U ahex micProt rum<br>
+		U ahex prot rum<br>
+		U ahex rum<br>
+		U am-amic rum<br>
+		U am-cmic rum<br>
+		U amicPz rum<br>
+		U chex micAm rum<br>
+		U chex micProt rum<br>
+		U chex rum<br>
+		U cmic-amicPz rum<br>
+		U degFibre-C-chex rum<br>
+		U degFibre-F-chex rum<br>
+		U degProt-solProt-C rum<br>
+		U degProt-solProt-F rum<br>
+		U degStch-C-ahex rum<br>
+		U degStch-F-ahex rum<br>
+		U hy-fat rum<br>
+		U hy-fats rum<br>
+		U hy-meth rum<br>
+		U hy-mic rum<br>
+		U hy-micAm rum<br>
+		U hy-pr rum<br>
+		U hy-vfa rum<br>
+		U hy-vl rum<br>
+		U solProt-am rum<br>
+		U solProt-amic rum<br>
+		U solProt-cmic rum<br>
+		Ua am rum<br>
+		Y hy-AcBuMic rum
+	</div>
+	<div class="columnUnit">
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol Ha/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		g/d<br>
+		g/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		g/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		g/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d
+	</div>
+	<div class="columnRight">
+		Total amylolytic hexose production<br>
+		Amylolytic hexose from storage polysaccharides due to lysis or death of microbes in the rumen<br>
+		Amylolytic hexose from degradable starch hydrolysis in the rumen<br>
+		Amylolytic hexose from dietary lipid intake in the rumen<br>
+		Amylolytic hexose from dietary lactate in the rumen<br>
+		Amylolytic hexose from dietary pectin hydrolysis in the rumen<br>
+		Amylolytic hexose from soluble sugars (including lactose) in the rumen<br>
+		Amylolytic hexose from dietary soluble starch hydrolysis in the rumen<br>
+		Growth of amylolytic microbes on ammonia in the rumen<br>
+		Growth of amylolytic microbes associated with engulfment of cellulolytic microbes in the rumen<br>
+		Growth of amylolytic microbes on protein in the rumen<br>
+		Ammonia production from microbial protein fermentation in the rumen<br>
+		Ammonia production fom protein fermentation in the rumen<br>
+		Ammonia production from urea recycling in the rumen<br>
+		Cellulolytic hexose yield from fibre degradation in the rumen<br>
+		Growth of cellulolytic microbes on ammonia in the rumen<br>
+		Growth of cellulolytic microbes on protein in the rumen<br>
+		Hydrogen production associated with acetate production in the rumen<br>
+		Hydrogen production associated with butyrate production in the rumen<br>
+		Hydrogen production associated with microbial growth on protein/amino acids in the rumen<br>
+		Production of soluble protein from degradation of degradable protein in the rumen<br>
+		Production of soluble protein from microbial biomass in the rumen<br>
+		Production of soluble protein from engulfed microbial protein in the rumen<br>
+		Soluble protein originating from saliva in the rumen<br>
+		Soluble protein from soluble protein in concentrate and rumen leaked milk replacer<br>
+		Amylolytic hexose uptake for amylolytic polysaccharide storage in the rumen<br>
+		Amylolytic hexose uptake required for growth on ammonia in the rumen<br>
+		Amylolytic hexose uptake for microbial growth on microbial protein in the rumen<br>
+		Amylolytic hexose uptake required for growth on protein in the rumen<br>
+		Amylolytic hexose fermentation for microbial non-growth functions in the rumen<br>
+		Ammonia uptake for growth of amylolytic microbes in the rumen<br>
+		Ammonia uptake for growth of cellulolytic microbes in the rumen<br>
+		Death of protozoa and amylolytic microbes in the rumen<br>
+		Cellulolytic hexose uptake for microbial growth on ammonia in the rumen<br>
+		Cellulolytic hexose uptake for microbial growth on protein in the rumen<br>
+		Cellulolytic hexose fermentation for microbial non-growth functions in the rumen<br>
+		Rate of engulfment of cellolytic microbes by amylolytic microbes and protozoa in de rumen<br>
+		Hydrolysis of degradable fibre (concentrate origin) to cellulolytic hexose in the rumen<br>
+		Hydrolysis of degradable fibre (forage origin) to cellulolytic hexose in the rumen<br>
+		Degradation of degradable protein (concentrate origin) into soluble protein in the rumen<br>
+		Degradation of degradable protein (forage origin) into soluble protein in the rumen<br>
+		Hydrolysis of degradable starch (concentrate origin) to amylolytic hexose in the rumen<br>
+		Hydrolysis of degradable starch (forage origin) to amylolytic hexose in the rumen<br>
+		Hydrogen uptake required for lipid biohydrogenation in the rumen<br>
+		Hydrogen uptake associated with biohydrogenation of fats or unsaturated fatty acids in the rumen<br>
+		Hydrogen uptake required for methane production in the rumen<br>
+		Hydrogen required for microbial growth on ammonia in the rumen<br>
+		Hydrogen uptake associated with microbial growth on ammonia in the rumen<br>
+		Hydrogen uptake associated with propionate production in the rumen<br>
+		Hydrogen uptake required for propionate and valerate production in the rumen<br>
+		Hydrogen uptake associated with valerate production in the rumen<br>
+		Soluble protein fermentation to ammonia in the rumen<br>
+		Soluble protein uptake for growth of amylolytic microbes in the rumen<br>
+		Soluble protein uptake for growth of cellulolytic microbes in the rumen<br>
+		Ammonia absorption from the rumen<br>
+		Hydrogen yield from acetate, butyrate production and microbial growth on amino acids/protein in the rumen
+	</div>
+</div><br>
+
+
+<h3 id="rumOut">Rumen outflux</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		K C rum<br>
+		K C/F rum<br>
+		K F rum<br>
+		K fl rum<br>
+		K pz rum<br>
+		K vfa rum<br>
+		U asp-mic rum<br>
+		Ua ac rum<br>
+		Ua bu rum<br>
+		Ua pr rum<br>
+		Ua vl rum<br>
+		Up ac rum<br>
+		Up ahex rum<br>
+		Up am rum<br>
+		Up amic rum<br>
+		Up aspAmic rum<br>
+		Up aspPz rum<br>
+		Up bu rum<br>
+		Up chex rum<br>
+		Up cmic rum<br>
+		Up degFibre-C rum<br>
+		Up degFibre-F rum<br>
+		Up degProt-C rum<br>
+		Up degProt-F rum<br>
+		Up degStch-C rum<br>
+		Up degStch-F rum<br>
+		Up fat-C rum<br>
+		Up fat-F rum<br>
+		Up indFibre-C rum<br>
+		Up indFibre-F rum<br>
+		Up indProt-C rum<br>
+		Up indProt-F rum<br>
+		Up pr rum<br>
+		Up pz rum<br>
+		Up solProt rum<br>
+		Up vl rum
+	</div>
+	<div class="columnUnit">
+		/d<br>
+		/d<br>
+		/d<br>
+		/d<br>
+		/d<br>
+		mol/d<br>
+		g/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		g/d<br>
+		g/d<br>
+		g/d<br>
+		mol/d<br>
+		mol/d<br>
+		g/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		g/d<br>
+		mol/d<br>
+		mol/d
+	</div>
+	<div class="columnRight">
+		Fractional passage rate of concentrate in the rumen<br>
+		Fractional passage rate of solid feed (concentrate and forage) in the rumen<br>
+		Fractional passage rate of forage in the rumen<br>
+		Fractional passage rate of fluid in the rumen<br>
+		Fractional passage rate of protozoa in the rumen<br>
+		Rate of absorption and passage of total VFA from the rumen<br>
+		Outflux of amylolytic storage polysaccharides due to death of microbes in the rumen<br>
+		Acetate absorption from the rumen<br>
+		Butyrate absorption from the rumen<br>
+		Propionate absorption from the rumen<br>
+		Valerate absorption in the rumen<br>
+		Acetate passage from the rumen<br>
+		Amylolytic hexose passage from the rumen<br>
+		Ammonia passage from the rumen<br>
+		Amylolytic microbes passage from the rumen<br>
+		Amylolytic storage polysaccharides (with amylolytic microbes) passage from the rumen<br>
+		Amylolytic storage polysaccharides (with protozoa) passage from the rumen<br>
+		Butyrate passage from the the rumen<br>
+		Cellulolytic hexose passage from the rumen<br>
+		Cellulolytic microbes passage from the rumen<br>
+		Degradable fibre (concentrate origin) passage from the rumen<br>
+		Degradable fibre (forage origin) passage from the rumen<br>
+		Degradable protein (concentrate origin) passage from the rumen<br>
+		Degradable protein (forage origin) passage from the rumen<br>
+		Degradable starch (concentrate origin) passage from the rumen<br>
+		Degradable starch (forage origin) passage from the rumen<br>
+		Fat (concentrate origin) passage from the rumen<br>
+		Fat (forage origin) passage from the rumen<br>
+		Indigestible fibre (concentrate origin) passage from the rumen<br>
+		Indigestible fibre (forage origin) passage from the rumen<br>
+		Indigestible protein (concentrate origin) passage from the rumen<br>
+		Indigestible protein (forage origin) passage from the rumen<br>
+		Propionate passage from the rumen<br>
+		Protozoa passage from the rumen<br>
+		Soluble protein passage from the rumen<br>
+		Valerate passage through the rumen
+	</div>
+</div><br>
+
+
+<h3 id="rumPools">Rumen pools</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		C ac rum<br>
+		C ahex rum<br>
+		C am rum<br>
+		C amic rum<br>
+		C asp rum<br>
+		C bu rum<br>
+		C chex rum<br>
+		C cmic rum<br>
+		C degFibre-C rum<br>
+		C degFibre-F rum<br>
+		C degProt-C rum<br>
+		C degProt-F rum<br>
+		C degStch-C rum<br>
+		C degStch-F rum<br>
+		C fat-C rum<br>
+		C fat-F rum<br>
+		C indFibre-C rum<br>
+		C indFibre-F rum<br>
+		C indProt-C rum<br>
+		C indProt-F rum<br>
+		C pr rum<br>
+		C solProt rum<br>
+		C vfa rum<br>
+		C vl rum<br>
+		Fr ac rum<br>
+		Fr bu rum<br>
+		Fr C rum<br>
+		Fr F rum<br>
+		Fr hex-nonSugar rum<br>
+		Fr MR rum<br>
+		Fr pr rum<br>
+		Fr pz amic rum<br>
+		Fr rumProtAdj rum<br>
+		Fr vl rum<br>
+		P ps-ahex rum<br>
+		Q acA rum<br>
+		Q amic rum<br>
+		Q buA rum<br>
+		Q cmic rum<br>
+		Q degProt-C rum<br>
+		Q degProt-F rum<br>
+		Q fat-C rum<br>
+		Q fat-F rum<br>
+		Q ferFibre-C rum<br>
+		Q ferFibre-F rum<br>
+		Q ferStch-C rum<br>
+		Q ferStch-F rum<br>
+		Q hex-amic rum<br>
+		Q hex-cmic rum<br>
+		Q infFibre-C rum<br>
+		Q infFibre-F rum<br>
+		Q msp rum<br>
+		Q nprotN-C/F rum<br>
+		Q prA rum<br>
+		Q solProt-C/F rum<br>
+		Q undProt-C rum<br>
+		Q undProt-F rum<br>
+		Q vlA rum
+	</div>
+	<div class="columnUnit">
+		M<br>
+		M<br>
+		M<br>
+		g/L<br>
+		g/L<br>
+		M<br>
+		M<br>
+		g/L<br>
+		M<br>
+		M<br>
+		M<br>
+		M<br>
+		M<br>
+		M<br>
+		M<br>
+		M<br>
+		M<br>
+		M<br>
+		M<br>
+		M<br>
+		M<br>
+		M<br>
+		mM<br>
+		M<br>
+		%<br>
+		%<br>
+		%<br>
+		%<br>
+		mol/mol<br>
+		%<br>
+		%<br>
+		g/g<br>
+		%<br>
+		%<br>
+		g/d<br>
+		mol<br>
+		g<br>
+		mol<br>
+		g<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		g<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol
+	</div>
+	<div class="columnRight">
+		Acetate concentration in the rumen<br>
+		Concentration of amylolytic hexose in the rumen<br>
+		Concentration of ammonia in the rumen<br>
+		Concentration of amylolytic microbes in the rumen<br>
+		Concentration of amylolytic storage polysaccharides in the rumen<br>
+		Butyrate concentration in the rumen<br>
+		Concentration of cellulolytic hexose in the rumen<br>
+		Concentration of cellulytic microbes in the rumen<br>
+		Concentration of degradable fibre (concentrate origin) in the rumen<br>
+		Concentration of degradable fibre (forage origin) in the rumen<br>
+		Concentration of degradable protein (concentrate origin) in the rumen<br>
+		Concentration of degradable protein (forage origin) in the rumen<br>
+		Concentration of degradable starch (concentrate origin) in the rumen<br>
+		Concentration of degradable starch (forage origin) in the rumen<br>
+		Concentration of fat (concentrate origin) in the rumen<br>
+		Concentration of fat (forage origin) in the rumen<br>
+		Concentration of indigestible fibre (concentrate origin) in the rumen<br>
+		Concentration of indigestible fibre (forage origin) in the rumen<br>
+		Concentration of indigestible protein (concentrate origin) in the rumen<br>
+		Concentration of indigestible protein (forage origin) in the rumen<br>
+		Propionate concentration in the rumen<br>
+		Concentration of soluble protein in the rumen<br>
+		VFA concentration in the rumen<br>
+		Valerate concentration in the rumen<br>
+		Acetate proportion in the rumen<br>
+		Butyrate proportion in the rumen<br>
+		Proportion of concentrate in the rumen<br>
+		Proportion of forage in the rumen<br>
+		Proportion of hexose not derived from sugars in the rumen<br>
+		Proportion of milk replacer in the rumen<br>
+		Propionate proportion in the rumen<br>
+		Proportion g protozoa per g amylolytic microbes in the rumen<br>
+		Rumen protein adjusted for milk replacer leaking into the rumen<br>
+		Valerate proportion in the rumen<br>
+		Polysaccharides storage of amylolytic hexose in the rumen<br>
+		Quantity acetic acid in the rumen<br>
+		Quantity amylolytic microbes in the rumen<br>
+		Quantity butyric acid in the rumen<br>
+		Quantity cellulolytic microbes in the rumen<br>
+		Quantity degradable protein in the rumen (concentrate origin)<br>
+		Quantity degradable protein in the rumen (forage origin)<br>
+		Quantity fat in the rumen (concentrate origin)<br>
+		Quantity fat in the rumen (forage origin)<br>
+		Quantity fermentable fibre in the rumen (concentrate origin)<br>
+		Quantity fermentable fibre in the rumen (forage origin)<br>
+		Quantity fermentable starch in the rumen (concentrate origin)<br>
+		Quantity fermentable starch in the rumen (forage origin)<br>
+		Quantity hexose available to amylolytic microbes in the rumen (concentrate & forage origin)<br>
+		Quantity hexose available to cellulolytic microbes in the rumen (concentrate & forage origin)<br>
+		Quantity infermentable fibre in the rumen (concentrate origin)<br>
+		Quantity infermentable fibre in the rumen (forage origin)<br>
+		Quantity microbial storage polysaccharides in the rumen<br>
+		Quantity non-protein nitrogen in the rumen (concentrate & forage origin)<br>
+		Quantity propionic acid in the rumen<br>
+		Quantity soluble protein in the rumen (concentrate & forage origin)<br>
+		Quantity undegradable protein in the rumen (concentrate origin)<br>
+		Quantity undegradable protein in the rumen (forage origin)<br>
+		Quantity valeric acid in the rumen
+	</div>
+</div><br>
+
+
+<h3 id="rumVFAp">Rumen VFA production</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		P ac asp rum<br>
+		P ac rum<br>
+		P ac-acot rum<br>
+		P ac-ahex amicAm rum<br>
+		P ac-ahex amicMicProt rum<br>
+		P ac-ahex amicProt rum<br>
+		P ac-ahex rum<br>
+		P ac-chex cmicAm rum<br>
+		P ac-chex cmicProt rum<br>
+		P ac-chex rum<br>
+		P bu asp rum<br>
+		P bu rum<br>
+		P bu-ahex amicAm rum<br>
+		P bu-ahex amicMicProt rum<br>
+		P bu-ahex amicProt rum<br>
+		P bu-ahex rum<br>
+		P bu-chex cmicAm rum<br>
+		P bu-chex cmicProt rum<br>
+		P bu-chex rum<br>
+		P bu-prot rum<br>
+		P pr asp rum<br>
+		P pr rum<br>
+		P pr-ahex amicAm rum<br>
+		P pr-ahex amicMicProt rum<br>
+		P pr-ahex amicProt rum<br>
+		P pr-ahex rum<br>
+		P pr-chex cmicAm rum<br>
+		P pr-chex cmicProt rum<br>
+		P pr-chex rum<br>
+		P pr-prot rum<br>
+		P vl asp rum<br>
+		P vl rum<br>
+		P vl-ahex amicAm rum<br>
+		P vl-ahex amicMicProt rum<br>
+		P vl-ahex amicProt rum<br>
+		P vl-ahex rum<br>
+		P vl-chex cmicAm rum<br>
+		P vl-chex cmicProt rum<br>
+		P vl-chex rum<br>
+		P vl-prot rum
+	</div>
+	<div class="columnUnit">
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d
+	</div>
+	<div class="columnRight">
+		Acetate production from fermentation required for amylolytic polysaccharides storage in the rumen<br>
+		Total acetate production in the rumen<br>
+		Acetate production from soluble protein fermentation in the rumen<br>
+		Acetate production from amylolytic hexose fermentation required for amylolytic microbial growth on ammonia in the rumen<br>
+		Acetate production from amylolytic hexose fermentation required for amylolytic microbial growth on microbial protein in the rumen<br>
+		Acetate production from amylolytic hexose fermentation required for amylolytic microbial growth on protein in the rumen<br>
+		Acetate production from amylolytic hexose fermentation in the rumen<br>
+		Acetate production from cellulolytic hexose fermentation required for cellulolytic microbial growth on ammonia in the rumen<br>
+		Acetate production from cellulolytic hexose fermentation required for cellulolytic microbial growth on protein in the rumen<br>
+		Acetate production from cellulolytic hexose fermentation in the rumen<br>
+		Butyrate production from fermentation required for amylolytic polysaccharides storage in the rumen<br>
+		Total butyrate production in the rumen<br>
+		Butyrate production from amylolytic hexose fermentation required for amylolytic microbial growth on ammonia in the rumen<br>
+		Butyrate production from amylolytic hexose fermentation required for amylolytic microbial growth on microbial protein in the rumen<br>
+		Butyrate production from amylolytic hexose fermentation required for amylolytic microbial growth on protein in the rumen<br>
+		Butyrate production from amylolytic hexose fermentation in the rumen<br>
+		Butyrate production from cellulolytic hexose fermentation required for cellulolytic microbial growth on ammonia in the rumen<br>
+		Butyrate production from cellulolytic hexose fermentation required for cellulolytic microbial growth on protein in the rumen<br>
+		Butyrate production from cellulolytic hexose fermentation in the rumen<br>
+		Butyrate production from soluble protein fermentation in the rumen<br>
+		Propionate production from fermentation required for amylolytic polysaccharides storage in the rumen<br>
+		Total propionate production in the rumen<br>
+		Propionate production from amylolytic hexose fermentation required for amylolytic microbial growth on ammonia in the rumen<br>
+		Propionate production from amylolytic hexose fermentation required for amylolytic microbial growth on microbial protein in the rumen<br>
+		Propionate production from amylolytic hexose fermentation required for amylolytic microbial growth on protein in the rumen<br>
+		Propionate production from amylolytic hexose fermentation in the rumen<br>
+		Propionate production from cellulolytic hexose fermentation required for cellulolytic microbial growth on ammonia in the rumen<br>
+		Propionate production from cellulolytic hexose fermentation required for cellulolytic microbial growth on protein in the rumen<br>
+		Propionate production from cellulolytic hexose fermentation in the rumen<br>
+		Propionate production from soluble protein fermentation in the rumen<br>
+		Valerate production from fermentation required for amylolytic polysaccharides storage in the rumen<br>
+		Total valerate production in the rumen<br>
+		Valerate production from amylolytic hexose fermentation required for amylolytic microbial growth on ammonia in the rumen<br>
+		Valerate production from amylolytic hexose fermentation required for amylolytic microbial growth on microbial protein in the rumen<br>
+		Valerate production from amylolytic hexose fermentation required for amylolytic microbial growth on protein in the rumen<br>
+		Valerate production from amylolytic hexose fermentation in the rumen<br>
+		Valerate production from cellulolytic hexose fermentation required for cellulolytic microbial growth on ammonia in the rumen<br>
+		Valerate production from cellulolytic hexose fermentation required for cellulolytic microbial growth on protein in the rumen<br>
+		Valerate production from cellulolytic hexose fermentation in the rumen<br>
+		Valerate production from soluble protein fermentation in the rumen
+	</div>
+</div><br>
+
+
+<h3 id="rumVFAy">Rumen VFA yields</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		Y ac-ahexAm rum<br>
+		Y ac-ahexMicProt rum<br>
+		Y ac-ahexProt rum<br>
+		Y ac-asp rum<br>
+		Y ac-chex rum<br>
+		Y ac-chexAm rum<br>
+		Y ac-chexProt rum<br>
+		Y ac-fibre rum<br>
+		Y ac-hex rum<br>
+		Y ac-prot rum<br>
+		Y bu-ahexAm rum<br>
+		Y bu-ahexMicProt rum<br>
+		Y bu-ahexProt rum<br>
+		Y bu-asp rum<br>
+		Y bu-chex rum<br>
+		Y bu-chexAm rum<br>
+		Y bu-chexProt rum<br>
+		Y bu-fibre rum<br>
+		Y bu-hex rum<br>
+		Y bu-prot rum<br>
+		Y pr-ahexAm rum<br>
+		Y pr-ahexMicProt rum<br>
+		Y pr-ahexProt rum<br>
+		Y pr-asp rum<br>
+		Y pr-chex rum<br>
+		Y pr-chexAm rum<br>
+		Y pr-chexProt rum<br>
+		Y pr-fibre rum<br>
+		Y pr-hex rum<br>
+		Y pr-prot rum<br>
+		Y vl-ahexAm rum<br>
+		Y vl-ahexMicProt rum<br>
+		Y vl-ahexProt rum<br>
+		Y vl-asp rum<br>
+		Y vl-chex rum<br>
+		Y vl-chexAm rum<br>
+		Y vl-chexProt rum<br>
+		Y vl-fibre rum<br>
+		Y vl-hex rum<br>
+		Y vl-prot rum
+	</div>
+	<div class="columnUnit">
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-<br>
+		-
+	</div>
+	<div class="columnRight">
+		Acetate yield from amylolytic hexose when growing on ammonia in the rumen<br>
+		Acetate yield from amylolytic hexose when growing on microbial protein in the rumen<br>
+		Acetate yield from amylolytic hexose when growing on protein in the rumen<br>
+		Acetate yield from amylolytic storage polysaccharides fermentation in the rumen<br>
+		Acetate yield from cellulolytic hexose fermentation in the rumen<br>
+		Acetate yield from cellulolytic hexose when growing on ammonia in the rumen<br>
+		Acetate yield from cellulolytic hexose when growing on protein in the rumen<br>
+		Total acetate yield from fibre in the rumen<br>
+		Acetate yield from hexose fermentation in the rumen<br>
+		Acetate yield from soluble protein fermentation in the rumen<br>
+		Butyrate yield from amylolytic hexose when growing on ammonia in the rumen<br>
+		Butyrate yield from amylolytic hexose when growing on microbial protein in the rumen<br>
+		Butyrate yield from amylolytic hexose when growing on protein in the rumen<br>
+		Butyrate yield from amylolytic storage polysaccharides fermentation in the rumen<br>
+		Butyrate yield from cellulolytic hexose fermentation in the rumen<br>
+		Butyrate yield from cellulolytic hexose when growing on ammonia in the rumen<br>
+		Butyrate yield from cellulolytic hexose when growing on protein in the rumen<br>
+		Total butyrate yield from fibre in the rumen<br>
+		Butyrate yield from hexose fermentation in the rumen<br>
+		Butyrate yield from soluble protein fermentation in the rumen<br>
+		Propionate yield from amylolytic hexose when growing on ammonia in the rumen<br>
+		Propionate yield from amylolytic hexose when growing on microbial protein in the rumen<br>
+		Propionate yield from amylolytic hexose when growing on protein in the rumen<br>
+		Propionate yield from amylolytic storage polysaccharides fermentation in the rumen<br>
+		Propionate yield from cellulolytic hexose fermentation in the rumen<br>
+		Propionate yield from cellulolytic hexose when growing on ammonia in the rumen<br>
+		Propionate yield from cellulolytic hexose when growing on protein in the rumen<br>
+		Total propionate yield from fibre in the rumen<br>
+		Propionate yield from hexose fermentation in the rumen<br>
+		Propionate yield from soluble protein fermentation in the rumen<br>
+		Valerate yield from amylolytic hexose when growing on ammonia  in the rumen<br>
+		Valerate yield from amylolytic hexose when growing on microbial protein in the rumen<br>
+		Valerate yield from amylolytic hexose when growing on protein in the rumen<br>
+		Valerate yield from amylolytic storage polysaccharides fermentation in the rumen<br>
+		Valerate yield from cellulolytic hexose fermentation in the rumen<br>
+		Valerate yield from cellulolytic hexose when growing on ammonia in the rumen<br>
+		Valerate yield from cellulolytic hexose when growing on protein in the rumen<br>
+		Total valerate yield from fibre in the rumen<br>
+		Valerate yield from hexose fermentation in the rumen<br>
+		Valerate yield from soluble protein fermentation in the rumen
+	</div>
+</div><br>
+
+
+<h3 id="siIn">Small intestine influx</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		In degProt dSI<br>
+		In degProt pSI<br>
+		In fat dSI<br>
+		In fat pSI<br>
+		In lac dSI<br>
+		In lac pSI<br>
+		In N-MR dSI<br>
+		In N-MR pSI<br>
+		In stch dSI<br>
+		In stch pSI
+	</div>
+	<div class="columnUnit">
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d
+	</div>
+	<div class="columnRight">
+		Degradable protein influx into the distal small intestine<br>
+		Degradable protein influx into the proximal small intestine<br>
+		Fat influx into the distal small intestine<br>
+		Fat influx into the proximal small intestine<br>
+		Lactose influx into the distal small intestine<br>
+		Lactose influx into the proximal small intestine<br>
+		Nitrogen (MR origin) influx into the distal small intestine<br>
+		Nitrogen (MR origin) influx into the proximal small intestine<br>
+		Starch influx into the distal small intestine<br>
+		Starch influx into the proximal small intestine
+	</div>
+</div><br>
+
+
+<h3 id="siMet">Small intestine metabolism</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		P glc-Asp SI<br>
+		P glc-degStch SI<br>
+		U asp SI<br>
+		U degStarch SI<br>
+		U fat SI<br>
+		U micFat SI<br>
+		U micProt SI<br>
+		U prot-C/F SI<br>
+		U solProt SI<br>
+		Ua degProt SI<br>
+		Ua fat SI<br>
+		Ua N SI<br>
+		Ua prot-C SI<br>
+		Ua prot-F SI<br>
+		Ua sls SI<br>
+		Ua stch SI
+	</div>
+	<div class="columnUnit">
+		mol/d<br>
+		mol/d<br>
+		mol st/d<br>
+		mol st/d<br>
+		mol li/d<br>
+		mol li/d<br>
+		mol pr /d<br>
+		mol pr/d<br>
+		mol pr/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol AA/d<br>
+		mol AA/d<br>
+		mol/d<br>
+		mol/d
+	</div>
+	<div class="columnRight">
+		Postabsorptive glucose obtained from digested amylolytic storage polysaccharides absorbed from the small intestine<br>
+		Postabsorptive glucose obtained from digested degradable starch absorbed from the small intestine<br>
+		Digestion of amylolytic storage polysaccharides in the small intestine<br>
+		Digestion and absorption of degradable starch in the small intestine<br>
+		Digestion and absorption of fats in the small intestine<br>
+		Digested fat from microbial origin in the small intestine<br>
+		Digestion and absorption of microbial protein in the small intestine<br>
+		Digestion and absorption of protein (concentrate & forage origin) in the small intestine<br>
+		Digestion of soluble protein in the small intestine<br>
+		Degradable protein (MR origin) absorption from the small intestine<br>
+		Fat absorption from the small intestine<br>
+		Nitrogen absorption from the small intestine<br>
+		Absorption (uptake) of protein in the small intestine (concentrate origin)<br>
+		Absorption (uptake) of protein in the small intestine (forage origin)<br>
+		Soluble sugars (including lactose) absorption from the small intestine<br>
+		Starch absorption from the small intestine
+	</div>
+</div><br>
+
+
+<h3 id="siOut">Small intestine outflux</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		K dSI<br>
+		K pSI<br>
+		Out degProt SI<br>
+		Out indProt-C/F SI<br>
+		Out micProt SI<br>
+		Out solProt SI<br>
+		Out stch-micC/F SI<br>
+		Up degProt dSI<br>
+		Up degProt pSI<br>
+		Up fat dSI<br>
+		Up fat pSI<br>
+		Up fat-C/F SI<br>
+		Up lac dSI<br>
+		Up lac pSI<br>
+		Up micFat SI<br>
+		Up N dSI<br>
+		Up N pSI<br>
+		Up stch dSI<br>
+		Up stch pSI<br>
+		Up stch-msp SI
+	</div>
+	<div class="columnUnit">
+		/d<br>
+		/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d
+	</div>
+	<div class="columnRight">
+		Fractional passage rate of all dry matter through the distal small intestine<br>
+		Fractional passage rate of all dry matter through the proximal small intestine<br>
+		Degradable protein (MR, concentrate & forage origin) outflux from the small intestine<br>
+		Indigestible protein (concentrate & forage origin) outflux from the small intestine<br>
+		Microbial protein (MR, concentrate & forage origin) outflux from small intestine<br>
+		Soluble protein (MR, concentrate & forage origin) outflux from the small intestine<br>
+		Starch (concentrate, forage and microbes origin) outflux from the small intestine<br>
+		Degradable protein passage through the distal small intestine<br>
+		Degradable protein passage through the proximal small intestine<br>
+		Fat passage through the distal small intestine<br>
+		Fat passage through the proximal small intestine<br>
+		Fat (concentrate & forage origin) passage from the small intestine<br>
+		Lactose passage through the distal small intestine<br>
+		Lactose passage through the proximal small intestine<br>
+		Microbial fat passage from the small intestine<br>
+		Nitrogen passage through the distal small intestine<br>
+		Nitrogen passage through the proximal small intestine<br>
+		Starch passage through the distal small intestine<br>
+		Starch passage through the proximal small intestine<br>
+		Starch (from microbial storage polysaccharides) passage through the small intestine
+	</div>
+</div><br>
+
+
+<h3 id="siPools">Small intestine pools</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		Fr cell-NDF dSI<br>
+		Fr digC/F SI<br>
+		Q fat-MR dSI<br>
+		Q fat-MR pSI<br>
+		Q lac-MR dSI<br>
+		Q lac-MR pSI<br>
+		Q N-MR dSI<br>
+		Q N-MR pSI<br>
+		Q prot-MR dSI<br>
+		Q prot-MR pSI<br>
+		Q stch-MR dSI<br>
+		Q stch-MR pSI
+	</div>
+	<div class="columnUnit">
+		mol/mol<br>
+		%<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol<br>
+		mol
+	</div>
+	<div class="columnRight">
+		Proportion of cellulose in NDF in the distal small intestine<br>
+		Fraction of concentrate & forage digested in the small intestine<br>
+		Quantity fat in the distal small intestine (MR origin)<br>
+		Quantity fat in the proximal small intestine (MR origin)<br>
+		Quantity lactose in the distal small intestine (MR origin)<br>
+		Quantity lactose in the proximal small intestine (MR origin)<br>
+		Quantity nitrogen in the distal small intestine (MR origin)<br>
+		Quantity nitrogen in the proximal small intestine (MR origin)<br>
+		Quantity protein in the distal small intestine (MR origin)<br>
+		Quantity protein in the proximal small intestine (MR origin)<br>
+		Quantity starch in the distal small intestine (MR origin)<br>
+		Quantity starch in the proximal small intestine (MR origin)
+	</div>
+</div><br>
+
+
+<h3 id="waMet">Whole animal metabolism</h3>
+<div class="row">
+	<div class="columnLeftVars">
+		C fa<br>
+		C fa-pl<br>
+		C glc<br>
+		C glc-pl<br>
+		C glg<br>
+		C glg1<br>
+		K meth mbw<br>
+		K vfa rumLI<br>
+		P bfat-fa<br>
+		P fa-acc<br>
+		P fa-bfat<br>
+		P fa-fat<br>
+		P glc-aa<br>
+		P glc-bfat<br>
+		P glc-glg<br>
+		P glc-gly<br>
+		P glc-lac<br>
+		P glc-pr<br>
+		P glc-stch<br>
+		P glg-glg<br>
+		P meth<br>
+		P methEC<br>
+		P methEC WA<br>
+		P methEJ<br>
+		P methV<br>
+		Ratio lv-ew<br>
+		U bfat-fa<br>
+		U digFa-C/F<br>
+		U digFa-mic<br>
+		U fa-bfat<br>
+		U fa-ox<br>
+		U glc-acc<br>
+		U glc-faAcc<br>
+		U glc-glg<br>
+		U glc-gly<br>
+		U glc-ur<br>
+		U glg-glg<br>
+		V fa-acc<br>
+		V fa-bfat<br>
+		V glc-glg<br>
+		V glc-gly<br>
+		V glc-ox<br>
+		V glg-glg
+	</div>
+	<div class="columnUnit">
+		mol/kg<br>
+		mol/L<br>
+		mol/kg<br>
+		mol/L<br>
+		mol/kg<br>
+		mol/kg<br>
+		KJ/kg^0.75/d<br>
+		mol/d<br>
+		kg/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		kg/d<br>
+		mol/d<br>
+		Mcal/d<br>
+		Mcal/d<br>
+		MJ/d<br>
+		L/d<br>
+		kg/kg<br>
+		kg/d<br>
+		mol FA/d<br>
+		mol FA/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		kg/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d<br>
+		mol/d
+	</div>
+	<div class="columnRight">
+		Concentration of fatty acids in body fluids<br>
+		Concentration of fatty acids per L of plasma in blood<br>
+		Concentration of glucose in body fluids<br>
+		Concentration of glucose per L of plasma in blood<br>
+		Concentration of glycogen in liver and muscle<br>
+		Glycogen concentration based on a Immonen et al.  2000, Meat Science p163<br>
+		Whole animal methane production per metabolic weight<br>
+		Rate of total VFA leaving the rumen and large intestine<br>
+		Body fat influx from lipogenesis of fatty acids<br>
+		Fatty acid influx through synthesis from Acetyl-CoA<br>
+		Fatty acid influx from degradation of body fat<br>
+		Fatty acid influx from fat (MR origin) absorbed from the small intestine<br>
+		Glucose influx through gluconeogenesis of amino acids<br>
+		Glucose influx from glycerol from degraded body fat<br>
+		Glucose influx from glycogenolysis<br>
+		Glucose influx from glycerol (from milk replacer fat) absorbed in the small intestine<br>
+		Glucose influx from lactose (MR origin) absorbed in the small intestine<br>
+		Glucose production via gluconeogenesis from absorbed propionate<br>
+		Glucose influx from starch (MR origin) absorbed in the small intestine<br>
+		Glycogen influx from glycogenesis<br>
+		Methane production<br>
+		Methane production (calories)<br>
+		Whole animal methane production (calories)<br>
+		Methane production (joule)<br>
+		Methane production (volume) at 1 atm and 20 °C<br>
+		Ratio of liver weight to empty body weight<br>
+		Body fat outflux through breakdown (lipolysis) into fatty acids<br>
+		Uptake of digested fatty acids from solid feed<br>
+		Uptake of digested fatty acids from microbial origin<br>
+		Fatty acid outflux for lipogenesis into body fat<br>
+		Fatty acid outflux into oxidation (to Acetyl-CoA)<br>
+		Glucose outflux into glycolysis (oxidation of glucose to Acetyl-CoA)<br>
+		Glucose outflux into fatty acid synthesis from Acetyl-CoA<br>
+		Glucose outflux into glycogenesis<br>
+		Glucose outflux into glycerol synthesis during lipogenesis<br>
+		Glucose outflux into urine<br>
+		Glycogen outflux into glycogenolysis<br>
+		Maximum rate of fatty acid oxidation (into Acetyl-CoA)<br>
+		Maximum rate of lipogenesis into body fat<br>
+		Maximum rate of glycogenesis<br>
+		Maximum rate of glycolysis (oxidation of glucose to Acetyl-CoA)<br>
+		Maximum rate of glucose oxidation<br>
+		Maximum rate of glycogen synthesis
+	</div>
+</div><br>
+
+
+<br><hr>
+<p class="toTop"><a href="#top">Back to top</a></p>
 </body></html>
